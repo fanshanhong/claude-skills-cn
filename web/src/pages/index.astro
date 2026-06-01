@@ -1,0 +1,147 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getArticleTags, getAllTags } from '../lib/tags';
+import { resolveScenes } from '../lib/scenes';
+
+const articles = await getCollection('articles');
+
+const resolvedScenes = resolveScenes(articles);
+const coveredIds = new Set(resolvedScenes.flatMap(s => s.articles.map(a => a.id)));
+const unbucketed = articles.filter(a => !coveredIds.has(a.id));
+
+const totalCount = articles.length;
+const sceneCount = resolvedScenes.length;
+const pluginCount = new Set(
+  articles.map(a => a.data.plugin).filter(Boolean)
+).size;
+const authorCount = new Set(articles.map(a => a.data.author)).size;
+const popularTags = getAllTags(articles).slice(0, 10);
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Claude Skills 中文市集',
+  alternateName: 'Claude Code Skills 中文教程合集',
+  url: 'https://claudeskill.me/',
+  inLanguage: 'zh-CN',
+  description: `每个 Claude Skill 一篇深度长文，覆盖 Anthropic 官方 / obra/superpowers / 社区高质量 Skill，共收录 ${totalCount} 篇。`,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://claudeskill.me/skills/?q={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+};
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Claude Skills 中文市集',
+  url: 'https://claudeskill.me/',
+  logo: 'https://claudeskill.me/favicon.svg',
+};
+---
+<Base title="Claude Skills 中文市集" jsonLd={[websiteJsonLd, orgJsonLd]}>
+  <section class="container">
+    <div class="hero">
+      <h1>每个 Claude Skill 一篇深度长文</h1>
+      <p class="hero-desc">
+        覆盖 Anthropic 官方 Skills、obra/superpowers plugin、社区高质量 Skill 的
+        <strong>中文教程长文</strong>。每篇都包含安装、参数详解、实战 demo、搭配建议、常见坑。
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><strong>{totalCount}</strong>篇长文</div>
+        <div class="stat"><strong>{sceneCount}</strong>大使用场景</div>
+        <div class="stat"><strong>{pluginCount}</strong>个 Plugin</div>
+        <div class="stat"><strong>{authorCount}</strong>位作者</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">按使用场景找 Skill</h2>
+    <div class="scene-grid">
+      {resolvedScenes.map(scene => (
+        <a class="scene-card" href={`#scene-${scene.slug}`}>
+          <div class="scene-card-header">
+            <span class="scene-card-emoji">{scene.emoji}</span>
+            <span class="scene-card-title">{scene.label}</span>
+            <span class="scene-card-count">{scene.articles.length} 篇</span>
+          </div>
+          <p class="scene-card-blurb">{scene.blurb}</p>
+        </a>
+      ))}
+    </div>
+
+    <h2 class="section-title">分类导航</h2>
+    <div class="group-grid">
+      <a class="group-card" href="/skills/">
+        <div class="group-card-title">全部 Skills</div>
+        <div class="group-card-meta">{totalCount} 篇文章</div>
+      </a>
+      <a class="group-card" href="/plugins/superpowers/">
+        <div class="group-card-title">obra/superpowers</div>
+        <div class="group-card-meta">完整开发工作流 plugin</div>
+      </a>
+      <a class="group-card" href="/tags/anthropic/">
+        <div class="group-card-title">Anthropic 官方</div>
+        <div class="group-card-meta">官方 skills 库</div>
+      </a>
+    </div>
+
+    <h2 class="section-title">热门标签</h2>
+    <div class="tag-filter">
+      {popularTags.map(t => (
+        <a class="tag-chip" href={`/tags/${t.slug}/`}>
+          #{t.label} <span style="opacity: 0.7;">{t.count}</span>
+        </a>
+      ))}
+      <a class="tag-chip" href="/tags/" style="opacity: 0.7;">查看全部 →</a>
+    </div>
+
+    {resolvedScenes.map(scene => (
+      <section class="scene-section" id={`scene-${scene.slug}`}>
+        <div class="scene-section-header">
+          <span class="scene-card-emoji">{scene.emoji}</span>
+          <h2>{scene.label}</h2>
+          <span class="scene-section-count">{scene.articles.length} 篇</span>
+        </div>
+        <p class="scene-card-blurb" style="margin: 0.2em 0 0.8em;">{scene.blurb}</p>
+        <div class="article-list">
+          {scene.articles.map(a => (
+            <ArticleCard
+              href={`/articles/${a.id}/`}
+              title={a.data.title}
+              description={a.data.description}
+              author={a.data.author}
+              license={a.data.license}
+              sourceType={a.data.source_type}
+              tags={getArticleTags(a)}
+            />
+          ))}
+        </div>
+      </section>
+    ))}
+
+    {unbucketed.length > 0 && (
+      <section class="scene-section" id="scene-other">
+        <div class="scene-section-header">
+          <span class="scene-card-emoji">📦</span>
+          <h2>其他</h2>
+          <span class="scene-section-count">{unbucketed.length} 篇</span>
+        </div>
+        <div class="article-list">
+          {unbucketed.map(a => (
+            <ArticleCard
+              href={`/articles/${a.id}/`}
+              title={a.data.title}
+              description={a.data.description}
+              author={a.data.author}
+              license={a.data.license}
+              sourceType={a.data.source_type}
+              tags={getArticleTags(a)}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+  </section>
+</Base>

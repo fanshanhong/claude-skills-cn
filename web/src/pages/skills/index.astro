@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getArticleTags, getAllTags } from '../../lib/tags';
+import { SCENES, sceneForArticle } from '../../lib/scenes';
+
+const articles = await getCollection('articles');
+const sorted = articles.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const allTags = getAllTags(articles);
+
+const sceneCountById = new Map(
+  SCENES.map(s => [s.slug, articles.filter(a => s.slugs.includes(a.id)).length])
+);
+const unbucketedCount = articles.filter(a => !sceneForArticle(a.id)).length;
+---
+<Base title="全部 Skills" description="Claude Skills 中文市集收录的全部 Skill 教程文章列表">
+  <section class="container">
+    <div class="hero">
+      <h1>全部 Skills</h1>
+      <p class="hero-desc">
+        共 <strong>{sorted.length}</strong> 篇文章。涵盖 Anthropic 官方 Skills + obra/superpowers plugin + 社区高质量 Skill。
+      </p>
+    </div>
+
+    <div class="tag-filter" id="scene-filter">
+      <span class="tag-filter-label">按场景筛选：</span>
+      <button class="tag-chip scene-filter-btn active" data-scene="">全部 <span style="opacity: 0.7;">{sorted.length}</span></button>
+      {SCENES.map(s => (
+        <button class="tag-chip scene-filter-btn" data-scene={s.slug}>
+          {s.emoji} {s.label} <span style="opacity: 0.7;">{sceneCountById.get(s.slug) ?? 0}</span>
+        </button>
+      ))}
+      {unbucketedCount > 0 && (
+        <button class="tag-chip scene-filter-btn" data-scene="__other">📦 其他 <span style="opacity: 0.7;">{unbucketedCount}</span></button>
+      )}
+    </div>
+
+    <div class="tag-filter">
+      <span class="tag-filter-label">按标签筛选：</span>
+      {allTags.slice(0, 12).map(t => (
+        <a class="tag-chip" href={`/tags/${t.slug}/`}>
+          #{t.label} <span style="opacity: 0.7;">{t.count}</span>
+        </a>
+      ))}
+      <a class="tag-chip" href="/tags/" style="opacity: 0.7;">查看全部 →</a>
+    </div>
+
+    <div class="article-list" id="article-list">
+      {sorted.map(a => {
+        const scene = sceneForArticle(a.id);
+        return (
+          <div class="article-card-wrapper" data-scene={scene?.slug ?? '__other'}>
+            <ArticleCard
+              href={`/articles/${a.id}/`}
+              title={a.data.title}
+              description={a.data.description}
+              author={a.data.author}
+              license={a.data.license}
+              sourceType={a.data.source_type}
+              tags={getArticleTags(a)}
+            />
+          </div>
+        );
+      })}
+    </div>
+
+    <p id="empty-hint" style="display:none; text-align:center; color: var(--color-text-muted); padding: 2em 0;">
+      该场景下暂无文章。
+    </p>
+  </section>
+
+  <script is:inline>
+    (() => {
+      const buttons = document.querySelectorAll('.scene-filter-btn');
+      const cards = document.querySelectorAll('.article-card-wrapper');
+      const emptyHint = document.getElementById('empty-hint');
+
+      function apply(scene) {
+        let shown = 0;
+        cards.forEach(c => {
+          const ok = !scene || c.dataset.scene === scene;
+          c.style.display = ok ? '' : 'none';
+          if (ok) shown++;
+        });
+        emptyHint.style.display = shown === 0 ? '' : 'none';
+        buttons.forEach(b => {
+          b.classList.toggle('active', (b.dataset.scene || '') === scene);
+        });
+        if (scene) {
+          history.replaceState(null, '', `?scene=${encodeURIComponent(scene)}`);
+        } else {
+          history.replaceState(null, '', location.pathname);
+        }
+      }
+
+      buttons.forEach(b => {
+        b.addEventListener('click', () => apply(b.dataset.scene || ''));
+      });
+
+      const urlScene = new URLSearchParams(location.search).get('scene');
+      if (urlScene) apply(urlScene);
+    })();
+  </script>
+</Base>

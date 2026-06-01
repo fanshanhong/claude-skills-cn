@@ -1,0 +1,39 @@
+---
+import { tagSlug } from '../lib/tags';
+
+export interface Props {
+  href: string;
+  title: string;
+  description: string;
+  author: string;
+  license: string;
+  sourceType: string;
+  tags?: Array<{ slug: string; label: string }>;
+}
+const { href, title, description, author, license, sourceType, tags = [] } = Astro.props;
+
+const typeLabel: Record<string, string> = {
+  'single-skill': '单 Skill',
+  'plugin-skill': 'Plugin Skill',
+  'plugin-overview': 'Plugin 总览',
+  'plugin-doc': '工程文档',
+};
+
+// Show only top 3 tags in card to keep it tidy
+const visibleTags = tags.slice(0, 3);
+---
+<article class="article-card">
+  <h2 class="article-card-title">
+    <a href={href}>{title}</a>
+  </h2>
+  <p class="article-card-desc">{description}</p>
+  <div class="article-card-meta">
+    <span class="type-chip" data-type={sourceType}>{typeLabel[sourceType] ?? sourceType}</span>
+    <span>· {author}</span>
+    <span>· {license}</span>
+    {visibleTags.length > 0 && <span style="color: var(--color-border);">·</span>}
+    {visibleTags.map(t => (
+      <a class="tag-chip" href={`/tags/${t.slug}/`}>#{t.label}</a>
+    ))}
+  </div>
+</article>

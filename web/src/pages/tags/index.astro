@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { getAllTags } from '../../lib/tags';
+
+const articles = await getCollection('articles');
+const tags = getAllTags(articles);
+---
+<Base
+  title="所有标签"
+  description="按标签浏览 Claude Skills 中文市集的全部文章"
+>
+  <section class="container">
+    <div class="hero">
+      <h1>所有标签</h1>
+      <p class="hero-desc">
+        共 <strong>{tags.length}</strong> 个标签。点击任意标签查看相关文章。
+      </p>
+    </div>
+
+    <div class="tag-filter" style="margin-top: 0;">
+      {tags.map(t => (
+        <a class="tag-chip" href={`/tags/${t.slug}/`}>
+          #{t.label} <span style="opacity: 0.7;">{t.count}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

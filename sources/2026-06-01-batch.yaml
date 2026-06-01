@@ -1,11 +1,12 @@
 batch_id: '2026-06-01'
 generated_at: '2026-06-01T15:21:31'
-total_entries: 33
-approved_count: 32
+total_entries: 35
+approved_count: 34
 counts_by_type:
   single-skill: 18
   plugin-skill: 14
   plugin-overview: 1
+  plugin-doc: 2
 entries:
 - id: algorithmic-art
   source_url: https://github.com/anthropics/skills/blob/main/skills/algorithmic-art/SKILL.md
@@ -701,4 +702,44 @@ entries:
   - verification-before-completion
   - writing-plans
   - writing-skills
+  status: approved
+- id: superpowers-dogfooding-cases
+  source_url: https://github.com/obra/superpowers/tree/main/docs/superpowers
+  raw_url: null
+  repo_url: https://github.com/obra/superpowers
+  skill_path: docs/superpowers/
+  skill_name: dogfooding-cases
+  skill_name_cn: Superpowers 自举实战案例
+  description_en: Real specs and implementation plans authored by the superpowers maintainer using superpowers' own workflow
+    to design and refactor superpowers itself. Dogfooding case library covering visual-brainstorming refactor, worktree
+    rototill, codex compatibility, document review, and zero-dep brainstorm server.
+  author: Jesse Vincent (obra)
+  license: MIT
+  source_type: plugin-doc
+  plugin: superpowers
+  sibling_skills:
+  - brainstorming
+  - writing-plans
+  - executing-plans
+  - subagent-driven-development
+  - using-git-worktrees
+  status: approved
+- id: superpowers-testing-skills
+  source_url: https://github.com/obra/superpowers/blob/main/docs/testing.md
+  raw_url: https://raw.githubusercontent.com/obra/superpowers/main/docs/testing.md
+  repo_url: https://github.com/obra/superpowers
+  skill_path: docs/testing.md
+  skill_name: testing-skills
+  skill_name_cn: Skill 集成测试方法论
+  description_en: Official guide on how to test superpowers skills using headless Claude Code sessions, session transcript
+    verification, and token usage analysis. Covers integration test structure, helpers, and the subagent-driven-development
+    test as a canonical example.
+  author: Jesse Vincent (obra)
+  license: MIT
+  source_type: plugin-doc
+  plugin: superpowers
+  sibling_skills:
+  - subagent-driven-development
+  - writing-skills
+  - test-driven-development
   status: approved

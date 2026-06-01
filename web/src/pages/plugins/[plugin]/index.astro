@@ -1,0 +1,109 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import { getArticleTags } from '../../../lib/tags';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  const plugins = [...new Set(articles.map(a => a.data.plugin).filter(Boolean))] as string[];
+
+  return plugins.map(plugin => {
+    const pluginArticles = articles.filter(a => a.data.plugin === plugin);
+    return {
+      params: { plugin },
+      props: { plugin, articles: pluginArticles },
+    };
+  });
+}
+
+const { plugin, articles } = Astro.props;
+
+const order = (x: typeof articles[0]) =>
+  x.data.source_type === 'plugin-overview' ? 0 :
+  x.data.source_type === 'plugin-doc' ? 1 : 2;
+
+const sorted = [...articles].sort((a, b) => {
+  const oa = order(a), ob = order(b);
+  if (oa !== ob) return oa - ob;
+  return a.data.title.localeCompare(b.data.title);
+});
+
+const overview = sorted.find(a => a.data.source_type === 'plugin-overview');
+const docs = sorted.filter(a => a.data.source_type === 'plugin-doc');
+const skills = sorted.filter(a => a.data.source_type === 'plugin-skill');
+
+const author = articles[0]?.data.author ?? '';
+const license = articles[0]?.data.license ?? '';
+const repo = articles[0]?.data.repo ?? '';
+---
+<Base
+  title={`${plugin} plugin 中文教程总览`}
+  description={`obra/${plugin} plugin 中文教程合集 —— 包含 plugin 总览、所有 sibling skills、工程附加文档。`}
+>
+  <section class="container">
+    <div class="plugin-header">
+      <h1>{plugin} <span style="color: var(--color-text-muted); font-weight: normal; font-size: 0.7em;">plugin 教程合集</span></h1>
+      <div class="article-meta">
+        <span class="badge badge-author">作者：{author}</span>
+        <span class="badge badge-author">许可：{license}</span>
+        {repo && <span>仓库：<a href={repo} target="_blank" rel="noopener">{repo}</a></span>}
+      </div>
+    </div>
+
+    {overview && (
+      <>
+        <h2 class="section-title">从这里开始</h2>
+        <div class="article-list">
+          <ArticleCard
+            href={`/articles/${overview.id}/`}
+            title={overview.data.title}
+            description={overview.data.description}
+            author={overview.data.author}
+            license={overview.data.license}
+            sourceType={overview.data.source_type}
+            tags={getArticleTags(overview)}
+          />
+        </div>
+      </>
+    )}
+
+    {skills.length > 0 && (
+      <>
+        <h2 class="section-title">单个 Skill 详解（{skills.length} 篇）</h2>
+        <div class="article-list">
+          {skills.map(a => (
+            <ArticleCard
+              href={`/articles/${a.id}/`}
+              title={a.data.title}
+              description={a.data.description}
+              author={a.data.author}
+              license={a.data.license}
+              sourceType={a.data.source_type}
+              tags={getArticleTags(a)}
+            />
+          ))}
+        </div>
+      </>
+    )}
+
+    {docs.length > 0 && (
+      <>
+        <h2 class="section-title">工程附加文档</h2>
+        <div class="article-list">
+          {docs.map(a => (
+            <ArticleCard
+              href={`/articles/${a.id}/`}
+              title={a.data.title}
+              description={a.data.description}
+              author={a.data.author}
+              license={a.data.license}
+              sourceType={a.data.source_type}
+              tags={getArticleTags(a)}
+            />
+          ))}
+        </div>
+      </>
+    )}
+  </section>
+</Base>

@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="关于本站" description="Claude Skills 中文市集是什么、为什么做、内容怎么来。">
+  <section class="container prose">
+    <h1>关于本站</h1>
+
+    <h2>本站是什么</h2>
+    <p>
+      Claude Skills 中文市集（以下简称"本站"）是面向中文开发者的 Claude Code Skill 教程合集。
+      每个 Skill 一篇深度长文，包含安装、参数详解、实战 demo、搭配建议、常见坑。
+    </p>
+
+    <h2>为什么做</h2>
+    <p>
+      Anthropic 把 <code>SKILL.md</code> 机制引入 Claude Code 之后，社区涌现了大量优质 Skill 和 plugin（最典型如 obra/superpowers）。
+      但这些资源几乎全部以英文 README 形式存在，中文区缺少系统的、面向使用者的中文教程。
+    </p>
+    <p>
+      本站想做的事很简单：把每个值得用的 Skill 翻译成"中文开发者能看懂、能上手"的长文，覆盖 SEO 长尾，方便后来者搜到。
+    </p>
+
+    <h2>内容怎么来</h2>
+    <p>
+      本站文章由 AI（Claude Opus 4.7）基于 Skill 原始 <code>SKILL.md</code> 辅助生成，再经人工 review。
+      原始内容版权归各自作者所有，本站只做中文教程二创，不分发或复制原文件。
+    </p>
+    <p>
+      每篇文章顶部都会标注原始 Skill 链接、作者、许可证、最后同步时间。
+      如发现内容与原 Skill 有出入，<strong>请以原文为准</strong>，并欢迎在原 repo 给作者反馈。
+    </p>
+
+    <h2>许可</h2>
+    <ul>
+      <li>本站文章本身：<strong>MIT 许可</strong>，欢迎转载（请注明出处链接）</li>
+      <li>各 Skill 原始内容：以 Skill 仓库的许可为准（Apache-2.0 / MIT / Source-Available 等）</li>
+    </ul>
+
+    <h2>反馈 / 投稿</h2>
+    <p>
+      欢迎提交 PR 改进现有文章，或推荐新的 Skill 给我们收录。
+      联系方式：（域名上线后补充 GitHub / Newsletter / Twitter 入口）
+    </p>
+  </section>
+</Base>

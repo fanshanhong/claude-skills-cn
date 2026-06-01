@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getAllTags, filterByTag, getArticleTags } from '../../lib/tags';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  const tags = getAllTags(articles);
+  return tags.map(tag => ({
+    params: { tag: tag.slug },
+    props: { tag, articles: filterByTag(articles, tag.slug) },
+  }));
+}
+
+const { tag, articles } = Astro.props;
+const sorted = [...articles].sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+<Base
+  title={`标签：#${tag.label}`}
+  description={`所有标记为 #${tag.label} 的 Claude Skill 中文教程文章`}
+>
+  <section class="container">
+    <div class="hero">
+      <p style="color: var(--color-text-muted); margin: 0;">
+        <a href="/tags/">← 所有标签</a>
+      </p>
+      <h1 style="margin-top: 0.3em;">#{tag.label}</h1>
+      <p class="hero-desc">
+        共 <strong>{sorted.length}</strong> 篇相关文章。
+      </p>
+    </div>
+
+    <div class="article-list">
+      {sorted.map(a => (
+        <ArticleCard
+          href={`/articles/${a.id}/`}
+          title={a.data.title}
+          description={a.data.description}
+          author={a.data.author}
+          license={a.data.license}
+          sourceType={a.data.source_type}
+          tags={getArticleTags(a)}
+        />
+      ))}
+    </div>
+  </section>
+</Base>
