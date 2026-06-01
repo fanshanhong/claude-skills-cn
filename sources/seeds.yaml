@@ -1,0 +1,34 @@
+# Seeds for the AI generation pipeline scraper.
+#
+# Each seed produces 1+ entries in the batch output (sources/<batch-id>.yaml).
+# After scraping, yichen reviews the output and toggles status:
+# pending_review → approved before any entry feeds into article generation.
+#
+# Seed types:
+#
+# 1. github_repo:        scan a whole repo for SKILL.md files
+#    pack_mode: plugin     — all SKILL.md are siblings of one plugin; emits N plugin-skill + 1 plugin-overview
+#    pack_mode: collection — each SKILL.md is an independent single-skill; emits N single-skill
+#
+# 2. direct_url:         a specific SKILL.md URL (single article)
+#    source_type: single-skill | plugin-skill | plugin-overview (default single-skill)
+#
+# Optional per-seed overrides:
+#   author_override: "Anthropic"        # override repo owner as author
+#   license_override: "MIT"             # override detected license
+#
+# Add new seeds below; re-run scrape_skills.py to refresh the batch yaml.
+
+seeds:
+
+  # Anthropic official skills collection — each is a standalone skill
+  - type: github_repo
+    repo: anthropics/skills
+    pack_mode: collection
+    author_override: Anthropic
+
+  # obra/superpowers — a coherent plugin: skills designed to work together
+  - type: github_repo
+    repo: obra/superpowers
+    pack_mode: plugin
+    author_override: Jesse Vincent (obra)

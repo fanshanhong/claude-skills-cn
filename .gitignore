@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+
+# Node / Astro（未来用到）
+node_modules/
+dist/
+.astro/
+.cache/
+
+# 编辑器
+.idea/
+.vscode/
+
+# 环境变量 / 密钥
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# 日志
+*.log
+logs/
+
+# 临时
+tmp/
+.tmp/
