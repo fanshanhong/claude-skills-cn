@@ -4,7 +4,7 @@ import { glob } from 'astro/loaders';
 const articles = defineCollection({
   loader: glob({
     pattern: '**/*.md',
-    base: '../articles/2026-06-01-batch',
+    base: '../articles',
   }),
   schema: z.object({
     slug: z.string(),

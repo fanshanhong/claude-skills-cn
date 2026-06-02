@@ -1,6 +1,6 @@
 ---
 slug: omc-autopilot
-title: "autopilot 怎么用？把"一句话点子"变成跑通代码的 6 阶段自驾流水线"
+title: "autopilot 怎么用？把「一句话点子」变成跑通代码的 6 阶段自驾流水线"
 description: "oh-my-claudecode 的 autopilot Skill 中文教程：6 阶段自治流水线（Expansion/Planning/Execution/QA/Validation/Cleanup）、3-stage pipeline 跳跃逻辑、QA 5 轮 / Validation 3 轮的硬停规则。"
 keywords: [Claude Code, Skill, autopilot, oh-my-claudecode, omc, 自动驾驶, 6 阶段, 3-stage pipeline, 中文教程, Yeachan-Heo]
 source: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/autopilot/SKILL.md

@@ -1,7 +1,7 @@
 ---
 slug: ecc-iterative-retrieval
 title: "iterative-retrieval 怎么用？ECC 解决 Subagent 上下文问题的 4 阶段渐进检索"
-description: "affaan-m/ecc 的迭代检索模式 SKILL 中文教程：用 DISPATCH → EVALUATE → REFINE → LOOP 四阶段最多 3 轮的渐进式上下文检索，解决 subagent 不知道自己需要什么文件的"上下文问题"，每轮按 0-1 relevance 评分裁剪后续搜索。"
+description: "affaan-m/ecc 的迭代检索模式 SKILL 中文教程：用 DISPATCH → EVALUATE → REFINE → LOOP 四阶段最多 3 轮的渐进式上下文检索，解决 subagent 不知道自己需要什么文件的「上下文问题」，每轮按 0-1 relevance 评分裁剪后续搜索。"
 keywords: [Claude Code, Skill, iterative-retrieval, ECC, subagent, RAG, 上下文检索, 多 agent 编排, 中文教程, affaan-m]
 source: https://github.com/affaan-m/ecc/blob/main/skills/iterative-retrieval/SKILL.md
 repo: https://github.com/affaan-m/ecc
