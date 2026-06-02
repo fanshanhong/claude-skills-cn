@@ -151,6 +151,23 @@ python3 ~/.claude/skills/design/scripts/icon/generate.py --prompt "user profile"
 
 详细工作流转 [uxpm-banner-design](/articles/uxpm-banner-design)，本 Skill 内置 5 步 workflow：
 
+```mermaid
+flowchart TB
+    user(["用户：'我要个 banner'"]):::user
+    gather["1. Gather requirements<br/>AskUserQuestion<br/>purpose / platform /<br/>content / brand /<br/>style / quantity"]:::primary
+    research["2. Research<br/>激活 ui-ux-pro-max<br/>浏览 Pinterest<br/>取 reference"]
+    design["3. Design<br/>HTML/CSS via<br/>frontend-design<br/>+ AI 视觉 via<br/>ai-artist / ai-multimodal"]:::primary
+    export["4. Export<br/>chrome-devtools<br/>截图精确像素 PNG"]
+    present["5. Present<br/>并排展示所有方案<br/>按 feedback 迭代"]:::done
+
+    user --> gather --> research --> design --> export --> present
+    present -. 不满意 .-> design
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
 1. **Gather requirements**（AskUserQuestion） — purpose / platform / content / brand / style / quantity
 2. **Research** — 激活 `ui-ux-pro-max`，浏览 Pinterest 取 reference
 3. **Design** — HTML/CSS via `frontend-design`，AI 视觉 via `ai-artist` / `ai-multimodal`
@@ -160,6 +177,28 @@ python3 ~/.claude/skills/design/scripts/icon/generate.py --prompt "user profile"
 ### Social Photos（多平台 HTML → screenshot）
 
 SKILL.md 8 步 workflow：
+
+```mermaid
+flowchart TB
+    user(["用户：'给品牌 X<br/>出一组 IG / FB / LinkedIn'"]):::user
+    orch["1. Orchestrate<br/>project-management skill<br/>出 TODO<br/>独立任务并行 subagent"]:::primary
+    analyze["2. Analyze<br/>解析 prompt：<br/>subject / platforms /<br/>style / brand / content"]
+    ideate["3. Ideate<br/>3-5 个 concept<br/>AskUserQuestion 展示"]:::primary
+    design["4. Design<br/>/ckm:brand → /ckm:design-system<br/>→ 随机调 /ck:ui-ux-pro-max<br/>或 /ck:frontend-design<br/>HTML 按 idea × size 出"]:::primary
+    export["5. Export<br/>chrome-devtools 或 Playwright<br/>精确像素 screenshot<br/>(2x deviceScaleFactor)"]:::warn
+    verify{"6. Verify<br/>Chrome MCP 视觉检查"}:::warn
+    report["7. Report<br/>总结到 plans/reports/"]
+    organize["8. Organize<br/>assets-organizing skill<br/>整理输出文件"]:::done
+
+    user --> orch --> analyze --> ideate --> design --> export --> verify
+    verify -- "有问题" --> design
+    verify -- "通过" --> report --> organize
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
 
 1. **Orchestrate** — `project-management` skill 出 TODO，独立任务并行 subagent
 2. **Analyze** — 解析 prompt：subject / platforms / style / brand / content
@@ -196,6 +235,25 @@ Load `references/slides-create.md` 启动 workflow。完整知识库：
 ### Workflow 1: Complete Brand Package
 
 SKILL.md "Workflows → Complete Brand Package" 段原文：
+
+```mermaid
+flowchart TB
+    user(["用户：'给新品牌 X<br/>出完整品牌包'"]):::user
+    logo["1. Logo<br/>scripts/logo/generate.py<br/>--brand X --style ... --industry ...<br/>白底 PNG × N 变体"]:::primary
+    artifact1[(logo-v1.png<br/>logo-v2.png<br/>...)]:::artifact
+    cip["2. CIP<br/>scripts/cip/generate.py<br/>--logo logo-v1.png<br/>--industry ... --set<br/>(Flash 默认 / Pro 4K 文字)"]:::primary
+    artifact2[(business-card.png<br/>letterhead.png<br/>reception-mockup.png<br/>... 50+ deliverable)]:::artifact
+    pres["3. Presentation<br/>load references/slides-create.md<br/>启动 slides workflow<br/>+ Chart.js 数据可视化"]:::primary
+    artifact3[(pitch-deck.html<br/>+ 投资人增长曲线)]:::artifact
+    done["完整品牌包<br/>(brand voice / colors<br/>通过 /ckm:brand 注入<br/>每一步保证视觉统一)"]:::done
+
+    user --> logo --> artifact1 --> cip --> artifact2 --> pres --> artifact3 --> done
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
 
 1. **Logo** → `scripts/logo/generate.py` → 生成 logo 变体
 2. **CIP** → `scripts/cip/generate.py --logo ...` → 创建 deliverable mockup
@@ -330,4 +388,5 @@ SKILL.md "Integration" 段明示了外部 sub-skill 和相关 Skill：
 - 本 SKILL.md frontmatter license = MIT，与 batch yaml 一致；metadata.author = "claudekit"，按任务说明使用 batch yaml 的 nextlevelbuilder。
 - 实战 demo 中的 "TechFlow logo 3 方案 + 名片信纸 + 10 张投资 slide" 是基于 SKILL.md 流程的演示，非源文件实际案例。
 - "Social Photos workflow Step 4" 中 `/ckm:brand` / `/ckm:design-system` 命名空间在 banner-design / brand / design-system SKILL.md frontmatter name 字段 (`ckm:banner-design` 等) 也明示，整体一致。
+- 已检查全文所有编号列表 / 'first X then Y' / 'phase 1→2→3' 表达，均已转 mermaid 或保留源 ASCII 图（Banner 5 步 / Social Photos 8 步 / Complete Brand Package 3 步均已补 mermaid，原编号列表保留以方便对照）
 -->

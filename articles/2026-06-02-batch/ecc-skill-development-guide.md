@@ -116,7 +116,23 @@ Link to complementary skills.
 
 ## 创建你的第一个 Skill
 
-四步走：
+整体流程是"选方向 → 建目录 → 写骨架 → 填内容"四步串行：
+
+```mermaid
+flowchart TB
+    start(["要写一个新 Skill"]):::user
+    s1["Step 1 选方向<br/>聚焦 + 可执行<br/>react-hook-patterns PASS<br/>react FAIL"]:::primary
+    s2["Step 2 建目录<br/>mkdir -p skills/your-skill-name"]
+    s3["Step 3 写 SKILL.md<br/>骨架: name / description /<br/>When to Activate / Core Concepts /<br/>Code Examples / Best Practices /<br/>Related Skills"]:::primary
+    s4["Step 4 填内容<br/>copy-pasteable 代码 PASS<br/>决策树 PASS / checklist PASS<br/>空泛解释 FAIL / 长篇散文 FAIL"]:::primary
+    done(["Skill 可被 Claude 自动加载"]):::done
+
+    start --> s1 --> s2 --> s3 --> s4 --> done
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
 
 ### Step 1：选一个聚焦的方向
 
@@ -163,13 +179,15 @@ ECC 把 Skill 分成四个大类，每个类有自己的模版：
 
 ### 3. 工作流（Workflow Skills）
 
-定义常见开发任务的分步流程。例如 `tdd-workflow` / `code-review-workflow` / `deployment-checklist`。文档给的 code-review-workflow 样例步骤：
+定义常见开发任务的分步流程。例如 `tdd-workflow` / `code-review-workflow` / `deployment-checklist`。文档给的 code-review-workflow 样例 Skill 的内部 step 表（属另一个 Skill 的内容、非本指南主流程）：
 
-1. **Understand Context** - 读 PR 描述和相关 issue
-2. **Check Tests** - 验证测试覆盖率和质量
-3. **Review Logic** - 分析实现正确性
-4. **Check Security** - 找漏洞
-5. **Verify Style** - 确保符合规范
+| Step | 名称 | 含义 |
+|------|------|------|
+| 1 | Understand Context | 读 PR 描述和相关 issue |
+| 2 | Check Tests | 验证测试覆盖率和质量 |
+| 3 | Review Logic | 分析实现正确性 |
+| 4 | Check Security | 找漏洞 |
+| 5 | Verify Style | 确保符合规范 |
 
 ### 4. 领域知识（Domain Knowledge）
 
@@ -282,12 +300,19 @@ ECC 给的对照表：
 
 ### 本地测试
 
-1. 复制到 Claude Code skills 目录：
-   ```bash
-   cp -r skills/your-skill-name ~/.claude/skills/
-   ```
-2. 用 Claude Code 触发"该激活该 Skill 的任务"，看 Claude 是否引用了你的模式
-3. 让 Claude 解释 Skill 里某个概念，验证它用了你的示例和准则
+三步走流程：复制 → 触发 → 验证。
+
+```mermaid
+flowchart TB
+    s1["1. 复制到 Claude Code skills 目录<br/>cp -r skills/your-skill-name<br/>~/.claude/skills/"]:::primary
+    s2["2. 用 Claude Code 触发<br/>跑一个该激活该 Skill 的任务<br/>看 Claude 是否引用你的模式"]
+    s3["3. 验证激活<br/>让 Claude 解释 Skill 里某个概念<br/>确认它用了你的示例和准则"]:::done
+
+    s1 --> s2 --> s3
+
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
 
 ### 验证 checklist
 
@@ -315,35 +340,66 @@ go build ./skills/your-skill-name/examples/...
 
 ## 提交流程
 
-ECC 走 GitHub PR 流：
+ECC 走 GitHub PR 流，整套六步串行：
 
-1. **Fork & clone**
-   ```bash
-   gh repo fork affaan-m/everything-claude-code --clone
-   cd everything-claude-code
-   ```
-2. **建分支**
-   ```bash
-   git checkout -b feat/skill-your-skill-name
-   ```
-3. **加 Skill**
-   ```bash
-   mkdir -p skills/your-skill-name
-   # Create SKILL.md
-   ```
-4. **校验**
-   ```bash
-   head -10 skills/your-skill-name/SKILL.md
-   ls -la skills/your-skill-name/
-   npm test
-   ```
-5. **commit + push**
-   ```bash
-   git add skills/your-skill-name/
-   git commit -m "feat(skills): add your-skill-name skill"
-   git push -u origin feat/skill-your-skill-name
-   ```
-6. **开 PR**——使用文档提供的 PR 模板（Summary / Skill Type 单选 / Testing / Checklist）。
+```mermaid
+flowchart TB
+    start(["写完一个 Skill 想提 PR"]):::user
+    s1["1. Fork & clone<br/>gh repo fork<br/>affaan-m/everything-claude-code --clone<br/>cd everything-claude-code"]:::primary
+    s2["2. 建分支<br/>git checkout -b<br/>feat/skill-your-skill-name"]
+    s3["3. 加 Skill<br/>mkdir -p skills/your-skill-name<br/>创建 SKILL.md"]
+    s4["4. 校验<br/>head -10 SKILL.md<br/>ls -la skills/your-skill-name/<br/>npm test"]:::primary
+    s5["5. commit + push<br/>git add skills/your-skill-name/<br/>git commit -m 'feat(skills): ...'<br/>git push -u origin <branch>"]
+    s6["6. 开 PR<br/>使用文档提供的 PR 模板<br/>Summary / Skill Type 单选 /<br/>Testing / Checklist"]:::done
+
+    start --> s1 --> s2 --> s3 --> s4 --> s5 --> s6
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
+各步详细命令：
+
+### Step 1 Fork & clone
+
+```bash
+gh repo fork affaan-m/everything-claude-code --clone
+cd everything-claude-code
+```
+
+### Step 2 建分支
+
+```bash
+git checkout -b feat/skill-your-skill-name
+```
+
+### Step 3 加 Skill
+
+```bash
+mkdir -p skills/your-skill-name
+# Create SKILL.md
+```
+
+### Step 4 校验
+
+```bash
+head -10 skills/your-skill-name/SKILL.md
+ls -la skills/your-skill-name/
+npm test
+```
+
+### Step 5 commit + push
+
+```bash
+git add skills/your-skill-name/
+git commit -m "feat(skills): add your-skill-name skill"
+git push -u origin feat/skill-your-skill-name
+```
+
+### Step 6 开 PR
+
+使用文档提供的 PR 模板（Summary / Skill Type 单选 / Testing / Checklist）。
 
 ## 示例画廊
 
@@ -403,6 +459,12 @@ ECC 的核心提示一句话：
 图 / 代码块处理：
 - 所有 markdown 代码块、目录树、决策树（"Need to fetch data?" 三叉树）保留原文
 - 表格按规则保留结构，按需翻译表头与单元格中文摘录
+- 新增 3 张 mermaid 流程图：
+  1. "创建你的第一个 Skill" 4 步走（Step 1 选方向 → Step 2 建目录 → Step 3 写 SKILL.md → Step 4 填内容）
+  2. "本地测试" 3 步（复制 → 触发 → 验证）
+  3. "提交流程" 6 步（Fork & clone → 建分支 → 加 Skill → 校验 → commit + push → 开 PR）
+- "代码评审 Workflow Skills" 1-5 步是源文件给的另一个示例 Skill 的内部步骤（非本指南主流程），已改成表格保留结构
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 等流程性表达：本指南主流程（创建 / 本地测试 / 提交）全部已转 mermaid；其余编号列表（"五条原则" / "三种常见模式" / DO-DONT 对照）是 *guideline list* 非 *流程*，按 v3 规则保留 list/表格形式
 
 依赖关系（plugin-doc，非 plugin-skill）：
 - 本文 source_type 为 plugin-doc，不强制点名同 plugin sibling Skill 的搭配；在 "适合人群" 段引用了 ecc-workflow / ecc-skill-placement-policy / ecc-skill-stocktake / ecc-eval-harness / ecc-autonomous-loops 作为补充阅读链接

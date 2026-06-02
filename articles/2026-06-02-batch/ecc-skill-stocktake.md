@@ -81,15 +81,68 @@ cd ~/path/to/my-project
 
 ### Quick Scan Flow（增量复评）
 
-1. 读 `~/.claude/skills/skill-stocktake/results.json`
-2. 跑 `bash ~/.claude/skills/skill-stocktake/scripts/quick-diff.sh ~/.claude/skills/skill-stocktake/results.json`（项目目录自动从 `$PWD/.claude/skills` 识别）
-3. 输出 `[]` → 报告 "No changes since last run." 停
-4. 用 Phase 2 同一 checklist 只复评变更文件
-5. 未变更的 skill 从上次结果 carry forward
-6. 输出 diff
-7. 跑 `bash ~/.claude/skills/skill-stocktake/scripts/save-results.sh ~/.claude/skills/skill-stocktake/results.json <<< "$EVAL_RESULTS"`
+```mermaid
+flowchart TD
+    start["/skill-stocktake<br/>(results.json 存在)"]:::primary
+    read["读 results.json"]
+    diff["跑 quick-diff.sh<br/>比 mtime"]
+    check{"输出为 []?"}:::gate
+    nochange["报告 No changes since last run<br/>停"]:::ok
+    reeval["用 Phase 2 checklist<br/>只复评变更文件"]
+    carry["未变更 skill<br/>从上次结果 carry forward"]
+    out["输出 diff<br/>(Previous → Now)"]
+    save["跑 save-results.sh<br/>更新 results.json"]:::ok
+
+    start --> read --> diff --> check
+    check -->|"是"| nochange
+    check -->|"否"| reeval --> carry --> out --> save
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
+```
+
+各步对应命令（按图节点）：
+
+- 读：`~/.claude/skills/skill-stocktake/results.json`
+- diff：`bash ~/.claude/skills/skill-stocktake/scripts/quick-diff.sh ~/.claude/skills/skill-stocktake/results.json`（项目目录自动从 `$PWD/.claude/skills` 识别）
+- save：`bash ~/.claude/skills/skill-stocktake/scripts/save-results.sh ~/.claude/skills/skill-stocktake/results.json <<< "$EVAL_RESULTS"`
 
 ### Full Stocktake 4 阶段
+
+4 阶段顺序流（含 chunk 循环 + Resume 分支 + Phase 4 用户确认门）：
+
+```mermaid
+flowchart TD
+    s0["/skill-stocktake full<br/>(或无 results.json)"]:::primary
+    resume{"results.json 存在<br/>且 status=in_progress?"}:::gate
+    p1["Phase 1 Inventory<br/>scan.sh: 双路径扫描<br/>+ frontmatter + mtime"]
+    p2["Phase 2 Quality Eval<br/>派 subagent"]
+    chunk["每 chunk ~20 skill<br/>chunk 后存 results.json<br/>status=in_progress"]
+    more{"还有未评估 skill?"}:::gate
+    done["status=completed"]:::ok
+    p3["Phase 3 Summary Table<br/>Skill / 7d use / Verdict / Reason"]
+    p4["Phase 4 Consolidation"]
+    v1["Retire/Merge<br/>给详细 justification<br/>问用户确认"]:::warn
+    v2["Improve<br/>给具体 trim 建议<br/>用户决定"]:::warn
+    v3["Update<br/>WebSearch 找新版<br/>展示更新内容"]:::warn
+    v4["检查 MEMORY.md<br/>>100 行建议压缩"]
+
+    s0 --> resume
+    resume -->|"是 → 续跑"| p2
+    resume -->|"否 → 从头"| p1 --> p2 --> chunk --> more
+    more -->|"是"| chunk
+    more -->|"否"| done --> p3 --> p4
+    p4 --> v1
+    p4 --> v2
+    p4 --> v3
+    p4 --> v4
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
+```
 
 #### Phase 1 — Inventory（清点）
 
@@ -177,13 +230,15 @@ Return JSON for each skill:
 
 #### Phase 4 — Consolidation（决策落地）
 
-1. **Retire / Merge**：逐文件给详细 justification 再让用户确认
+四类裁定的处理路径已在 4 阶段流程图右侧列出，每类的具体要求：
+
+- **Retire / Merge**：逐文件给详细 justification 再让用户确认
    - 发现的具体问题（重叠 / 过时 / 失效引用）
    - 替代方案（Retire：哪个现有 skill / rule；Merge：目标文件 + 要整合的内容）
    - 移除影响（依赖 skill / MEMORY.md 引用 / workflow）
-2. **Improve**：给具体建议 + 理由（如"trim 430→200 lines because sections X/Y duplicate python-patterns"），用户决定是否执行
-3. **Update**：展示更新后内容 + 验证来源
-4. 检查 MEMORY.md 行数；> 100 行建议压缩
+- **Improve**：给具体建议 + 理由（如"trim 430→200 lines because sections X/Y duplicate python-patterns"），用户决定是否执行
+- **Update**：展示更新后内容 + 验证来源
+- **MEMORY.md** 检查：行数 > 100 时建议压缩
 
 ### Results File Schema
 
@@ -341,6 +396,9 @@ SKILL.md 未列 "Integration" 或 "Related" 章节明示 sibling 协作（仅在
 - 源文件 bash 命令 — 全部原样
 - 源文件 Agent 模板 / Checklist / Phase 1 Scanning text block / JSON schema — 全部原样
 - 实战 demo 中 Scenario A / Scenario B 输出为按 SKILL.md 4 阶段范式串联的演示文本，使用合理示例数字
+- 新增 mermaid #1：Quick Scan Flow 7 步（含 "[] → 报告 No changes 停" 决策菱形）
+- 新增 mermaid #2：Full Stocktake 4 阶段含 chunk 循环 + Resume detection 分支 + Phase 4 4 类裁定 fan-out
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达：Quick Scan Flow 7 步 + Full Stocktake 4 阶段已转 mermaid；Phase 4 文字列表被流程图右侧节点覆盖，剩余 4 项作为"裁定要求"清单保留；Checklist 4 条 / Verdict 5 类 / 常见坑 8 条等属"非流程"清单或源文件原文 prompt，按规则保留
 
 依赖关系（plugin-skill 必填）：
 - 兄弟 continuous-learning-v2 — 源文件 "Phase 2 Reason quality requirements - Retire Good example" 直接命名引用

@@ -218,6 +218,44 @@ confidence 升 / 降的触发条件 SKILL.md "Confidence Scoring" 段已列：�
 
 ## 实战 demo：从 hook 接入到 promote 成 global
 
+下面这张 mermaid 把"从开 observer → 跑 session → 提炼 instinct → cross-project promote → 用 /evolve 聚类 → 导出共享"6 步串成 flowchart，对应下面文字版 Step 1-6 的可视化：
+
+```mermaid
+flowchart TD
+    pre(["前置：git repo 已检出<br/>+ plugin/hook 已装<br/>+ config.json observer.enabled=true"]):::user
+    s1["Step 1：跑 session<br/>PreToolUse/PostToolUse hook<br/>写 observations 到<br/>projects/&lt;hash&gt;/observations.jsonl"]:::primary
+    g1{"observations<br/>≥ min_observations_to_analyze<br/>(默认 20)？"}:::warn
+    s2["Step 2：后台 Haiku 跑分析<br/>(默认每 5 分钟一次)<br/>→ projects/&lt;hash&gt;/instincts/personal/<br/>新 yaml(trigger + action +<br/>confidence + domain + evidence)"]:::primary
+    s3["Step 3：/instinct-status<br/>查看 project + global 列表<br/>+ confidence 分数"]:::primary
+    g2{"同 instinct ID<br/>在 2+ 项目 +<br/>平均 confidence ≥ 0.8？"}:::warn
+    s4["Step 4：python3 instinct-cli.py<br/>promote --dry-run / promote<br/>把 project instinct<br/>提升到 global"]:::primary
+    s5["Step 5：/evolve<br/>聚类相关 instinct →<br/>evolved/skills/&lt;X&gt;.md /<br/>commands/ / agents/"]:::primary
+    s6["Step 6：/instinct-export<br/>按 scope/domain 过滤导出<br/>同事 /instinct-import &lt;file&gt;"]:::primary
+    store[("ecc-homunculus 数据目录<br/>$XDG_DATA_HOME/ecc-homunculus/<br/>projects/&lt;hash&gt;/ +<br/>instincts/personal/ (global)")]:::artifact
+    done(["跨项目可复用 instinct +<br/>团队共享的 evolved skills"]):::done
+
+    pre --> s1 --> g1
+    g1 -- 否：再跑一会 --> s1
+    g1 -- 是 --> s2 --> s3 --> g2
+    g2 -- 否：留在 project --> s3
+    g2 -- 是 --> s4 --> s5 --> s6 --> done
+    s1 -.写入.-> store
+    s2 -.写入.-> store
+    s4 -.改 scope.-> store
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
+**读图三条线索：**
+
+1. **两道 gate 把误触发拦住**：observations 数门槛防止"刚开 observer 就出垃圾 instinct"；2+ 项目 + confidence 阈值防止把一时的项目偏好误 promote 成 global。
+2. **store 是隐藏底盘**：所有阶段都读写同一个 `ecc-homunculus` 目录，hook → background agent → CLI 都通过文件系统而不是 IPC 通信，方便回溯。
+3. **`/evolve` 是聚类临界点**：单条 instinct 只是"原子规则"，聚成 skill / command / agent 后才成为真正可复用的 SOP。
+
 **前置**：项目是 git repo（有 `git remote origin`）；已装 plugin 或手动加 hook。
 
 **Step 1**：随便跑几次 session，让 hook 把 observations 写入 `projects/<hash>/observations.jsonl`。SKILL.md "Configuration" 默认 `observer.enabled: false`，所以要先 `config.json` 里改成 `true`（且 `min_observations_to_analyze: 20`，至少 20 条观察才会跑分析）。
@@ -331,9 +369,11 @@ SKILL.md "Related" 段明示：
 - 场景 6 "plugin 自动加载 hook 不要再手动加" — 源文件 "Enable Observation Hooks" 段明示
 
 图 / 代码块处理：
-- 源文件 ASCII 工作流图 — 完整保留
+- 源文件 ASCII 工作流图 — 完整保留（"工作流（v2.1 项目隔离版）"段不动）
 - 源文件 yaml / json / bash / shell 代码块 — 全部原样保留
 - 源文件 markdown 表格（v1/v2/v2.1 对比 / Commands / Scope / Confidence）— 全部按规则保留结构
+- 新增 1 张 mermaid（实战 demo 6 步：跑 session → observations 门槛 → Haiku 提炼 → /instinct-status → cross-project promote → /evolve 聚类 → /instinct-export 共享，含 2 道 gate 的回流箭头）
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达，均已转 mermaid 或保留源 ASCII 图
 
 依赖关系（plugin-skill 必填）：
 - 兄弟 ECC-Tools GitHub App / Homunculus / Longform Guide — 源文件 "Related" 段明示（均为外部，非 plugin 内 sibling）

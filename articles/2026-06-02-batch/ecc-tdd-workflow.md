@@ -69,6 +69,50 @@ SKILL.md 把这部分写得最硬：
 
 ### 7 步 TDD 工作流
 
+下面这张 mermaid 把 SKILL.md 的"User Journey → Test → RED → Implement → GREEN → Refactor → Coverage"全链路画成 flowchart，含 RED gate / GREEN gate 的失败回流箭头，呈现循环本质：
+
+```mermaid
+flowchart TD
+    pre(["Pre-flight：<br/>git 处于干净 active branch<br/>jest / vitest / pytest 可跑"]):::user
+    s1["Step 1：写 User Journey<br/>As a [role], I want to [action],<br/>so that [benefit]"]:::primary
+    s2["Step 2：为每个 journey<br/>写完整 test case<br/>(happy / 边界 / error)"]:::primary
+    s3["Step 3：跑测试<br/>npm test"]:::primary
+    g1{"RED gate<br/>失败原因是<br/>业务 bug / 缺实现？"}:::warn
+    cp1[/"checkpoint commit<br/>test: add reproducer<br/>for &lt;feature&gt;"/]:::artifact
+    s4["Step 4：写最少代码<br/>使测试通过<br/>(stage but don't commit)"]:::primary
+    s5["Step 5：再跑测试<br/>npm test"]:::primary
+    g2{"GREEN gate<br/>所有目标 test 全绿？"}:::warn
+    cp2[/"checkpoint commit<br/>fix: &lt;feature or bug&gt;"/]:::artifact
+    s6["Step 6：Refactor<br/>去重 / 重命名 / 优化<br/>保持 GREEN"]:::primary
+    cp3[/"checkpoint commit<br/>refactor: clean up<br/>after &lt;feature&gt;"/]:::artifact
+    s7["Step 7：跑 coverage<br/>npm run test:coverage"]:::primary
+    g3{"branches / functions /<br/>lines / statements<br/>全部 ≥ 80%？"}:::warn
+    done(["PR ready：<br/>3 commit 序列<br/>RED → GREEN → REFACTOR"]):::done
+    next_iter([下一个 user journey<br/>回 Step 1]):::user
+
+    pre --> s1 --> s2 --> s3 --> g1
+    g1 -- 否：语法错/setup 崩/无关回归 --> s2
+    g1 -- 是 --> cp1 --> s4 --> s5 --> g2
+    g2 -- 否：实现不够 --> s4
+    g2 -- 是 --> cp2 --> s6 --> s5
+    s6 -.可选省略 refactor.-> cp3
+    cp3 --> s7 --> g3
+    g3 -- 否：补 edge case 测 --> s2
+    g3 -- 是 --> done --> next_iter
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
+**读图三条线索：**
+
+1. **两道 gate 是关键阀门**：RED gate 验证"失败原因是业务 bug 而非 setup 崩"，GREEN gate 验证"目标 test 真的从红变绿"；任一失败不进下一步。
+2. **3 个 checkpoint commit 对应 3 个阶段**：`test:` / `fix:` / `refactor:` 的 commit message 让 reviewer 在 git log 里能 1 秒看出每个阶段对应哪段证据。
+3. **循环本质**：Step 7 通过后，下一条 user journey 直接回 Step 1，整套流程是 multi-journey 的 outer loop + 每条 journey 内部 RED→GREEN→REFACTOR 的 inner loop。
+
 #### Step 1：写 User Journey
 
 ```text
@@ -286,7 +330,9 @@ SKILL.md 未列 "Integration" 或 "Related" 章节明示 sibling 协作。下列
 图 / 代码块处理：
 - 源文件 typescript / bash / json / yaml / 目录树代码块 — 全部按规则保留原样
 - 源文件无 dot 流程图
+- 新增 1 张 mermaid（7 步 TDD 循环：Pre-flight → RED → checkpoint → GREEN → checkpoint → REFACTOR → checkpoint → Coverage → next iter，含 RED/GREEN/Coverage 三道 gate 的回流箭头）
 - 实战 demo 中"semantic markets search"业务示例直接复用源文件 Step 1-2 给的 example
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达，均已转 mermaid 或保留源 ASCII 图
 
 依赖关系（plugin-skill 必填）：
 - 源 SKILL.md 没有 Integration / Related 章节，无 sibling 明示

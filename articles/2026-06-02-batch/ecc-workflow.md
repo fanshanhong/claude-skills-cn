@@ -242,11 +242,35 @@ flowchart TB
 
 > 这是 README "Longform Guide → Subagent Orchestration" 段的微观示例，纯 `iterative-retrieval` 内部循环。
 
-1. **触发**：主 agent 需要 spawn 一个 subagent 去 "find all authentication-related middleware in the codebase"。
-2. **DISPATCH**：用 SKILL.md 给的范式发初始 broad query——`patterns: ['src/**/*.ts', 'lib/**/*.ts']`、`keywords: ['authentication', 'user', 'session']`、`excludes: ['*.test.ts', '*.spec.ts']`。
-3. **EVALUATE**：对每个返回文件用 `evaluateRelevance(files, task)` 打分：`relevance` / `reason` / `missingContext`。比如发现命中 5 个文件但其中 2 个其实是 password reset 不是 auth middleware，标记 missingContext。
-4. **REFINE**：根据 missingContext 缩小搜索——把 `keywords` 从 `['authentication', 'user', 'session']` 改成 `['authenticate', 'session.verify', 'requireAuth']`，excludes 加 `'**/reset-password/*'`。
-5. **LOOP**：再发一轮，max 3 cycles 后强制 proceed，避免无限拉锯。
+```mermaid
+flowchart TD
+    trig(["触发：主 agent 需 spawn subagent<br/>'find all authentication-related<br/>middleware in the codebase'"]):::user
+    dispatch["DISPATCH：发初始 broad query<br/>patterns: ['src/**/*.ts', 'lib/**/*.ts']<br/>keywords: ['authentication',<br/>'user', 'session']<br/>excludes: ['*.test.ts', '*.spec.ts']"]:::primary
+    files[("返回文件集 +<br/>命中 hits / 行号片段")]:::artifact
+    evaluate["EVALUATE：evaluateRelevance(files, task)<br/>每文件打分<br/>relevance / reason / missingContext"]:::primary
+    g1{"relevance 足够 +<br/>missingContext 为空？"}:::warn
+    refine["REFINE：根据 missingContext 缩小<br/>keywords → ['authenticate',<br/>'session.verify', 'requireAuth']<br/>excludes += '**/reset-password/*'"]:::primary
+    cnt{"cycle &lt; 3 ？"}:::warn
+    proceed(["PROCEED：返回<br/>relevance-scored 文件清单<br/>给主 agent 进入下一阶段"]):::done
+
+    trig --> dispatch --> files --> evaluate --> g1
+    g1 -- 是：足够 --> proceed
+    g1 -- 否：有遗漏 / 误命中 --> cnt
+    cnt -- 是：再 LOOP --> refine --> dispatch
+    cnt -- 否：max 3 --> proceed
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
+**读图三条线索：**
+
+1. **DISPATCH → EVALUATE → REFINE 是核心三角**：每轮 DISPATCH 发宽查询，EVALUATE 给 relevance / missingContext 反馈，REFINE 收窄查询参数；三步缺一不可。
+2. **两道 gate 终止循环**：一是 EVALUATE 满意度（relevance 足够 + missingContext 为空），二是 cycle 计数硬上限（max 3）；避免拉锯无限。
+3. **proceed 出口而非死循环**：max 3 cycles 后即使不完美也强制返回当前最佳 relevance-scored 文件清单，把"完美的敌人是足够好"做硬编码。
 
 这一个微观 loop 是 README 提到的"Subagent Orchestration: the context problem" 的标准解，搭配 `autonomous-loops` 的 DAG orchestration 就成了 multi-agent workflow 的基础原语。
 
@@ -371,7 +395,8 @@ flowchart TB
 - README 大量 bash / json 代码块（install / token optimization / agent team 等）→ 选择性保留 install 命令、token 优化设置、env 变量表
 - iterative-retrieval ASCII flow 图（4 阶段）→ 在示例 C 中文字描述，原图保留在单 Skill 文章
 - search-first ASCII flow 图（5 阶段 + 决策矩阵）→ 文中以文字概括，原图保留在单 Skill 文章
-- 3 张 mermaid 新增：示例 A 端到端 / 示例 B 长跑 loop / 整体协作图。节点名词全部出自 README 或 SKILL.md
+- 4 张 mermaid 新增：示例 A 端到端 / 示例 B 长跑 loop / 示例 C iterative-retrieval 5 步微观循环（DISPATCH → EVALUATE → REFINE → LOOP，含 cycle &lt; 3 硬上限与 PROCEED 出口）/ 整体协作图。节点名词全部出自 README 或 SKILL.md
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达，均已转 mermaid 或保留源 ASCII 图
 
 依赖关系（plugin-overview）：
 - 10 个 sibling skills 全部列出：continuous-learning-v2 / tdd-workflow / security-review / iterative-retrieval / strategic-compact / eval-harness / verification-loop / search-first / skill-stocktake / autonomous-loops（与 batch yaml 一致）

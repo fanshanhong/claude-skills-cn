@@ -47,7 +47,32 @@ SKILL.md 本身没有给出独立的安装命令，本 Skill 通过 `ralph` plug
 
 ## 核心流程逐项解释
 
-整套 prd Skill 的工作流可以拆成 "Clarify → Generate → Save" 三段：
+整套 prd Skill 的工作流可以拆成 "Clarify → Generate → Save" 三段。完整链路：
+
+```mermaid
+flowchart TB
+    user(["用户：'plan this feature'<br/>/ 'create a prd' /<br/>'spec out ...'"]):::user
+    clarify["Step 1: Clarifying Questions<br/>3-5 个 lettered options<br/>4 维度：Problem/Goal /<br/>Core Functionality /<br/>Scope/Boundaries / Success Criteria"]:::primary
+    answer(["用户回复 '1A, 2C, 3B'"]):::user
+    gen["Step 2: 生成 9 段 PRD<br/>Introduction / Goals /<br/>User Stories / FR /<br/>Non-Goals / Design /<br/>Technical / Success Metrics /<br/>Open Questions"]:::primary
+    story["Step 3: User Story 格式<br/>Title + Description<br/>(As a [user], I want…<br/>so that [benefit])<br/>+ Acceptance Criteria<br/>可验证 checklist"]:::primary
+    uicheck{"涉及 UI 改动？"}:::warn
+    addbrowser["追加 verify in browser<br/>using dev-browser skill"]:::warn
+    save["Step 4: 存盘<br/>tasks/prd-[feature-name].md<br/>kebab-case 文件名"]
+    checklist["保存前 Checklist (5 条)<br/>- lettered options 问过<br/>- 用户答案整合进去<br/>- stories 小且具体<br/>- FR 编号无歧义<br/>- non-goals 划界清楚"]:::warn
+    done["完成<br/>(不开始实现<br/>下游交给 ralph<br/>转 prd.json)"]:::done
+
+    user --> clarify --> answer --> gen --> story --> uicheck
+    uicheck -- "是" --> addbrowser --> save
+    uicheck -- "否" --> save
+    save --> checklist --> done
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
 
 ### Step 1: Clarifying Questions（字母选项格式）
 
@@ -278,4 +303,5 @@ SKILL.md 没有独立 "Gotchas" 段，下列 6 条来自 SKILL.md 散落的强�
 - 源 SKILL.md 没有显式 "Integration" / "Related Skills" 章节，搭配建议是基于 plugin 整体结构（仅含 prd + ralph 两个 Skill）和 SKILL.md 中对 dev-browser 的直接引用反推。
 - License 字段：batch yaml 和 SKILL.md frontmatter 均一致为 MIT，无冲突。
 - ralph plugin README 内容未在本 Skill 单篇中引用，避免越过 plugin-skill 边界。
+- 已检查全文所有编号列表 / 'first X then Y' / 'phase 1→2→3' 表达，均已转 mermaid 或保留源 ASCII 图（主流程 Clarify → 9 段 PRD → User Story → 存盘 + Checklist 已补 mermaid 主链；段内子表保留方便对照）
 -->

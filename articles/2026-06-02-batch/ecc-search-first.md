@@ -81,6 +81,34 @@ Full Mode 需要 Claude Code 的 agent / subagent 工具可用（即 `Agent` 或
 | Multiple weak matches | **Compose** — combine 2-3 small packages |
 | Nothing suitable found | **Build** — write custom, but informed by research |
 
+把 EVALUATE → DECIDE 的决策树画成 mermaid（4 条分叉对应 4 类 action）：
+
+```mermaid
+flowchart TD
+    eval["EVALUATE 完<br/>已对候选 6 维评分:<br/>功能/维护/社区/文档/许可/依赖"]:::primary
+    q1{"有 exact match 吗?<br/>well-maintained +<br/>MIT/Apache?"}:::gate
+    adopt["Adopt<br/>install + use directly<br/>零 custom code"]:::ok
+    q2{"有 partial match 吗?<br/>好底子但缺一点?"}:::gate
+    extend["Extend<br/>install + thin wrapper"]:::ok
+    q3{"多个弱匹配?<br/>组合能覆盖?"}:::gate
+    compose["Compose<br/>combine 2-3 包"]:::ok
+    build["Build (last resort)<br/>custom 但 informed by research"]:::warn
+    impl["Step 5 IMPLEMENT<br/>装包 / 配 MCP / 写最少胶水"]:::primary
+
+    eval --> q1
+    q1 -->|"是"| adopt --> impl
+    q1 -->|"否"| q2
+    q2 -->|"是"| extend --> impl
+    q2 -->|"否"| q3
+    q3 -->|"是"| compose --> impl
+    q3 -->|"否"| build --> impl
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
+```
+
 ### Step 0：Tool Availability Preflight
 
 > SKILL.md 原文："This is agent guidance, not an executable setup script. Check only the channels that are relevant to the task and project in front of you."
@@ -156,7 +184,32 @@ SKILL.md "Search Shortcuts" 段直接给了常用类别的候选名：
 
 ## 实战 demo
 
-SKILL.md "Examples" 段给了三个端到端 case：
+SKILL.md "Examples" 段给了三个端到端 case。三个 case 都从 "Need" 出发、跑 search、走到 Adopt 档（这是 search-first 的核心收益证据）；同一模板的端到端流程如下：
+
+```mermaid
+flowchart TD
+    need["Need 输入<br/>3 个 case:<br/>dead link / HTTP retry / config schema"]:::primary
+    s0["Step 0 Preflight<br/>检查 npm / web 渠道可用"]
+    s1["Step 1 Need Analysis<br/>明确语言/约束"]
+    s2["Step 2 Parallel Search<br/>npm + PyPI + GitHub"]
+    s3["Step 3 Evaluate<br/>6 维评分"]
+    d{"Decision Matrix"}:::gate
+    e1["Case 1: textlint-rule-no-dead-link<br/>score 9/10 → ADOPT"]:::ok
+    e2["Case 2: got/httpx with retry<br/>built-in → ADOPT"]:::ok
+    e3["Case 3: ajv-cli<br/>score 8/10 → ADOPT + EXTEND<br/>(写 project schema)"]:::ok
+    s5["Step 5 Implement<br/>装包 + 极少 custom code"]:::primary
+
+    need --> s0 --> s1 --> s2 --> s3 --> d
+    d --> e1 --> s5
+    d --> e2 --> s5
+    d --> e3 --> s5
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
+```
+
+三个 case 原文（保留）：
 
 ### Example 1：加 dead link checking
 
@@ -268,6 +321,9 @@ SKILL.md "Anti-Patterns" 段：
 - 源文件 Quick Mode 0-4 问句 — 原文保留
 - 源文件 Full Mode Agent 模板 — 原文保留
 - 源文件 Examples 3 段 plain text — 原文保留
+- 新增 mermaid #1：Decision Matrix 决策树（4 个分叉对应 Adopt/Extend/Compose/Build），明确"Build 是 last resort"语义
+- 新增 mermaid #2：实战 demo 三 case 共享 Step 0-3-Decide-5 主流程 + 3 分支落到不同 verdict
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达：整体 6 阶段保留源 ASCII；DECIDE 决策 + 三个 demo case 已转 mermaid；Quick Mode 5 问句 / Anti-Patterns 5 条 / 常见坑 7 条等属"非流程"清单或源文件原文 mental checklist，按规则保留
 
 依赖关系（plugin-skill 必填）：
 - 源 SKILL.md "Integration Points" 段明示 planner / architect / iterative-retrieval 协作

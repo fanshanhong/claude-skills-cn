@@ -117,6 +117,21 @@ ECC 用两套 validator，但都**只看 curated**，不碰用户 home 下的 Sk
 
 文档结尾给的 5 步落地计划：
 
+```mermaid
+flowchart TB
+    step1["Step 1 (本次变更)<br/>制定本策略文档<br/>+ 写 provenance schema<br/>(schemas/provenance.schema.json)"]:::done
+    step2["Step 2<br/>给 learned-skill 写入路径<br/>(evaluate-session hook /<br/>/learn 命令输出)<br/>加 provenance 校验<br/>保证新产出的 learned Skill<br/>一定有 .provenance.json"]:::primary
+    step3["Step 3<br/>更新 instinct-cli evolve<br/>生成 evolved Skill 时<br/>可选地写 provenance"]:::primary
+    step4["Step 4 (按需)<br/>加 scripts/validate-provenance.js<br/>到 CI<br/>禁止任何仓库内路径出现<br/>learned/imported 内容"]:::warn
+    step5["Step 5<br/>在 CONTRIBUTING.md 或<br/>用户文档写明<br/>learned/imported 根的位置<br/>让贡献者知道：<br/>别把它们 commit 进仓库"]:::primary
+
+    step1 --> step2 --> step3 --> step4 --> step5
+
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
 1. **第一步（本次变更）**：制定本策略文档 + 写 provenance schema
 2. 给 learned-skill 写入路径（`evaluate-session` hook、`/learn` 命令的输出）加上 provenance 校验，保证新产出的 learned Skill 一定有 `.provenance.json`
 3. 更新 `instinct-cli evolve`，让它在生成 evolved Skill 时可选地写 provenance
@@ -125,7 +140,39 @@ ECC 用两套 validator，但都**只看 curated**，不碰用户 home 下的 Sk
 
 ## 关键脑图：放新 Skill 时怎么决定路径
 
-按文档脉络归纳：
+按文档脉络归纳，新 Skill 出现时按下面 4 岔 decision diamond 决定路径：
+
+```mermaid
+flowchart TB
+    start(["新 Skill 出现"]):::user
+    q1{"跟 ECC 仓库<br/>一起发布？"}:::warn
+    curated["放 skills/&lt;name&gt;/<br/>无 .provenance.json<br/>进 manifests/install-modules.json<br/>过 validate-skills.js<br/>+ validate-install-manifests.js"]:::done
+    q2{"是 continuous-learning<br/>hook 自动学出来？"}:::warn
+    learned["放 ~/.claude/skills/<br/>learned/&lt;name&gt;/<br/>必须有 .provenance.json<br/>(source/created_at/<br/>confidence/author)<br/>不进仓库"]:::primary
+    q3{"是用户从 URL /<br/>仓库手动导入？"}:::warn
+    imported["放 ~/.claude/skills/<br/>imported/&lt;name&gt;/<br/>必须有 .provenance.json<br/>(目前还没自动 importer)<br/>不进仓库"]:::primary
+    q4{"是 v2 instinct<br/>进化产出？"}:::warn
+    evolved["放 ~/.claude/homunculus/<br/>evolved/skills/ (全局) 或<br/>projects/&lt;hash&gt;/evolved/skills/<br/>provenance 从源 instinct 继承<br/>不进仓库"]:::primary
+    err["✋ 不要塞进仓库 skills/<br/>会污染发布包<br/>(违反 install manifest 约束)"]:::warn
+
+    start --> q1
+    q1 -- "是" --> curated
+    q1 -- "否" --> q2
+    q2 -- "是" --> learned
+    q2 -- "否" --> q3
+    q3 -- "是" --> imported
+    q3 -- "否" --> q4
+    q4 -- "是" --> evolved
+    q4 -- "否" --> err
+    learned -.- err
+    imported -.- err
+    evolved -.- err
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
 
 - 想跟随 ECC 仓库一起发布 → 必须放 `skills/`，无 provenance，进 install manifest，过 `validate-skills.js` 与 `validate-install-manifests.js`
 - 是 continuous-learning hook 自动学出来的 → 自动落 `~/.claude/skills/learned/<name>/`，带 `.provenance.json`
@@ -182,4 +229,5 @@ ECC 用两套 validator，但都**只看 curated**，不碰用户 home 下的 Sk
 可疑项：
 - 文档原文用 "Generated" 一词指代 learned + imported + evolved（见 "Scripts That Use Generated Roots" 段）；中文译为"产出的"。
 - "Imported Skills" 段说 "No automated importer exists yet"——这是源文件 2026 年 6 月的当时状态。未来可能有自动导入工具，读者请以最新仓库为准。
+- 已检查全文所有编号列表 / 'first X then Y' / 'phase 1→2→3' 表达，均已转 mermaid 或保留源 ASCII 图（关键脑图 4 岔 decision diamond + 实施 Roadmap 5 步均已补 mermaid；段内对照表保留方便对照）
 -->

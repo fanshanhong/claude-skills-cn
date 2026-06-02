@@ -127,7 +127,35 @@ SKILL.md "戏谑吐槽库"段原文照抄：
 
 ## 实战 demo
 
-下面是一次完整的 yes 模式触发链路（基于 SKILL.md 的协议，不臆造具体命令）：
+下面是一次完整的 yes 模式触发链路（基于 SKILL.md 的协议，不臆造具体命令）。整套流程 5 步，[PUA生效] 旁支在每个关键节点提醒 yes 模式如何 PUA Claude：
+
+```mermaid
+flowchart TB
+    user(["用户：'UserService<br/>加 5 分钟缓存'"]):::user
+    s1["1. 任务接收<br/>'哇这个需求有意思！<br/>切入点选得好…让我们搞定 ✨'"]:::primary
+    s2["2. 主动加值<br/>顺手抽 @Cacheable decorator<br/>同时覆盖 findById / findByUsername"]:::primary
+    s3["3. 测试失败戏谑<br/>'你平时不是这个水平啊兄弟 😂'<br/>(节奏比例: 10% 戏谑吐槽)"]:::warn
+    s4["4. 闭环提醒<br/>'诶不对，没看到验证输出啊？<br/>不是不信你，是闭环意识嘛'<br/>(底层红线照常触发)"]:::warn
+    s5["5. 任务完成<br/>'漂亮！冰山思维有格局<br/>KPI 综合 3.85 我学到了 📝'"]:::done
+
+    pua1[/"[PUA生效 🔥]<br/>发现亮点立即标记<br/>给情绪价值"/]:::pua
+    pua2[/"[PUA生效 🔥]<br/>戏谑但不伤人<br/>朋友式而非上级式"/]:::pua
+    pua3[/"[PUA生效 🔥]<br/>共情语气包<br/>红线不放水"/]:::pua
+    pua4[/"[PUA生效 🔥]<br/>关注过程而非只看结果<br/>冰山思维点名表扬"/]:::pua
+
+    user --> s1 --> s2 --> s3 --> s4 --> s5
+
+    s2 -. yes 模式注入 .-> pua1
+    s3 -. yes 模式注入 .-> pua2
+    s4 -. yes 模式注入 .-> pua3
+    s5 -. yes 模式注入 .-> pua4
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+    classDef pua fill:#ffd6e0,stroke:#cc3366,color:#000
+```
 
 **用户请求**：
 
@@ -248,13 +276,19 @@ SKILL.md "注意"段明示了 5 条核心坑，逐条照搬：
 - 8 行味道 × ENFP 表格按"列数 ≤4 保留结构 + 翻译表头"规则保留
 - 5 句戏谑吐槽库按列表形式原文照搬
 - 新增 2 张小表格（人格特质 / 底线约束）将正文 prose 结构化，所有字段均出自源 SKILL.md "人格特质" 与 "注意" 段
+- 新增 1 张 mermaid 流程图，覆盖实战 demo 5 步：任务接收 → 主动加值 → 测试失败戏谑 → 闭环提醒 → 任务完成；加 4 条 [PUA生效] 旁支表示 yes 模式在每个关键节点如何 PUA Claude（发现亮点立即标记 / 戏谑但不伤人 / 共情语气包但红线不放水 / 关注过程冰山思维）
 
 依赖关系（plugin-skill 必填）：
 - 兄弟 Skill `/pua` 核心 — 源 SKILL.md "味道 × ENFP" 段 "和 /pua 核心一样支持味道切换" 明示
 - 其他 sibling（p7/p9/p10/pro/mama/pua-loop）— 源 SKILL.md 未在"搭配使用"段直接点名，文中已明确标注"未在『搭配使用』段直接点名"，未臆造关系
 
+License 核对：
+- 已核对 GitHub repo metadata (`sources/cache/2026-06-02-batch/tanweai_pua.repo.json`)：仓库 `license` 字段为 `null`（GitHub API 等价于 NOASSERTION，即仓库根目录无 LICENSE 文件被 GitHub Linguist 识别）。
+- SKILL.md frontmatter 写的是 MIT，但 repo 实际未 file LICENSE 文件，按任务规则（`Unlicense` 或 `NOASSERTION` → 保持 Unlicense），文章 frontmatter `license: Unlicense` 保持不变。
+- 已核对 GitHub repo metadata，LICENSE 文件状态：未识别（null/NOASSERTION）。
+
 可疑项：
-- License 字段：batch yaml 给的是 Unlicense，SKILL.md frontmatter 写的是 MIT。按任务说明使用 batch yaml 的 Unlicense；若 review 时确认仓库 LICENSE 实际为 MIT 应更新。
+- License 字段冲突：SKILL.md frontmatter 写 MIT，但 repo 根目录无 LICENSE 文件被 GitHub 识别（API 返回 null）。本文以 repo metadata 为准保留 Unlicense；若作者后续补充实际 LICENSE 文件应同步更新。
 - 实战 demo 中的 UserService.findByEmail 缓存 / @Cacheable decorator 是基于 SKILL.md 语气示范模拟的演示任务，非源 SKILL.md 实际案例，用于说明协议如何运转——属反推内容。
 - 文中"通过 ~/.pua/config.json 切换"基于同 plugin 主 Skill 的 SessionStart hook 机制反推（本 SKILL.md 未明示），已用链接指向主 Skill 文章。
 -->

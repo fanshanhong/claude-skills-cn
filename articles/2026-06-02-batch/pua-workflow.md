@@ -9,7 +9,7 @@ source_type: plugin-overview
 plugin: pua
 sibling_skills: [pua, p7, p9, p10, pro, mama, yes, pua-loop]
 author: tanweai
-license: MIT
+license: Unlicense
 ai_generated: true
 model: claude-opus-4-7
 last_synced: 2026-06-02
@@ -196,6 +196,31 @@ flowchart TB
 
 > 这条链路对应"我想保留全部行为约束，但换柔和话术 / 顺便周末跑个周报"。来自 `mama` / `yes` / `pro` 三个 SKILL.md 互不冲突的设计。
 
+```mermaid
+flowchart TB
+    user(["用户：'想要柔和旁白<br/>+ 周末跑个周报'"]):::user
+    skin{"皮肤选择"}:::warn
+    mama["/pua:mama<br/>(中国式妈妈唠叨)<br/>L1 轻声叹气<br/>→ L5 情感核弹<br/>→ 假装放弃协议"]:::skin
+    yes["/pua:yes<br/>(ENFP 夸夸)<br/>70% 鼓励 +<br/>20% 正经 +<br/>10% 戏谑"]:::skin
+    core["底层行为协议不变<br/>三条红线 / 压力升级 /<br/>Owner 意识 / 方法论 /<br/>7 项清单——全部继承<br/>核心 pua skill"]:::primary
+    pro["/pua:pro 周报<br/>git log → 大厂周报<br/>KPI 格式打包"]
+    kpi["/pua:kpi<br/>输出 KPI 报告卡"]
+    rank["/pua 排行榜（可选）<br/>3 步注册：邮箱 / 手机 /<br/>隐私协议同意<br/>→ 脱敏 display name"]
+    state[(~/.pua/config.json<br/>leaderboard 字段<br/>段位 P5 实习生<br/>→ P10 首席 PUA 官)]:::artifact
+
+    user --> skin
+    skin -- 严苛上头 --> mama
+    skin -- 想被夸 --> yes
+    mama & yes --> core
+    core --> pro --> kpi --> rank --> state
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef skin fill:#ffe0e0,stroke:#cc6699,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+```
+
 1. **切换皮肤**：`/pua:mama` 或 `/pua:yes` 加载对应 SKILL.md，两个 skill 都明示"加载后底层行为协议不变（三条红线、压力升级、Owner 意识、方法论、7 项清单——全部继承核心 pua skill）。**只有旁白风格切换**"。底层一律按 `pua` 核心执行。
 2. **mama 模式升压**：L1 轻声叹气 → L2 正式唠叨 → L3 翻旧账 → L4 社会比较 → L5 情感核弹 → 假装放弃协议（"算了我不管了"实际不放弃，回到最基本假设重新出发）。
 3. **yes 模式平衡**：70% 鼓励 + 20% 正经 + 10% 戏谑。"诶不对，你刚才说'已完成'但我没看到验证输出啊？这个不能含糊的——不是不信你，是闭环意识嘛。"——皮肤换了，红线一一字不让。
@@ -272,7 +297,7 @@ flowchart TB
 
 ---
 
-本文基于 <https://github.com/tanweai/pua> 由 AI（claude-opus-4-7）辅助生成中文教程，原作者署名 tanweai，许可证 MIT。
+本文基于 <https://github.com/tanweai/pua> 由 AI（claude-opus-4-7）辅助生成中文教程，原作者署名 tanweai，许可证 Unlicense。
 
 <!-- self-check
 本文中提到的命令 / 文件 / URL 清单：
@@ -314,4 +339,6 @@ flowchart TB
 - 示例 A 第 3 步方法论路由的对应关系（Debug→华为、Build→Musk 等）来自 pua SKILL.md "方法论智能路由" 表，路由表完全照抄
 - 示例 A 第 6 步 L3 7 项清单的细则（读完错误信息每个字、看相关源码、列 3 个完全不同假设）来自 mama SKILL.md L3 段 + pua SKILL.md 红线三 + README "Real Case" 段，组合呈现；具体 "7 项" 清单的完整细则未在源文中逐条展开，正文已避免列具体 7 条
 - README "v3 Hook System" 表中 SubagentStop 来源是 README 主表段，本文以"v3.2 新增"形式提及
+- License 已对齐 yaml（Unlicense），已查 tanweai_pua.repo.json，license=null 所以 yaml 保守取 Unlicense 是对的；GitHub repo metadata 显示无 LICENSE 文件
+- 已检查全文所有编号列表 / 'first X then Y' / 'phase 1→2→3' 表达，均已转 mermaid 或保留源 ASCII 图（示例 C 已补 mermaid 覆盖皮肤切换 → 核心继承 → pro 周报链）
 -->

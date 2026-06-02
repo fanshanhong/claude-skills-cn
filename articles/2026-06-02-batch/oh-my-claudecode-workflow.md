@@ -236,11 +236,35 @@ flowchart TB
 
 > 这条链路对应"我想让 Agent 持续跑直到 evaluator 通过、跑通了写决策日志、不通过继续迭代"。来自 deep-interview SKILL.md `<Autoresearch_Mode>` 段 + autoresearch SKILL.md 完整工作流。
 
-1. **`/deep-interview --autoresearch improve startup performance`**：deep-interview 进入 autoresearch 模式，第一个问题强制问 "What should autoresearch improve or prove for this repo?"，之后收 evaluator 命令（如 `python perf/eval.py --json`），把 mission 和 evaluator 设为硬性 readiness gate（除了正常 ambiguity threshold 之外）。
-2. **handoff 给 autoresearch skill**：deep-interview SKILL.md 明示 "do not bridge into omc-plan / autopilot / ralph / team / 旧的 omc autoresearch CLI"，必须走 `Skill("oh-my-claudecode:autoresearch")` 真正的 stateful skill。handoff 成功后宣布 mission slug、evaluator 命令、max-runtime ceiling、artifact 位置。
-3. **autoresearch 迭代循环**：autoresearch SKILL.md `<Workflow>` 段每轮——跑一次 experiment/change → 跑 evaluator → 落 `.omc/autoresearch/<mission-slug>/runs/<run-id>/evaluations/iteration-NNNN.json` → append 人读 markdown 决策日志 → **non-passing 不停止，继续下一轮**。
-4. **stop 条件**：达到 max-runtime；用户显式取消；runtime 记录的其他 explicit terminal condition。
-5. **周期触发**：可选用 Claude Code native cron 周期跑同一 mission，append 新 run artifact 而不是覆盖旧实验。
+```mermaid
+flowchart TD
+    user(["用户：<br/>/deep-interview --autoresearch<br/>improve startup performance"]):::user
+    di["1. deep-interview autoresearch 模式<br/>强制首问 'What should autoresearch<br/>improve or prove for this repo?'<br/>收 evaluator 命令<br/>(如 python perf/eval.py --json)<br/>把 mission + evaluator<br/>设为硬性 readiness gate"]:::primary
+    handoff["2. handoff<br/>Skill('oh-my-claudecode:autoresearch')<br/>宣布 mission slug / evaluator /<br/>max-runtime ceiling / artifact 位置<br/>(不能桥到 omc-plan / autopilot /<br/>ralph / team / 旧 omc autoresearch CLI)"]:::primary
+    iter["3a. 跑 experiment / change<br/>(本轮假设的改进)"]:::primary
+    eval["3b. 跑 evaluator<br/>必须输出含 pass:bool 的 JSON"]:::primary
+    log[("3c. 落 artifact:<br/>.omc/autoresearch/&lt;mission-slug&gt;/<br/>runs/&lt;run-id&gt;/evaluations/<br/>iteration-NNNN.json +<br/>append decision-log.md")]:::artifact
+    stop{"达到 stop 条件？<br/>(max-runtime / 用户取消 /<br/>显式 terminal condition)"}:::warn
+    cron["5. 可选 cron 周期触发<br/>(Claude Code native cron)<br/>append 新 run artifact<br/>而不是覆盖旧实验"]
+    done(["mission 完结：<br/>completed runs +<br/>append-only decision-log.md"]):::done
+
+    user --> di --> handoff --> iter --> eval --> log --> stop
+    stop -- 否 (non-passing 也继续) --> iter
+    stop -- 是 --> done
+    done -.周期重启.-> cron --> handoff
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
+**读图三条线索：**
+
+1. **`/deep-interview --autoresearch` 是唯一入口**：mission 与 evaluator 必须在 readiness gate 阶段就锁定，handoff 之后 autoresearch skill 不再二次询问；避免无人值守跑半夜目标飘移。
+2. **non-passing 不停**：图中 stop 决策菱形只看 max-runtime / 用户取消 / 显式 terminal condition 三件事；evaluator 不过不是 stop 信号，而是下一轮 iteration 的输入；这正是 evaluator-driven 持续改进的本质。
+3. **append-only artifact + cron 周期重启**：每个 iteration 写新 JSON 文件而不覆盖，decision-log.md 永远 append；周期 cron 触发同 mission 时也 append 新 run dir，方便长期回溯实验史。
 
 ## Skill 间协作关系图
 
@@ -370,7 +394,8 @@ flowchart TB
 - README "tmux CLI Workers" 表 → 安装段引用了 `omc team N:...` 命令，未复制原表
 - team SKILL.md "Stage Agent Routing" 表 → 在示例 B 文字中引用 agent 类型，未直接复制原大表
 - README 多处 bash 代码块（install / setup / update / team / ask）→ 完整保留原文
-- 3 张 mermaid 新增：示例 A 3-stage pipeline / 示例 B Team+CCG+Ralph 复合 / 整体协作图
+- 4 张 mermaid 新增：示例 A 3-stage pipeline / 示例 B Team+CCG+Ralph 复合 / 示例 C Autoresearch 一夜跑 5 步（/deep-interview --autoresearch → handoff → 迭代循环 experiment+evaluator+artifact → stop 条件判定 → 周期 cron 触发）/ 整体协作图
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达，均已转 mermaid 或保留源 ASCII 图
 - autopilot SKILL.md `<Steps>` 段完整 5 阶段 → 在示例 A 中按 1-7 步串讲，未原文复制整段
 - deep-interview SKILL.md Phase 0/1 细节 → 仅引用关键约束（threshold 来源、Round 0 topology、weakest-dimension），未原文复制
 

@@ -38,6 +38,8 @@ SKILL.md 没给独立 plugin 安装命令，本 Skill 通过 `ecc` plugin 分发
 
 ## 核心机制 / 4 阶段流程
 
+源文件原图（保留）：
+
 ```text
 ┌─────────────────────────────────────────────┐
 │                                             │
@@ -52,6 +54,30 @@ SKILL.md 没给独立 plugin 安装命令，本 Skill 通过 `ecc` plugin 分发
 │                                             │
 │        Max 3 cycles, then proceed           │
 └─────────────────────────────────────────────┘
+```
+
+为方便后文 Phase 拆解和实战 demo 衔接，再画一版含终止判断的 mermaid 版：
+
+```mermaid
+flowchart TD
+    task["任务输入<br/>subagent 收到任务"]:::primary
+    p1["Phase 1: DISPATCH<br/>初查 patterns/keywords/excludes<br/>拿候选文件集"]
+    p2["Phase 2: EVALUATE<br/>每文件 0-1 评分<br/>+ missingContext 列表"]
+    decide{"≥3 文件 relevance≥0.7<br/>且无 critical gap?"}:::gate
+    p3["Phase 3: REFINE<br/>加新 keywords/patterns<br/>低分路径 exclude<br/>missingContext 转 focus"]
+    p4{"已跑满 3 cycle?"}:::warn
+    out["返回 high-relevance 集"]:::ok
+
+    task --> p1 --> p2 --> decide
+    decide -->|"是"| out
+    decide -->|"否"| p4
+    p4 -->|"否，再 LOOP 一轮"| p3 --> p1
+    p4 -->|"是，截断"| out
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
 ```
 
 ### Phase 1: DISPATCH
@@ -201,6 +227,30 @@ Result: throttle.ts, middleware/index.ts, router-setup.ts
 
 > 经典案例：你脑子里的 "rate limit" 在代码里叫 "throttle"——第一轮 EVALUATE 为空恰恰是信号，REFINE 时调整术语，第二轮立刻命中。
 
+把 Example 2 的 3-cycle 演化画成 mermaid（最体现 refine 的精髓）：
+
+```mermaid
+flowchart TD
+    task["Task: Add rate limiting<br/>to API endpoints"]:::primary
+    c1d["Cycle 1 DISPATCH<br/>keywords: rate, limit, api<br/>scope: routes/**"]
+    c1e["Cycle 1 EVALUATE<br/>0 matches"]:::warn
+    insight1["发现：codebase 用<br/>throttle 而非 rate limit"]
+    c1r["Cycle 1 REFINE<br/>add throttle, middleware"]
+    c2d["Cycle 2 DISPATCH<br/>refined terms"]
+    c2e["Cycle 2 EVALUATE<br/>throttle.ts 0.9<br/>middleware/index.ts 0.7"]
+    insight2["够 2 个 high-rel<br/>但缺 router 上下文"]
+    c2r["Cycle 2 REFINE<br/>add router, express"]
+    c3d["Cycle 3 DISPATCH<br/>router patterns"]
+    c3e["Cycle 3 EVALUATE<br/>router-setup.ts 0.8"]:::ok
+    out["返回 3 文件<br/>throttle.ts<br/>middleware/index.ts<br/>router-setup.ts"]:::ok
+
+    task --> c1d --> c1e --> insight1 --> c1r --> c2d --> c2e --> insight2 --> c2r --> c3d --> c3e --> out
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+```
+
 ## 在 Agent prompt 里嵌入
 
 SKILL.md "Integration with Agents" 段直接给了可塞进 prompt 的话术：
@@ -296,6 +346,9 @@ SKILL.md "Best Practices" 段 5 条：
 - 源文件 javascript 代码块 — 全部按规则保留原样
 - 源文件 Example 1 / Example 2 plain text cycle 演示 — 全部按规则保留原样
 - 源文件 markdown prompt 模板 — 保留
+- 新增 mermaid #1：4 阶段流程含终止判断 decision diamond（补源 ASCII 没显式表达的"≥3 文件 + 无 critical gap → return"分支）
+- 新增 mermaid #2：Example 2 的 3-cycle DISPATCH→EVALUATE→REFINE 串接，体现 codebase 术语 mismatch 的修正路径
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达：4 阶段主流程 + Example demo 均已转 mermaid 或保留源 ASCII；其余编号列表（Best Practices / 常见坑 / Agent prompt 5 步）属"非流程"清单或源文件 prompt 原文，按规则保留
 
 依赖关系（plugin-skill 必填）：
 - 兄弟 continuous-learning skill — 源文件 "Related" 段明示

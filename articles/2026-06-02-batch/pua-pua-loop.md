@@ -94,7 +94,44 @@ SKILL.md 原文 ASCII 流程图（按 v3 规则保留原文）：
 | Phase 1 | in-prompt | Claude 自己跑 build/test，判断是否完成 |
 | Phase 2 | in-hook | Hook 独立运行 verify_command，确认或拒绝 |
 
-两阶段分离。即使 Claude 在 Phase 1 自欺欺人，Phase 2 的 Oracle 会拦住。
+两阶段分离。即使 Claude 在 Phase 1 自欺欺人，Phase 2 的 Oracle 会拦住。下图把模式 1 + 模式 2 + 模式 3 串成一张完整流：
+
+```mermaid
+flowchart TB
+    iter(["第 N 轮迭代开始"]):::user
+    work["Claude 干活<br/>读 history.jsonl 避重<br/>git log 看上轮改动<br/>执行任务"]
+    phase1["Phase 1: in-prompt<br/>Claude 自跑 build/test<br/>判断是否完成"]:::primary
+    self{"自检通过？"}:::warn
+    promise["Claude 输出<br/>&lt;promise&gt;LOOP_DONE&lt;/promise&gt;"]:::primary
+    stop["Stop Hook 拦截<br/>(Oracle)"]
+    phase2["Phase 2: in-hook<br/>独立运行 verify_command<br/>(Claude 无法修改)"]:::primary
+    exit{"exit code"}:::warn
+    accept["✅ 接受<br/>status: complete<br/>loop 终止"]:::done
+    reject["🚫 拒绝<br/>verify_tail 喂回 Claude<br/>rejections += 1"]:::warn
+    history[(".claude/pua-loop-history.jsonl<br/>每轮追加 status / verify_exit /<br/>verify_tail / rejections<br/>git revert 不影响)]:::artifact
+    stall{"rejections 计数"}:::warn
+    remind["1-2: 提醒<br/>'上次 promise 被 Oracle 拒绝'"]
+    reassess["3-4: REASSESS<br/>'重读验证输出<br/>列 3 个不同假设'"]:::warn
+    pivot["5+: 强制转向<br/>'你在解决错误的问题<br/>退回需求本身'"]:::warn
+
+    iter --> work --> phase1 --> self
+    self -- "否" --> work
+    self -- "是" --> promise --> stop --> phase2 --> exit
+    exit -- "0" --> accept
+    exit -- "≠ 0" --> reject --> history --> stall
+    stall -- "1-2" --> remind --> iter
+    stall -- "3-4" --> reassess --> iter
+    stall -- "5+" --> pivot --> iter
+    accept --> history
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+```
+
+**关键设计**：`verify_command` 由用户在启动时设定，嵌入状态文件 frontmatter——**Claude 无法修改**。这是 autoresearch 中"agent 不能修改评估函数"原则的硬实现。
 
 ### 模式 3: ASI（失败记忆）
 
@@ -176,7 +213,34 @@ Git revert 会撤代码，但 history.jsonl 不受影响。Claude 每轮读取�
 
 ## 实战 demo
 
-下面是一次典型的 pua-loop 触发链路（基于 SKILL.md 的协议，不臆造具体命令）：
+下面是一次典型的 pua-loop 触发链路（基于 SKILL.md 的协议，不臆造具体命令）。整条 8 轮迭代链如下图——前 6 轮自检不过不发 promise；第 7 轮自检过但被 Oracle 拒；第 8 轮修验证问题、Oracle 通过：
+
+```mermaid
+flowchart TB
+    user(["/pua:pua-loop<br/>'把所有 failing tests 修绿'"]):::user
+    start["Step 1 启动<br/>setup-pua-loop.sh<br/>--verify 'npm test'<br/>--completion-promise LOOP_DONE"]:::primary
+    notice["Step 2 告知文案<br/>'[PUA Loop] 自动迭代模式启动…<br/>因为信任所以简单——但 Oracle 不信任你'"]
+    iter1["迭代 1-3 (建立 baseline)<br/>跑 npm test 看到 5 红<br/>[PUA-DIAGNOSIS] 第一组修 3 个<br/>自检还剩 2 红 → 不发 promise"]
+    iter4["迭代 4 (换方案)<br/>读 pua-loop-history.jsonl<br/>避免重复前几轮失败<br/>剩 2 case 换思路修"]:::warn
+    iter7["迭代 7 (自检通过 提交 promise)<br/>自跑 npm test 全绿<br/>输出 &lt;promise&gt;LOOP_DONE&lt;/promise&gt;"]:::primary
+    oracle1{"Stop Hook (Phase 2 Oracle)<br/>独立跑 npm test"}:::warn
+    rej["环境问题 1 case 红<br/>verify_exit=1<br/>rejections=1<br/>tail 喂回 Claude"]:::warn
+    history1[(history.jsonl 追加：<br/>status: promise_rejected<br/>verify_tail:<br/>'1 test failed: timeout in<br/>flaky-network.test.ts')]:::artifact
+    iter8["迭代 8 (修验证问题)<br/>加 retry / 调 timeout<br/>再自检通过<br/>再发 &lt;promise&gt;"]:::primary
+    oracle2{"Stop Hook 再跑 npm test"}:::warn
+    done["✅ exit 0<br/>status: complete<br/>promise_rejections: 1<br/>loop 结束"]:::done
+    history2[(history.jsonl 追加：<br/>status: complete)]:::artifact
+
+    user --> start --> notice --> iter1 --> iter4 --> iter7 --> oracle1
+    oracle1 -- "exit 1" --> rej --> history1 --> iter8 --> oracle2
+    oracle2 -- "exit 0" --> done --> history2
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+```
 
 **用户请求**：
 
@@ -318,4 +382,5 @@ SKILL.md 没有独立 "Gotchas" 段，下列 6 条整合自 "核心规则" / "�
 - License 字段：batch yaml 给的是 Unlicense，SKILL.md frontmatter 写的是 MIT。按任务说明使用 batch yaml 的 Unlicense；若 review 时确认仓库 LICENSE 实际为 MIT 应更新。
 - 实战 demo 中具体 5 个 failing test / flaky-network.test.ts / timeout 修复是演示用任务，非源 SKILL.md 实际案例。
 - karpathy/autoresearch 项目本身的描述（630 行 Python + Oracle 验证、一夜跑 100 个实验）来自源 SKILL.md 开篇引文，未引用 autoresearch 仓库原文。
+- 已检查全文所有编号列表 / 'first X then Y' / 'phase 1→2→3' 表达，均已转 mermaid 或保留源 ASCII 图（模式 1 ASCII 图保留为源文；二阶 Gate 完整 Oracle 流 + 实战 demo 8 轮链均已补 mermaid）
 -->

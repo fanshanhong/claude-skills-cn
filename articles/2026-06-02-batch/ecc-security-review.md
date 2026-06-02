@@ -281,18 +281,42 @@ test('enforces rate limits', async () => {
 
 ## 实战 demo：给 `/api/users` POST 加完整安全审计
 
-按 SKILL.md 10 大类逐项过：
+按 SKILL.md 10 大类逐项过，整体流程如下：
 
-1. **Secrets**：endpoint 用的 `DATABASE_URL` / `JWT_SECRET` 都走 `process.env`，启动时校验 → ✅
-2. **Input**：用 `CreateUserSchema = z.object({...})` 校验 email / name / age，try-catch 返 400 ZodError → ✅
-3. **SQL**：用 supabase 的 `.from('users').insert(validated)` 参数化 → ✅
-4. **Auth**：写之前 `const requester = await db.users.findUnique(...)` + `if (requester.role !== 'admin') return 403` → ✅
-5. **XSS**：返回时不渲染 HTML，纯 JSON；如果将来要渲 user content，过 `DOMPurify.sanitize(..., { ALLOWED_TAGS: [...] })` → ✅
-6. **CSRF**：state-changing POST 必须带 X-CSRF-Token header，server 端 `csrf.verify` → ✅
-7. **Rate Limit**：`/api/` 加 100 req/15min 的全局 limiter，写操作加自己的 stricter limit → ✅
-8. **敏感数据**：log 只留 `email + userId`，不留 password；error 对前端只返 `'An error occurred'`，详细堆栈进 server log → ✅
-9. **Solana**：本接口不涉及链上，跳过 → ✅
-10. **依赖**：跑 `npm audit` 无 critical / high 漏洞，`package-lock.json` 已 commit → ✅
+```mermaid
+flowchart TD
+    start["新 endpoint<br/>POST /api/users"]:::primary
+    c1["1. Secrets<br/>DATABASE_URL / JWT_SECRET<br/>走 process.env"]
+    c2["2. Input<br/>CreateUserSchema z.object<br/>校验 email/name/age"]
+    c3["3. SQL<br/>supabase .from().insert()<br/>参数化"]
+    c4["4. Auth<br/>requester role 校验<br/>非 admin 返 403"]
+    c5["5. XSS<br/>纯 JSON 不渲 HTML<br/>需要时 DOMPurify"]
+    c6["6. CSRF<br/>X-CSRF-Token header<br/>csrf.verify"]
+    c7["7. Rate Limit<br/>全局 100/15min<br/>写操作 stricter"]
+    c8["8. Sensitive Data<br/>log 仅 email+userId<br/>error 返泛化 message"]
+    c9{"9. Solana<br/>涉及链上?"}:::warn
+    c9skip["跳过<br/>本接口不涉及"]
+    c9do["verify 签名+金额+余额"]
+    c10["10. 依赖<br/>npm audit 无 critical<br/>package-lock.json committed"]
+    pre["Pre-deployment 17 项<br/>Secrets/Input/SQL/XSS/CSRF/Auth<br/>Authz/Rate/HTTPS/Headers/Error<br/>Logging/Deps/RLS/CORS/Upload/Wallet"]:::gate
+    ship["Ship"]:::ok
+
+    start --> c1 --> c2 --> c3 --> c4 --> c5 --> c6 --> c7 --> c8 --> c9
+    c9 -->|"否"| c9skip --> c10
+    c9 -->|"是"| c9do --> c10
+    c10 --> pre
+    pre -->|"全 PASS"| ship
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
+```
+
+具体 verdict（按图节点编号）：
+
+- 1 Secrets ✅ / 2 Input ✅ / 3 SQL ✅ / 4 Auth ✅ / 5 XSS ✅ / 6 CSRF ✅
+- 7 Rate Limit ✅ / 8 敏感数据 ✅ / 9 Solana 跳过 / 10 依赖 ✅
 
 **Pre-deployment**：走完源文件 17 项清单（Secrets / Input / SQL / XSS / CSRF / Auth / Authz / Rate / HTTPS / Security Headers / Error / Logging / Dependencies / Supabase RLS / CORS / File Upload / Wallet），全 ✅ 后 ship。
 
@@ -373,6 +397,8 @@ SKILL.md 未列 "Integration" 或 "Related" 章节。下列搭配关系基于 ya
 - 源文件 typescript / sql / javascript / bash / json 代码块 — 全部按规则保留原样
 - 源文件无 dot 流程图
 - 源文件 Markdown 表格 —— 按规则保留结构
+- 实战 demo 10 步审计流程 — 新增 mermaid flowchart TD（含 Solana decision diamond）取代原编号列表
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达，10 步 demo 已转 mermaid；其余编号列表（验证项 / Best Practices / 常见坑）属"非流程"清单语义，保留 markdown 列表
 
 依赖关系（plugin-skill 必填）：
 - 源 SKILL.md 没有 Integration / Related 章节，无 sibling 明示

@@ -1,7 +1,7 @@
 ---
 slug: ecc-eval-harness
 title: "eval-harness 怎么用？ECC 的 Eval-Driven Development 框架与 pass@k 度量"
-description: "affaan-m/ecc 的评测框架 SKILL 中文教程：把 eval 当 AI 开发的"unit test"，定义 capability / regression eval、code/model/human 三类 grader、pass@1 / pass@3 / pass^3 度量；含 4 阶段 EDD workflow + .claude/evals/ 标准产物布局 + 4 类反模式。"
+description: "affaan-m/ecc 的评测框架 SKILL 中文教程：把 eval 当 AI 开发的「unit test」，定义 capability / regression eval、code/model/human 三类 grader、pass@1 / pass@3 / pass^3 度量；含 4 阶段 EDD workflow + .claude/evals/ 标准产物布局 + 4 类反模式。"
 keywords: [Claude Code, Skill, eval-harness, ECC, EDD, eval-driven development, pass@k, regression test, 中文教程, affaan-m]
 source: https://github.com/affaan-m/ecc/blob/main/skills/eval-harness/SKILL.md
 repo: https://github.com/affaan-m/ecc
@@ -142,6 +142,54 @@ Risk Level: LOW/MEDIUM/HIGH
 - Regression evals：`pass^3 = 1.00` for release-critical paths
 
 ### 4 阶段 EDD Workflow
+
+下面这张 mermaid 把 SKILL.md "Eval Workflow" 段的 4 阶段串成 flowchart，并把"三类 grader"作为 Evaluate 阶段的分支并到一张图里：
+
+```mermaid
+flowchart TD
+    start(["Feature 想法：<br/>'加 X capability'<br/>(写代码之前)"]):::user
+    p1["Phase 1：Define<br/>写 .claude/evals/&lt;feature&gt;.md<br/>含 Capability Evals 列表 +<br/>Regression Evals 列表 +<br/>Success Metrics (pass@k 阈值)"]:::primary
+    cap[["Capability Eval：<br/>Success Criteria checkbox<br/>Expected Output"]]:::artifact
+    reg[["Regression Eval：<br/>Baseline SHA + Tests +<br/>X/Y passed vs previously Y/Y"]]:::artifact
+    p2["Phase 2：Implement<br/>按 eval 定义写代码<br/>使其 PASS"]:::primary
+    p3["Phase 3：Evaluate<br/>选 grader 类型分支"]:::primary
+    gate{"判定类型是？"}:::warn
+    gC["Code Grader (deterministic)<br/>grep -q PATTERN /<br/>npm test --testPathPattern=... /<br/>npm run build<br/>→ PASS/FAIL 二元"]
+    gM["Model Grader (LLM-as-judge)<br/>1-5 评分 + 4 维度问句<br/>(解决问题 / 结构 /<br/>edge case / error handling)"]
+    gH["Human Grader<br/>[HUMAN REVIEW REQUIRED]<br/>Risk Level LOW/MED/HIGH<br/>security 强制走此路"]:::warn
+    log[("`.claude/evals/&lt;feature&gt;.log<br/>跑动历史 + baseline.json`")]:::artifact
+    p4["Phase 4：Report<br/>EVAL REPORT 模板<br/>Capability X/Y + Regression X/Y<br/>+ pass@1 / pass@3 / pass^3"]:::primary
+    g2{"达成阈值？<br/>Capability pass@3 ≥ 0.90<br/>Regression pass^3 = 1.00"}:::warn
+    ship(["Status: READY FOR REVIEW<br/>(or SHIP IT)"]):::done
+
+    start --> p1
+    p1 --> cap
+    p1 --> reg
+    cap --> p2
+    reg --> p2
+    p2 --> p3 --> gate
+    gate -- 可机械判定 --> gC
+    gate -- 开放式判断 --> gM
+    gate -- security/高风险 --> gH
+    gC --> log
+    gM --> log
+    gH --> log
+    log --> p4 --> g2
+    g2 -- 否 --> p2
+    g2 -- 是 --> ship
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
+
+**读图三条线索：**
+
+1. **Define 先于 Implement**：图中 Phase 1 强制在 Phase 2 之前完成——这正是 EDD 区别于"先写代码后画靶子"的本质。
+2. **三类 grader 三条独立路径**：Evaluate 阶段不是顺序串联，而是按"判定类型"路由分支——code 优先于 model，security 永远走 human。
+3. **未达阈值回 Phase 2**：图中 `g2` 决策菱形把"pass@k 不够"的失败 case 路回 Phase 2 重写代码，而不是去改 eval；保持客观性。
 
 #### 1. Define（写代码之前）
 
@@ -345,6 +393,11 @@ SKILL.md "Eval Anti-Patterns" 段：
 - 源文件 markdown / bash / json 代码块 — 全部按规则保留原样
 - 源文件 markdown 表格 — 保留结构
 - 源文件无 dot 流程图
+- 新增 1 张 mermaid（4 阶段 EDD workflow：Define → Implement → Evaluate (code/model/human 三分支) → Report，含 pass@k 阈值未达成时回 Phase 2 的回流箭头）
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达，均已转 mermaid 或保留源 ASCII 图
+
+frontmatter 修复：
+- description 字段原含未转义嵌套双引号 `"AI 开发的"unit test"，定义..."`，已把内层 `"unit test"` 改为中文方括号 `「unit test」`，YAML 解析不再报错
 
 依赖关系（plugin-skill 必填）：
 - 源 SKILL.md 没有 Integration / Related 章节，无 sibling 明示

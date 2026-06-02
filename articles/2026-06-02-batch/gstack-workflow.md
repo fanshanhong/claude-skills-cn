@@ -178,15 +178,42 @@ flowchart TB
 
 ### 示例 C：调试 + 设计探索复合——/investigate freeze 调试 + /design-shotgun 视觉迭代
 
-> 这条链路对应"我有一个 bug + 一个 UI 改造需求并发"。来自 investigate SKILL.md `hooks.PreToolUse` 段 + design-shotgun SKILL.md 描述 + README "Parallel sprints" 段。
+> 这条链路对应"我有一个 bug + 一个 UI 改造需求并发"。来自 investigate SKILL.md `hooks.PreToolUse` 段 + design-shotgun SKILL.md 描述 + README "Parallel sprints" 段。两条 sprint 并行跑，最终汇合到同一个 `/ship`：
+
+```mermaid
+flowchart TB
+    user(["用户：'修 bug-X<br/>+ 顺便改改 UI'"]):::user
+    inv["1. /investigate bug-X<br/>Iron Law: no fixes without<br/>investigation<br/>读代码 → trace data flow<br/>→ 3 假设逐个验证"]:::warn
+    hook["2. PreToolUse hook 自动 freeze<br/>Edit/Write 前调<br/>check-freeze.sh<br/>把调试 scope 锁住<br/>(statusMessage:<br/>'Checking debug scope boundary...')"]:::warn
+    ds["3. 并行 /design-shotgun<br/>读 ~/.gstack/projects/{slug}/<br/>designs/*/approved.json<br/>+ DESIGN.md<br/>+ Taste memory 评分"]:::primary
+    img["4. GPT Image 出 4-6 个 mockup<br/>+ comparison board<br/>用户挑 + 反馈<br/>('more whitespace',<br/>'bolder headline')"]:::primary
+    html["5. /design-html 落地<br/>选定 mockup → 30KB<br/>Pretext-native HTML/CSS<br/>(检测 React/Svelte/Vue<br/>输出对应格式)"]:::primary
+    fix["6a. investigate 修完 bug<br/>+ unfreeze"]
+    ui["6b. design-html 出 UI 文件"]
+    rev["7. 汇合 → /review<br/>diff vs base branch"]:::ok
+    qa["7. → /qa<br/>真浏览器 + atomic fix"]:::ok
+    ship["7. → /ship<br/>sync / test / version / PR"]:::done
+
+    user --> inv --> hook --> fix
+    user --> ds --> img --> html --> ui
+    fix --> rev
+    ui --> rev
+    rev --> qa --> ship
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
 
 1. **/investigate bug-X**：投入调试模式，按 Iron Law "no fixes without investigation" 行动——读代码 → trace data flow → 列 3 个假设 → 逐个验证；"stops after 3 failed fixes" 防止 vibe debugging。
 2. **PreToolUse hook 自动 freeze**：investigate SKILL.md `hooks.PreToolUse` 段定义：Edit/Write 前调 `check-freeze.sh`（先找 `freeze/bin/check-freeze.sh`、再找 `gstack-freeze/bin/check-freeze.sh`），把当前调试 scope 锁住。Claude 想顺手改 unrelated 文件会被 block，statusMessage "Checking debug scope boundary..."。
 3. **同时 /design-shotgun for UI**：另起一段 chat 跑 design-shotgun。SKILL.md `gbrain.context_queries` 段会先读 `~/.gstack/projects/{repo_slug}/designs/*/approved.json`（历史已批准 variant）+ `DESIGN.md` + 最近 design docs，把上下文塞给 GPT Image。
-4. **GPT Image 出 4-6 个 mockup + comparison board**：浏览器开 comparison page 排排看，用户挑 + 反馈（"more whitespace", "bolder headline"）。
-5. **Taste memory 跨 round 学**：`gstack-taste-update` CLI 把 approval/rejection 写到 per-project taste profile（5%/week 衰减），下轮自动 bias 你喜欢的方向。
-6. **`/design-html`** 把选定 mockup 转成 30KB 零依赖的可上线 HTML（README 段 "Pretext computed layout"，text reflow + 自适应高度 + 检测 React/Svelte/Vue 输出对应格式）。
-7. **两边汇合**：investigate 修完 bug → `/review` → `/qa` → `/ship`；design-html 出的 UI → 同样走 review → qa → ship。
+4. **GPT Image 出 4-6 个 mockup + comparison board**：浏览器开 comparison page 排排看，用户挑 + 反馈（"more whitespace", "bolder headline"）。Taste memory 同时跨 round 学习偏好——`gstack-taste-update` CLI 把 approval/rejection 写到 per-project taste profile（5%/week 衰减），下轮自动 bias 你喜欢的方向。
+5. **`/design-html`** 把选定 mockup 转成 30KB 零依赖的可上线 HTML（README 段 "Pretext computed layout"，text reflow + 自适应高度 + 检测 React/Svelte/Vue 输出对应格式）。
+6. **两条 sprint 各自收尾**：investigate 路径修完 bug 解 freeze；design-shotgun 路径产出 UI 文件。
+7. **汇合走 review + qa + ship**：bug fix 和 UI 改动两边的 diff 同时进 `/review` → `/qa` → `/ship`，一次完成发版。README "Parallel sprints" 段明示这种"两边汇合"模式。
 
 ## Skill 间协作关系图
 
@@ -300,7 +327,8 @@ flowchart TB
 - README "The sprint" 表 → 在"包含哪些 Skills"段用 bullet 引用，未直接复制原表
 - README "Power tools" 表 + "New binaries" 表 → 列入 self-check，未在正文展开
 - README "Karpathy four failure modes" 段 → 在"核心理念"段用一段话概括
-- 3 张 mermaid 新增：示例 A 主链路 / 示例 B autoplan+spec+ship 批量 / 整体协作图
+- 4 张 mermaid 新增：示例 A 主链路 / 示例 B autoplan+spec+ship 批量 / 示例 C investigate+design-shotgun 双分支汇合到 ship / 整体协作图
+- 示例 C 已补 mermaid：覆盖 7 步——/investigate bug-X → PreToolUse hook 自动 freeze → 并行 /design-shotgun → GPT Image + Taste memory → /design-html 落地 → 两条 sprint 各自收尾 → 汇合走 review + qa + ship。建模为"双分支汇合"形式（investigate 路径 || design 路径 → 汇合到 ship），节点名词出自 investigate SKILL.md `hooks.PreToolUse` 段 + design-shotgun SKILL.md `gbrain.context_queries` 段 + README "Parallel sprints" 段
 - 各 sibling SKILL.md 中长达 100+ 行的 preamble bash 段 → 完全不复制（属基础设施代码，与工作流无关）
 
 依赖关系（plugin-overview 必填）：

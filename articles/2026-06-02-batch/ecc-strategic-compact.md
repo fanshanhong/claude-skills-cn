@@ -136,39 +136,41 @@ SKILL.md 给了三类常见 token 优化：
 
 ## 实战 demo：从 research 切到 plan 再到 implement
 
-**起始**：用户让你"为 SaaS 加 SSO 支持"。Session 初始，0 次工具调用。
+**起始**：用户让你"为 SaaS 加 SSO 支持"。Session 初始，0 次工具调用。整个 session 的 hook 触发 + 决策路径如下：
 
-**Phase 1 - Research**（30 次 Read / Grep / WebSearch）：你读了现有 auth 模块、查了 SAML / OIDC 协议、搜了 3 个候选 npm 包并对比。Hook 没到 50，未提醒。
+```mermaid
+flowchart TD
+    s0["Session 起<br/>tool calls = 0<br/>任务: SaaS 加 SSO"]:::primary
+    p1["Phase 1 Research<br/>30 次 Read/Grep/WebSearch<br/>读 auth 模块 + 查 SAML/OIDC"]
+    h1{"Hook 检查<br/>>=50?"}:::warn
+    p2["Phase 2 Plan<br/>+25 次工具调用<br/>累计 55, 产出 TodoWrite +<br/>docs/sso-plan.md"]
+    h2["Hook 触发<br/>第一次 compact 建议"]:::warn
+    d1{"Decision Guide<br/>Planning → Implementation?"}:::gate
+    prep["预处理：把 SAMLProvider<br/>OIDCSession 命名 + npm 包名<br/>写进 docs/sso-plan.md"]
+    cmd1["执行 /compact<br/>Focus on implementing SSO<br/>middleware next"]:::ok
+    p3["Phase 3 Implementation<br/>清爽 context 写<br/>src/middleware/sso.ts"]
+    h3["Hook 第二次提醒<br/>累计 +25"]:::warn
+    d2{"Mid-implementation?<br/>(变量名 / 路径在用中)"}:::gate
+    skip["忽略本次提醒<br/>继续 implementation"]
+    p4["Phase 4 失败<br/>lib A prod 不行<br/>决定换 lib B"]:::warn
+    d3{"After failed approach?<br/>(清死路推理)"}:::gate
+    write["把 lib A 失败根因<br/>写进 docs/sso-plan.md"]
+    cmd2["执行 /compact<br/>Switching from lib A to lib B"]:::ok
+    next["从清爽 context<br/>开 lib B 实现"]:::ok
 
-**Phase 2 - Plan**（再 25 次 工具调用 = 累计 55）：你产出 TodoWrite 任务列表 + 写 `docs/sso-plan.md`，Hook 触发**第一次** compact 建议。
+    s0 --> p1 --> h1
+    h1 -->|"否，未提醒"| p2 --> h2 --> d1
+    d1 -->|"Yes"| prep --> cmd1 --> p3 --> h3 --> d2
+    d2 -->|"No"| skip --> p4 --> d3
+    d3 -->|"Yes"| write --> cmd2 --> next
 
-> **决策时刻**：Plan 已 finalized 进 TodoWrite 和文件 → 按 Decision Guide "Planning → Implementation: Yes"。
->
-> **预处理**：把关键命名（`SAMLProvider` / `OIDCSession`）和 npm 包名写进 `docs/sso-plan.md`，因为这些 context 压完会丢。
-
-执行：
-
-```text
-/compact Focus on implementing SSO middleware next; plan is in TodoWrite and docs/sso-plan.md.
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
 ```
 
-**Phase 3 - Implementation**（清爽 context 开干）：CLAUDE.md / TodoWrite / `docs/sso-plan.md` / git state 全部保留，主对话腾空，开始写 `src/middleware/sso.ts`。
-
-**Mid-implementation 干扰**：写到一半（计数已经又到 25 次），Hook 又提醒一次。
-
-> **决策时刻**：Mid-implementation → Decision Guide "No / Losing variable names, file paths, and partial state is costly"。
->
-> **动作**：忽略本次提醒，继续。
-
-**Phase 4 - 失败的实现路径**：用了 lib A 跑通本地但 prod 不行，决定换 lib B。
-
-> **决策时刻**：After a failed approach → "Yes / Clear the dead-end reasoning before trying a new approach"。
->
-> **动作**：把"lib A 在 prod 失败"的根因写进 `docs/sso-plan.md` 当 lesson，再：
-
-```text
-/compact Switching from lib A to lib B for SSO; reasoning in docs/sso-plan.md.
-```
+> 说明：实线 = Claude 自主推进步骤，菱形 = 按 Decision Guide / Persists-Lost 表做的判断分叉，warn 色 = hook 自动触发或失败信号。两次 compact 命令均带 `<summary>` message（按 Best Practices 第 6 条）。
 
 ## 与其他官方 Skills 的搭配建议
 
@@ -245,6 +247,8 @@ SKILL.md "Related" 段明示：
 - 源文件 markdown 表格（Decision Guide / Persists-Lost / Trigger-Table）— 全部按规则保留结构
 - 源文件无 dot 流程图
 - 实战 demo 中 "/compact Focus on..." message 用法引用源文件 Best Practices 第 6 条原文
+- 新增 mermaid：实战 demo 完整 session 路径（Research → Plan → Implementation → Failed → Switch lib B），含 3 个 Decision Guide 决策菱形 + 2 次 hook warn 节点 + 2 次 /compact 执行节点
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达：实战 demo 4 阶段流程已转 mermaid；Hook 行为 3 步 / Best Practices 6 条 / 常见坑等属"非流程"清单或单点行为描述，按规则保留
 
 依赖关系（plugin-skill 必填）：
 - 兄弟 continuous-learning skill — 源文件 "Related" 段明示

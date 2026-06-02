@@ -45,6 +45,36 @@ SKILL.md 本身没有给出独立的安装命令，本 Skill 通过 `ralph` plug
 | `create prd.json from this` | 从 markdown 生成 JSON |
 | `ralph json` | 显式要 Ralph JSON 格式 |
 
+## 转换管道总览
+
+整套 ralph Skill 把 markdown PRD 压成 `prd.json` 的链路如下——拆故事 → 依赖排序 → 加固定 criteria → 写 branchName → 归档检查 → 输出：
+
+```mermaid
+flowchart TB
+    input(["输入：<br/>markdown PRD<br/>(或纯文本)"]):::user
+    parse["1. 解析 PRD<br/>读出 feature 标题 /<br/>requirements / UI mention"]:::primary
+    split["2. 拆故事<br/>每条 'one Ralph iteration'<br/>(一个 context window 跑完)<br/>2-3 句描述不完 = 太大"]:::primary
+    order["3. 依赖排序<br/>schema → server actions →<br/>UI components → dashboard<br/>(earlier 不能依赖 later)"]:::primary
+    assign["4. 分配 ID + priority<br/>US-001 / US-002 顺序<br/>priority = 依赖顺序<br/>passes: false / notes: ''"]
+    criteria["5. 加固定 criteria<br/>所有 story: Typecheck passes<br/>有逻辑: Tests pass<br/>改 UI: Verify in browser<br/>using dev-browser skill"]:::primary
+    branch["6. 写 branchName<br/>ralph/[feature-name-kebab-case]"]
+    archive{"7. 归档检查<br/>现有 prd.json 存在<br/>且 branchName 不同？"}:::warn
+    yes_arch["archive/YYYY-MM-DD-feature-name/<br/>拷 prd.json + progress.txt<br/>重置 progress.txt 为 fresh header"]:::warn
+    output[(prd.json<br/>+ progress.txt header)]:::artifact
+    consume["ralph.sh 消费<br/>fresh-context spawn Amp<br/>逐 story 干<br/>每条跑到 passes: true"]:::done
+
+    input --> parse --> split --> order --> assign --> criteria --> branch --> archive
+    archive -- "是 (且 progress 有内容)" --> yes_arch --> output
+    archive -- "否" --> output
+    output --> consume
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef primary fill:#fff3cd,stroke:#856404,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+    classDef artifact fill:#e2e3e5,stroke:#6c757d,color:#000
+```
+
 ## 输出 Schema（核心）
 
 SKILL.md "Output Format" 段原文照搬：
@@ -134,14 +164,38 @@ SKILL.md "Conversion Rules" 段原文：
 
 ### 规则 5: Archiving Previous Runs
 
-写新 `prd.json` 之前，检查现有 `prd.json` 是否来自不同 feature：
+写新 `prd.json` 之前，检查现有 `prd.json` 是否来自不同 feature。决策树如下：
 
-1. Read 当前 `prd.json`（如存在）
-2. 检查 `branchName` 是否与新 feature 的不同
-3. 如果不同 **AND** `progress.txt` 已有 header 以外的内容：
-   - 创建 `archive/YYYY-MM-DD-feature-name/`
-   - 把当前 `prd.json` 和 `progress.txt` 拷过去
-   - Reset `progress.txt` 为 fresh header
+```mermaid
+flowchart TB
+    start(["准备写新 prd.json"]):::user
+    exist{"现有 prd.json<br/>存在？"}:::warn
+    fresh["直接写新 prd.json<br/>(无需归档)"]:::done
+    readbranch["Read 当前 prd.json<br/>提取 branchName"]
+    samebranch{"branchName<br/>与新 feature 相同？"}:::warn
+    update["视为同 feature 继续<br/>覆盖即可<br/>(不归档)"]:::done
+    readprog["Read progress.txt"]
+    haspg{"progress.txt 有<br/>header 以外的内容？"}:::warn
+    noarch["视为空白进度<br/>直接覆盖<br/>(不归档)"]:::done
+    arch1["创建 archive/<br/>YYYY-MM-DD-feature-name/"]:::warn
+    arch2["拷贝当前 prd.json<br/>和 progress.txt 过去"]:::warn
+    arch3["Reset progress.txt<br/>为 fresh header"]:::warn
+    write["写新 prd.json"]:::done
+    note["⚠ ralph.sh 自动跑此流程<br/>手动改 prd.json 必须先归档"]:::warn
+
+    start --> exist
+    exist -- "否" --> fresh
+    exist -- "是" --> readbranch --> samebranch
+    samebranch -- "相同" --> update
+    samebranch -- "不同" --> readprog --> haspg
+    haspg -- "否" --> noarch
+    haspg -- "是" --> arch1 --> arch2 --> arch3 --> write
+    write -.-> note
+
+    classDef user fill:#e8d5f5,stroke:#333,color:#000
+    classDef warn fill:#ffe0b3,stroke:#cc6600,color:#000
+    classDef done fill:#90ee90,stroke:#333,color:#000
+```
 
 > SKILL.md 明示："The ralph.sh script handles this automatically when you run it, but if you are manually updating prd.json between runs, archive first."
 
@@ -328,4 +382,5 @@ SKILL.md 通过 plugin 设计意图明示了上游和外部依赖：
 可疑项：
 - 源 SKILL.md 没有显式 "Integration" / "Related Skills" 章节，搭配建议是基于 plugin 整体结构（仅含 prd + ralph 两个 Skill）+ Archiving 段对 ralph.sh 的引用 + Acceptance Criteria 段对 dev-browser 的直接引用反推。
 - License 字段：batch yaml 和 SKILL.md frontmatter 均一致为 MIT，无冲突。
+- 已检查全文所有编号列表 / 'first X then Y' / 'phase 1→2→3' 表达，均已转 mermaid 或保留源 ASCII 图（转换管道总览 + Archiving 决策树均已补 mermaid；段内对照表保留方便对照）
 -->

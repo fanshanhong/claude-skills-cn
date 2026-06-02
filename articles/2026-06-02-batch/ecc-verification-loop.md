@@ -53,6 +53,36 @@ ruff check .               # Phase 3 lint
 
 ## 核心机制 / 6 阶段流程
 
+6 阶段是**顺序门控**——Phase 1 失败必须停，后续无意义；其余 phase 失败要写进报告但不必立即终止。整体路径：
+
+```mermaid
+flowchart TD
+    trig["触发：feature 完成 /<br/>refactor 后 / PR 前"]:::primary
+    p1["Phase 1 Build<br/>npm run build / pnpm build"]
+    g1{"Build PASS?"}:::gate
+    stop["STOP，先修 build"]:::warn
+    p2["Phase 2 Type<br/>tsc --noEmit / pyright"]
+    p3["Phase 3 Lint<br/>npm run lint / ruff check"]
+    p4["Phase 4 Tests + Coverage<br/>npm test --coverage<br/>覆盖率 >= 80%"]
+    p5["Phase 5 Security Scan<br/>grep secrets / api_key /<br/>console.log"]
+    p6["Phase 6 Diff Review<br/>git diff --stat<br/>逐文件人工 review"]
+    rpt["生成 VERIFICATION REPORT<br/>PASS/FAIL 每项 + 综合裁定"]
+    ready{"全部 PASS?"}:::gate
+    ok["READY for PR"]:::ok
+    fix["NOT READY<br/>按 Issues to Fix 修后重跑"]:::warn
+
+    trig --> p1 --> g1
+    g1 -->|"否"| stop
+    g1 -->|"是"| p2 --> p3 --> p4 --> p5 --> p6 --> rpt --> ready
+    ready -->|"是"| ok
+    ready -->|"否"| fix --> p1
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+    classDef gate fill:#d6e4ff,stroke:#333,color:#000
+```
+
 ### Phase 1：Build Verification
 
 ```bash
@@ -168,7 +198,28 @@ PostToolUse hook 是即时反馈，本 Skill 是综合 review；两者互补不�
 
 ## 实战 demo：feature 完成后跑一次完整 verification
 
-按 SKILL.md 6 阶段，串成端到端：
+按 SKILL.md 6 阶段，串成端到端。实战路径（含一次"发现问题 → 修复 → 重跑"循环）：
+
+```mermaid
+flowchart TD
+    start["feature 完成<br/>/api/users POST<br/>6 files staged"]:::primary
+    r1["Phase 1 build<br/>✓ Compiled successfully"]
+    r2["Phase 2 tsc --noEmit<br/>0 errors"]
+    r3["Phase 3 lint<br/>1 warning: unused import"]:::warn
+    r4["Phase 4 tests<br/>47/47 passed<br/>coverage 83%"]
+    r5["Phase 5 grep<br/>发现 console.log<br/>at src/api/users/route.ts:42"]:::warn
+    r6["Phase 6 diff<br/>6 files, +152 -8<br/>人工 review 无非预期"]
+    rpt1["Report v1<br/>Security FAIL<br/>NOT READY"]:::warn
+    fix["按 Issues to Fix 列表修:<br/>1. 删 console.log<br/>2. 删 unused import"]
+    rerun["重跑 verification"]:::primary
+    rpt2["Report v2<br/>全 PASS<br/>READY for PR"]:::ok
+
+    start --> r1 --> r2 --> r3 --> r4 --> r5 --> r6 --> rpt1 --> fix --> rerun --> rpt2
+
+    classDef ok fill:#d4edda,stroke:#155724,color:#000
+    classDef warn fill:#fff3cd,stroke:#856404,color:#000
+    classDef primary fill:#cfe2ff,stroke:#0d6efd,color:#000
+```
 
 **起始**：刚完成 `/api/users` POST endpoint 实现，改动涉及 6 个文件，stage 但未 commit。
 
@@ -310,6 +361,9 @@ SKILL.md 未列 "Integration" 或 "Related" 章节明示 sibling 协作（仅在
 - 源文件 bash / markdown 代码块 — 全部按规则保留原样
 - 源文件无 dot 流程图
 - VERIFICATION REPORT 输出格式 ASCII — 完整保留
+- 新增 mermaid #1：6 阶段顺序流程 + Phase 1 STOP gate + NOT READY 回环（覆盖核心机制段）
+- 新增 mermaid #2：实战 demo 端到端路径（含 console.log 发现 → fix → 重跑 → READY 的修复循环）
+- 已检查全文所有编号列表 / "first X then Y" / "phase 1→2→3" 表达：6 阶段主流程 + 实战 demo phase 串接均已转 mermaid；常见坑 7 条等属"非流程"清单，按规则保留
 
 依赖关系（plugin-skill 必填）：
 - 源 SKILL.md 仅在 "Integration with Hooks" 段提到 hook 互补，无具体 sibling Skill 名
