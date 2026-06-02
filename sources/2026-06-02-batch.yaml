@@ -1,0 +1,1636 @@
+batch_id: '2026-06-02'
+generated_at: '2026-06-02T09:32:33'
+total_entries: 70
+approved_count: 70
+counts_by_type:
+  single-skill: 6
+  plugin-skill: 55
+  plugin-doc: 2
+  plugin-overview: 7
+counts_by_kind:
+  tool: 1
+  skill: 67
+  subagent: 1
+  framework: 1
+entries:
+- id: agent-browser
+  source_url: https://github.com/vercel-labs/agent-browser/blob/main/skills/agent-browser/SKILL.md
+  raw_url: https://raw.githubusercontent.com/vercel-labs/agent-browser/main/skills/agent-browser/SKILL.md
+  repo_url: https://github.com/vercel-labs/agent-browser
+  skill_path: skills/agent-browser/SKILL.md
+  skill_name: agent-browser
+  skill_name_cn: AI 代理浏览器自动化
+  description_en: Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating
+    pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser
+    task. ...
+  author: Vercel Labs
+  license: Apache-2.0
+  source_type: single-skill
+  plugin: null
+  sibling_skills: []
+  status: approved
+  _cached_name: agent-browser_skill
+  kind: tool
+- id: web-access
+  source_url: https://github.com/eze-is/web-access/blob/main/SKILL.md
+  raw_url: https://raw.githubusercontent.com/eze-is/web-access/main/SKILL.md
+  repo_url: https://github.com/eze-is/web-access
+  skill_path: SKILL.md
+  skill_name: web-access
+  skill_name_cn: 浏览器联网操作中枢
+  description_en: 所有联网操作必须通过此 skill 处理，包括：搜索、网页抓取、登录后操作、网络交互等。 触发场景：用户要求搜索信息、查看网页内容、访问需要登录的网站、操作网页界面、抓取社交媒体内容（小红书、微博、推特等）、读取动态渲染页面、以及任何需要真实浏览器环境的网络任务。
+  author: eze-is
+  license: Unlicense
+  source_type: single-skill
+  plugin: null
+  sibling_skills: []
+  status: approved
+  _cached_name: web-access_skill
+- id: planning-with-files
+  source_url: https://github.com/OthmanAdi/planning-with-files/blob/master/skills/planning-with-files/SKILL.md
+  raw_url: https://raw.githubusercontent.com/OthmanAdi/planning-with-files/master/skills/planning-with-files/SKILL.md
+  repo_url: https://github.com/OthmanAdi/planning-with-files
+  skill_path: skills/planning-with-files/SKILL.md
+  skill_name: planning-with-files
+  skill_name_cn: 基于文件的实施计划
+  description_en: Implements Manus-style file-based planning to organize and track progress on complex tasks. Creates task_plan.md,
+    findings.md, and progress.md. Use when asked to plan out, break down, or organize a multi-step project, research task,
+    or a...
+  author: OthmanAdi
+  license: MIT
+  source_type: single-skill
+  plugin: null
+  sibling_skills: []
+  status: approved
+  _cached_name: planning-with-files_skill
+- id: find-skills
+  source_url: https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md
+  raw_url: https://raw.githubusercontent.com/vercel-labs/skills/main/skills/find-skills/SKILL.md
+  repo_url: https://github.com/vercel-labs/skills
+  skill_path: skills/find-skills/SKILL.md
+  skill_name: find-skills
+  skill_name_cn: Skills 发现与一键安装
+  description_en: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill
+    for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when
+    the user is l...
+  author: Vercel Labs
+  license: Apache-2.0
+  source_type: single-skill
+  plugin: null
+  sibling_skills: []
+  status: approved
+  _cached_name: vercel-labs_find-skills.skill.json
+- id: code-simplifier
+  source_url: https://github.com/anthropics/claude-plugins-official/blob/main/plugins/code-simplifier/agents/code-simplifier.md
+  raw_url: https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/plugins/code-simplifier/agents/code-simplifier.md
+  repo_url: https://github.com/anthropics/claude-plugins-official
+  skill_path: plugins/code-simplifier/agents/code-simplifier.md
+  skill_name: code-simplifier
+  skill_name_cn: 代码简化 Subagent
+  description_en: Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality.
+    Focuses on recently modified code unless instructed otherwise.
+  author: Anthropic
+  license: Apache-2.0
+  source_type: single-skill
+  plugin: null
+  sibling_skills: []
+  status: approved
+  _cached_name: anthropics_code-simplifier.agent.json
+  kind: subagent
+- id: openspec
+  source_url: https://github.com/Fission-AI/OpenSpec/blob/main/README.md
+  raw_url: https://raw.githubusercontent.com/Fission-AI/OpenSpec/main/README.md
+  repo_url: https://github.com/Fission-AI/OpenSpec
+  skill_path: README.md
+  skill_name: openspec
+  skill_name_cn: OpenSpec 规格驱动开发框架
+  description_en: OpenSpec is a spec-driven development framework for AI coding agents. Distributed via npm install -g @fission-ai/openspec,
+    with /opsx:propose, /opsx:apply, /opsx:archive slash commands to align AI coders with intended behavior before code is
+    written.
+  author: Fission AI
+  license: MIT
+  source_type: single-skill
+  plugin: null
+  sibling_skills: []
+  status: approved
+  _cached_name: Fission-AI_OpenSpec.readme.json
+  kind: framework
+- id: pua-pua
+  source_url: https://github.com/tanweai/pua/blob/main/skills/pua/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/pua/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/pua/SKILL.md
+  skill_name: pua
+  skill_name_cn: PUA 老板模式
+  description_en: 'Use when the user explicitly requests PUA mode or signals frustration, repeated failures (2+), passive
+    behavior, quality complaints, unverified completion, giving up, or asks to try harder/change approach. Common triggers:
+    ''try harder'', ...'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - p7
+  - p9
+  - p10
+  - pro
+  - mama
+  - 'yes'
+  - pua-loop
+  status: approved
+  _cached_name: pua_pua
+- id: pua-p7
+  source_url: https://github.com/tanweai/pua/blob/main/skills/p7/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/p7/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/p7/SKILL.md
+  skill_name: p7
+  skill_name_cn: P7 资深工程师
+  description_en: 'P7 Senior Engineer mode — solution-driven execution under P8 supervision. Use when user says ''P7模式'',
+    ''方案驱动'', or when spawned as sub-task executor by P8. Produces: implementation plan + code + 3-question self-review, delivered
+    via [P7-COM...'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p9
+  - p10
+  - pro
+  - mama
+  - 'yes'
+  - pua-loop
+  status: approved
+  _cached_name: pua_p7
+- id: pua-p9
+  source_url: https://github.com/tanweai/pua/blob/main/skills/p9/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/p9/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/p9/SKILL.md
+  skill_name: p9
+  skill_name_cn: P9 技术专家
+  description_en: 'P9 Tech Lead mode — write Task Prompts, manage P8 agent teams, never write code yourself. Use when user
+    says ''P9模式'', ''tech-lead'', ''帮我管理这个项目'', ''任务拆解'', or when coordinating 3+ parallel agents. Produces: Task Prompts
+    (六要素) + P8 team delivery.'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p7
+  - p10
+  - pro
+  - mama
+  - 'yes'
+  - pua-loop
+  status: approved
+  _cached_name: pua_p9
+- id: pua-p10
+  source_url: https://github.com/tanweai/pua/blob/main/skills/p10/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/p10/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/p10/SKILL.md
+  skill_name: p10
+  skill_name_cn: P10 资深技术专家
+  description_en: 'P10 CTO mode — define strategic direction, design org topology, manage P9 teams. Use when user says ''CTO模式'',
+    ''P10'', ''战略规划'', ''架构委员会'', or when facing cross-team architectural decisions. Produces: strategic input templates +
+    org design.'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p7
+  - p9
+  - pro
+  - mama
+  - 'yes'
+  - pua-loop
+  status: approved
+  _cached_name: pua_p10
+- id: pua-pro
+  source_url: https://github.com/tanweai/pua/blob/main/skills/pro/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/pro/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/pro/SKILL.md
+  skill_name: pro
+  skill_name_cn: 产品经理 PRO 模式
+  description_en: 'PUA Pro extensions: self-evolution tracking, compaction state protection, KPI reporting, leaderboard, and
+    /pua:pua commands. Triggers on: ''/pua:kpi'', ''/pua:pro'', ''/pua:pro 段位'', ''/pua:pro 周报'', ''/pua:pro 述职'', ''/pua:flavor'',
+    ''/pua:pro 排行榜'',...'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p7
+  - p9
+  - p10
+  - mama
+  - 'yes'
+  - pua-loop
+  status: approved
+  _cached_name: pua_pro
+- id: pua-mama
+  source_url: https://github.com/tanweai/pua/blob/main/skills/mama/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/mama/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/mama/SKILL.md
+  skill_name: mama
+  skill_name_cn: 老妈关怀模式
+  description_en: '妈妈唠叨模式 — 中国式妈妈唠叨驱动 AI 穷尽一切方案。底层行为约束不变（三条红线、方法论、7项清单），旁白从大厂PUA变成妈妈碎碎念。Triggers on: ''/pua:mama'', ''/pua
+    mama'', ''妈妈模式'', ''妈妈唠叨'', ''mama mode'', ''唠叨模式''. 和 /pua:yes 一样是旁白风格切换，不改变核心行为。'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p7
+  - p9
+  - p10
+  - pro
+  - 'yes'
+  - pua-loop
+  status: approved
+  _cached_name: pua_mama
+- id: pua-yes
+  source_url: https://github.com/tanweai/pua/blob/main/skills/yes/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/yes/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/yes/SKILL.md
+  skill_name: 'yes'
+  skill_name_cn: Yes 极简肯定
+  description_en: 'SB Leader 夸夸模式 — ENFP 型领导，懂情绪有节奏。底层行为不变（三条红线、方法论），旁白从施压变成共情+鼓励+偶尔戏谑吐槽。Triggers on: ''/pua:yes'', ''夸夸模式'',
+    ''唠嗑模式'', ''情绪价值'', ''yes'', ''夸我'', ''鼓励模式''.'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p7
+  - p9
+  - p10
+  - pro
+  - mama
+  - pua-loop
+  status: approved
+  _cached_name: pua_yes
+- id: pua-pua-loop
+  source_url: https://github.com/tanweai/pua/blob/main/skills/pua-loop/SKILL.md
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/skills/pua-loop/SKILL.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: skills/pua-loop/SKILL.md
+  skill_name: pua-loop
+  skill_name_cn: PUA 自动 Loop
+  description_en: 'PUA Loop — autonomous iterative development with autoresearch-style gate protocol. Runs FOREVER until verified
+    done. Oracle Isolation: hook independently verifies completion, Claude cannot lie. Triggers on: ''/pua:pua-loop'', ''自动循环'',
+    ''loop...'
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-skill
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p7
+  - p9
+  - p10
+  - pro
+  - mama
+  - 'yes'
+  status: approved
+  _cached_name: pua_pua-loop
+- id: ecc-continuous-learning-v2
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/continuous-learning-v2/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/continuous-learning-v2/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/continuous-learning-v2/SKILL.md
+  skill_name: continuous-learning-v2
+  skill_name_cn: 持续学习 v2
+  description_en: Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence
+    scoring, and evolves them into skills/commands/agents. v2.1 adds project-scoped instincts to prevent cross-project contamination.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_continuous-learning-v2
+- id: ecc-tdd-workflow
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/tdd-workflow/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/tdd-workflow/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/tdd-workflow/SKILL.md
+  skill_name: tdd-workflow
+  skill_name_cn: TDD 测试驱动开发
+  description_en: Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development
+    with 80%+ coverage including unit, integration, and E2E tests.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_tdd-workflow
+- id: ecc-security-review
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/security-review/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/security-review/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/security-review/SKILL.md
+  skill_name: security-review
+  skill_name_cn: 安全审计
+  description_en: Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints,
+    or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_security-review
+- id: ecc-iterative-retrieval
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/iterative-retrieval/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/iterative-retrieval/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/iterative-retrieval/SKILL.md
+  skill_name: iterative-retrieval
+  skill_name_cn: 迭代检索
+  description_en: Pattern for progressively refining context retrieval to solve the subagent context problem
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_iterative-retrieval
+- id: ecc-strategic-compact
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/strategic-compact/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/strategic-compact/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/strategic-compact/SKILL.md
+  skill_name: strategic-compact
+  skill_name_cn: 战略性压缩 Context
+  description_en: Suggests manual context compaction at logical intervals to preserve context through task phases rather than
+    arbitrary auto-compaction.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_strategic-compact
+- id: ecc-eval-harness
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/eval-harness/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/eval-harness/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/eval-harness/SKILL.md
+  skill_name: eval-harness
+  skill_name_cn: 评测框架
+  description_en: Formal evaluation framework for Claude Code sessions implementing eval-driven development (EDD) principles
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_eval-harness
+- id: ecc-verification-loop
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/verification-loop/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/verification-loop/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/verification-loop/SKILL.md
+  skill_name: verification-loop
+  skill_name_cn: 验证 Loop
+  description_en: A comprehensive verification system for Claude Code sessions.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_verification-loop
+- id: ecc-search-first
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/search-first/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/search-first/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/search-first/SKILL.md
+  skill_name: search-first
+  skill_name_cn: Search-First 优先搜索
+  description_en: Research-before-coding workflow. Search for existing tools, libraries, and patterns before writing custom
+    code. Invokes the researcher agent.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_search-first
+- id: ecc-skill-stocktake
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/skill-stocktake/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/skill-stocktake/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/skill-stocktake/SKILL.md
+  skill_name: skill-stocktake
+  skill_name_cn: Skill 盘点
+  description_en: Use when auditing Claude skills and commands for quality. Supports Quick Scan (changed skills only) and
+    Full Stocktake modes with sequential subagent batch evaluation.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_skill-stocktake
+- id: ecc-autonomous-loops
+  source_url: https://github.com/affaan-m/ecc/blob/main/skills/autonomous-loops/SKILL.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/skills/autonomous-loops/SKILL.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: skills/autonomous-loops/SKILL.md
+  skill_name: autonomous-loops
+  skill_name_cn: 自治 Loop 模式
+  description_en: Patterns and architectures for autonomous Claude Code loops — from simple sequential pipelines to RFC-driven
+    multi-agent DAG systems.
+  author: affaan-m
+  license: MIT
+  source_type: plugin-skill
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  status: approved
+  _cached_name: ecc_autonomous-loops
+- id: omc-autopilot
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/autopilot/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/autopilot/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/autopilot/SKILL.md
+  skill_name: autopilot
+  skill_name_cn: Autopilot 自动驾驶
+  description_en: Full autonomous execution from idea to working code
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - ralph
+  - ultrawork
+  - deep-interview
+  - team
+  - ccg
+  - ask
+  - autoresearch
+  status: approved
+  _cached_name: omc_autopilot
+- id: omc-ralph
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/ralph/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/ralph/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/ralph/SKILL.md
+  skill_name: ralph
+  skill_name_cn: Ralph 长跑模式
+  description_en: Self-referential loop until task completion with configurable verification reviewer
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ultrawork
+  - deep-interview
+  - team
+  - ccg
+  - ask
+  - autoresearch
+  status: approved
+  _cached_name: omc_ralph
+- id: omc-ultrawork
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/ultrawork/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/ultrawork/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/ultrawork/SKILL.md
+  skill_name: ultrawork
+  skill_name_cn: Ultrawork 深度工作
+  description_en: Parallel execution engine for high-throughput task completion
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ralph
+  - deep-interview
+  - team
+  - ccg
+  - ask
+  - autoresearch
+  status: approved
+  _cached_name: omc_ultrawork
+- id: omc-deep-interview
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/deep-interview/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/deep-interview/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/deep-interview/SKILL.md
+  skill_name: deep-interview
+  skill_name_cn: 深度访谈模式
+  description_en: Socratic deep interview with mathematical ambiguity gating before explicit execution approval
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ralph
+  - ultrawork
+  - team
+  - ccg
+  - ask
+  - autoresearch
+  status: approved
+  _cached_name: omc_deep-interview
+- id: omc-team
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/team/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/team/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/team/SKILL.md
+  skill_name: team
+  skill_name_cn: 多 Agent 团队协作
+  description_en: N coordinated agents on shared task list using Claude Code native teams
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ralph
+  - ultrawork
+  - deep-interview
+  - ccg
+  - ask
+  - autoresearch
+  status: approved
+  _cached_name: omc_team
+- id: omc-ccg
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/ccg/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/ccg/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/ccg/SKILL.md
+  skill_name: ccg
+  skill_name_cn: CCG Commit 信息生成
+  description_en: Claude-Codex-Gemini tri-model orchestration via /ask codex + /ask gemini, then Claude synthesizes results
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ralph
+  - ultrawork
+  - deep-interview
+  - team
+  - ask
+  - autoresearch
+  status: approved
+  _cached_name: omc_ccg
+- id: omc-ask
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/ask/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/ask/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/ask/SKILL.md
+  skill_name: ask
+  skill_name_cn: 快问快答 Ask
+  description_en: Process-first advisor routing for Claude, Codex, or Gemini via `omc ask`, with artifact capture and no raw
+    CLI assembly
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ralph
+  - ultrawork
+  - deep-interview
+  - team
+  - ccg
+  - autoresearch
+  status: approved
+  _cached_name: omc_ask
+- id: omc-autoresearch
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/skills/autoresearch/SKILL.md
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/skills/autoresearch/SKILL.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: skills/autoresearch/SKILL.md
+  skill_name: autoresearch
+  skill_name_cn: 自动研究 Autoresearch
+  description_en: Stateful single-mission improvement loop with strict evaluator contract, markdown decision logs, and max-runtime
+    stop behavior
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-skill
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ralph
+  - ultrawork
+  - deep-interview
+  - team
+  - ccg
+  - ask
+  status: approved
+  _cached_name: omc_autoresearch
+- id: gstack-office-hours
+  source_url: https://github.com/garrytan/gstack/blob/main/office-hours/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/office-hours/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: office-hours/SKILL.md
+  skill_name: office-hours
+  skill_name_cn: 创业 Office Hours 头脑风暴
+  description_en: YC Office Hours — two modes. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - qa
+  - ship
+  - investigate
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_office-hours
+- id: gstack-plan-ceo-review
+  source_url: https://github.com/garrytan/gstack/blob/main/plan-ceo-review/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/plan-ceo-review/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: plan-ceo-review/SKILL.md
+  skill_name: plan-ceo-review
+  skill_name_cn: CEO 视角策略评审
+  description_en: CEO/founder-mode plan review. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-eng-review
+  - review
+  - qa
+  - ship
+  - investigate
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_plan-ceo-review
+- id: gstack-plan-eng-review
+  source_url: https://github.com/garrytan/gstack/blob/main/plan-eng-review/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/plan-eng-review/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: plan-eng-review/SKILL.md
+  skill_name: plan-eng-review
+  skill_name_cn: Eng 视角架构评审
+  description_en: Eng manager-mode plan review. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - review
+  - qa
+  - ship
+  - investigate
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_plan-eng-review
+- id: gstack-review
+  source_url: https://github.com/garrytan/gstack/blob/main/review/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/review/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: review/SKILL.md
+  skill_name: review
+  skill_name_cn: 代码 Diff 审查
+  description_en: Pre-landing PR review. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - qa
+  - ship
+  - investigate
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_review
+- id: gstack-qa
+  source_url: https://github.com/garrytan/gstack/blob/main/qa/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/qa/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: qa/SKILL.md
+  skill_name: qa
+  skill_name_cn: QA 行为测试
+  description_en: Systematically QA test a web application and fix bugs found. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - ship
+  - investigate
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_qa
+- id: gstack-ship
+  source_url: https://github.com/garrytan/gstack/blob/main/ship/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/ship/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: ship/SKILL.md
+  skill_name: ship
+  skill_name_cn: Ship 一键发布
+  description_en: 'Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit,
+    push, create PR. (gstack)'
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - qa
+  - investigate
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_ship
+- id: gstack-investigate
+  source_url: https://github.com/garrytan/gstack/blob/main/investigate/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/investigate/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: investigate/SKILL.md
+  skill_name: investigate
+  skill_name_cn: 问题根因调查
+  description_en: Systematic debugging with root cause investigation. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - qa
+  - ship
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_investigate
+- id: gstack-design-shotgun
+  source_url: https://github.com/garrytan/gstack/blob/main/design-shotgun/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/design-shotgun/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: design-shotgun/SKILL.md
+  skill_name: design-shotgun
+  skill_name_cn: 设计霰弹评审
+  description_en: 'Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback,
+    and iterate. (gstack)'
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - qa
+  - ship
+  - investigate
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: gstack_design-shotgun
+- id: gstack-autoplan
+  source_url: https://github.com/garrytan/gstack/blob/main/autoplan/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/autoplan/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: autoplan/SKILL.md
+  skill_name: autoplan
+  skill_name_cn: Autoplan 全自动评审管线
+  description_en: Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially
+    with auto-decisions using 6 decision principles. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - qa
+  - ship
+  - investigate
+  - design-shotgun
+  - spec
+  status: approved
+  _cached_name: gstack_autoplan
+- id: gstack-spec
+  source_url: https://github.com/garrytan/gstack/blob/main/spec/SKILL.md
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/spec/SKILL.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: spec/SKILL.md
+  skill_name: spec
+  skill_name_cn: 可交付 Spec 起草
+  description_en: Turn vague intent into a precise, executable spec in five phases. (gstack)
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-skill
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - qa
+  - ship
+  - investigate
+  - design-shotgun
+  - autoplan
+  status: approved
+  _cached_name: gstack_spec
+- id: claude-mem-mem-search
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/mem-search/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/mem-search/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/mem-search/SKILL.md
+  skill_name: mem-search
+  skill_name_cn: 记忆搜索（自然语言查询）
+  description_en: Search claude-mem's persistent cross-session memory database. Use when user asks "did we already solve this?",
+    "how did we do X last time?", or needs work from previous sessions.
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_mem-search
+- id: claude-mem-knowledge-agent
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/knowledge-agent/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/knowledge-agent/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/knowledge-agent/SKILL.md
+  skill_name: knowledge-agent
+  skill_name_cn: 知识 Agent
+  description_en: Build and query AI-powered knowledge bases from claude-mem observations. Use when users want to create focused
+    "brains" from their observation history, ask questions about past work patterns, or compile expertise on specific topics.
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_knowledge-agent
+- id: claude-mem-learn-codebase
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/learn-codebase/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/learn-codebase/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/learn-codebase/SKILL.md
+  skill_name: learn-codebase
+  skill_name_cn: 学习代码库
+  description_en: Prime a codebase by reading every source file in full. Use when starting work on a new or unfamiliar project,
+    or when the user asks to "learn the codebase", "read the codebase", "prime", or "get up to speed".
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_learn-codebase
+- id: claude-mem-smart-explore
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/smart-explore/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/smart-explore/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/smart-explore/SKILL.md
+  skill_name: smart-explore
+  skill_name_cn: 智能探索（项目/代码）
+  description_en: Token-optimized structural code search using tree-sitter AST parsing. Use instead of reading full files
+    when you need to understand code structure, find functions, or explore a codebase efficiently.
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_smart-explore
+- id: claude-mem-timeline-report
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/timeline-report/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/timeline-report/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/timeline-report/SKILL.md
+  skill_name: timeline-report
+  skill_name_cn: 时间线报告
+  description_en: Generate a "Journey Into [Project]" narrative report analyzing a project's entire development history from
+    claude-mem's timeline. Use when asked for a timeline report, project history analysis, development journey, or full project
+    report.
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_timeline-report
+- id: claude-mem-make-plan
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/make-plan/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/make-plan/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/make-plan/SKILL.md
+  skill_name: make-plan
+  skill_name_cn: 制定计划
+  description_en: Create a detailed, phased implementation plan with documentation discovery. Use when asked to plan a feature,
+    task, or multi-step implementation — especially before executing with do.
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - pathfinder
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_make-plan
+- id: claude-mem-pathfinder
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/pathfinder/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/pathfinder/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/pathfinder/SKILL.md
+  skill_name: pathfinder
+  skill_name_cn: Pathfinder 路线规划
+  description_en: Map a codebase into feature-grouped flowcharts, identify duplicated concerns across features, and propose
+    a unified architecture. Use when asked to "find the ideal path," unify duplicated systems, or audit architecture before
+    a refactor....
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_pathfinder
+- id: claude-mem-weekly-digests
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/weekly-digests/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/weekly-digests/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/weekly-digests/SKILL.md
+  skill_name: weekly-digests
+  skill_name_cn: 每周摘要
+  description_en: Generate a serial week-by-week narrative digest of a project's full claude-mem timeline. Splits the timeline
+    into per-ISO-week files, then runs one consecutive subagent per week — each receiving the prior week's carry-forward block
+    — to ...
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: cm_weekly-digests
+- id: claude-mem-babysit
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/babysit/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/babysit/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/babysit/SKILL.md
+  skill_name: babysit
+  skill_name_cn: Babysit 任务监督
+  description_en: Watch a pull request or review cycle until it is ready to merge. Use when asked to babysit, monitor, or
+    keep checking PR comments, reviews, and CI until all actionable issues are resolved.
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - design-is
+  status: approved
+  _cached_name: cm_babysit
+- id: claude-mem-design-is
+  source_url: https://github.com/thedotmack/claude-mem/blob/main/plugin/skills/design-is/SKILL.md
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/plugin/skills/design-is/SKILL.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: plugin/skills/design-is/SKILL.md
+  skill_name: design-is
+  skill_name_cn: 设计哲学 Design Is
+  description_en: Audit a design against Dieter Rams' ten "Good design is..." principles, then hand off a /make-plan prompt
+    for one of three outcomes — new design, refine design, or redesign. Use when the user says "audit this design", "design
+    review", "c...
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-skill
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - babysit
+  status: approved
+  _cached_name: cm_design-is
+- id: ralph-prd
+  source_url: https://github.com/snarktank/ralph/blob/main/skills/prd/SKILL.md
+  raw_url: https://raw.githubusercontent.com/snarktank/ralph/main/skills/prd/SKILL.md
+  repo_url: https://github.com/snarktank/ralph
+  skill_path: skills/prd/SKILL.md
+  skill_name: prd
+  skill_name_cn: PRD 起草助手
+  description_en: 'Generate a Product Requirements Document (PRD) for a new feature. Use when planning a feature, starting
+    a new project, or when asked to create a PRD. Triggers on: create a prd, write prd for, plan this feature, requirements
+    for, spec out.'
+  author: snarktank
+  license: MIT
+  source_type: plugin-skill
+  plugin: ralph
+  sibling_skills:
+  - ralph
+  status: approved
+  _cached_name: ralph_prd
+- id: ralph-ralph
+  source_url: https://github.com/snarktank/ralph/blob/main/skills/ralph/SKILL.md
+  raw_url: https://raw.githubusercontent.com/snarktank/ralph/main/skills/ralph/SKILL.md
+  repo_url: https://github.com/snarktank/ralph
+  skill_path: skills/ralph/SKILL.md
+  skill_name: ralph
+  skill_name_cn: PRD 转 Ralph JSON
+  description_en: 'Convert PRDs to prd.json format for the Ralph autonomous agent system. Use when you have an existing PRD
+    and need to convert it to Ralph''s JSON format. Triggers on: convert this prd, turn this into ralph format, create prd.json
+    from this...'
+  author: snarktank
+  license: MIT
+  source_type: plugin-skill
+  plugin: ralph
+  sibling_skills:
+  - prd
+  status: approved
+  _cached_name: ralph_ralph
+- id: uxpm-banner-design
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/banner-design/SKILL.md
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/banner-design/SKILL.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: .claude/skills/banner-design/SKILL.md
+  skill_name: banner-design
+  skill_name_cn: 横幅视觉设计
+  description_en: 'Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction
+    options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn,
+    YouTube, Inst...'
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-skill
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - brand
+  - design-system
+  - design
+  - slides
+  - ui-styling
+  - ui-ux-pro-max
+  status: approved
+  _cached_name: uxpm_banner-design
+- id: uxpm-brand
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/brand/SKILL.md
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/brand/SKILL.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: .claude/skills/brand/SKILL.md
+  skill_name: brand
+  skill_name_cn: 品牌一致性
+  description_en: Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded
+    content, tone of voice, marketing assets, brand compliance, style guides.
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-skill
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - banner-design
+  - design-system
+  - design
+  - slides
+  - ui-styling
+  - ui-ux-pro-max
+  status: approved
+  _cached_name: uxpm_brand
+- id: uxpm-design-system
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/design-system/SKILL.md
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/design-system/SKILL.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: .claude/skills/design-system/SKILL.md
+  skill_name: design-system
+  skill_name_cn: 设计系统与 Token
+  description_en: Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component),
+    CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic...
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-skill
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - banner-design
+  - brand
+  - design
+  - slides
+  - ui-styling
+  - ui-ux-pro-max
+  status: approved
+  _cached_name: uxpm_design-system
+- id: uxpm-design
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/design/SKILL.md
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/design/SKILL.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: .claude/skills/design/SKILL.md
+  skill_name: design
+  skill_name_cn: 综合设计套件（Logo/CIP/Banner/Icon）
+  description_en: 'Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini
+    AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.js), banner design (22 styles,
+    social/ads...'
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-skill
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - banner-design
+  - brand
+  - design-system
+  - slides
+  - ui-styling
+  - ui-ux-pro-max
+  status: approved
+  _cached_name: uxpm_design
+- id: uxpm-slides
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/slides/SKILL.md
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/slides/SKILL.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: .claude/skills/slides/SKILL.md
+  skill_name: slides
+  skill_name_cn: 策略 HTML 演示
+  description_en: Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas,
+    and contextual slide strategies.
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-skill
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - banner-design
+  - brand
+  - design-system
+  - design
+  - ui-styling
+  - ui-ux-pro-max
+  status: approved
+  _cached_name: uxpm_slides
+- id: uxpm-ui-styling
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-styling/SKILL.md
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/ui-styling/SKILL.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: .claude/skills/ui-styling/SKILL.md
+  skill_name: ui-styling
+  skill_name_cn: UI 样式生成
+  description_en: Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind
+    CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems,
+    c...
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-skill
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - banner-design
+  - brand
+  - design-system
+  - design
+  - slides
+  - ui-ux-pro-max
+  status: approved
+  _cached_name: uxpm_ui-styling
+- id: uxpm-ui-ux-pro-max
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-ux-pro-max/SKILL.md
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/ui-ux-pro-max/SKILL.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: .claude/skills/ui-ux-pro-max/SKILL.md
+  skill_name: ui-ux-pro-max
+  skill_name_cn: UI/UX Pro Max 总入口
+  description_en: UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings,
+    161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React
+    Native, Flutte...
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-skill
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - banner-design
+  - brand
+  - design-system
+  - design
+  - slides
+  - ui-styling
+  status: approved
+  _cached_name: uxpm_ui-ux-pro-max
+- id: ecc-skill-development-guide
+  source_url: https://github.com/affaan-m/ecc/blob/main/docs/SKILL-DEVELOPMENT-GUIDE.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/docs/SKILL-DEVELOPMENT-GUIDE.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: docs/SKILL-DEVELOPMENT-GUIDE.md
+  skill_name: skill-development-guide
+  skill_name_cn: Skill 开发指南
+  description_en: 'How to build, test, and ship a skill in ECC: file structure, frontmatter requirements, naming conventions,
+    when to extract subagents, and ECC''s "continuous learning" iteration loop. Reference for contributors and skill authors.'
+  author: affaan-m
+  license: MIT
+  source_type: plugin-doc
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_doc_skill-development-guide
+- id: ecc-skill-placement-policy
+  source_url: https://github.com/affaan-m/ecc/blob/main/docs/SKILL-PLACEMENT-POLICY.md
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/docs/SKILL-PLACEMENT-POLICY.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: docs/SKILL-PLACEMENT-POLICY.md
+  skill_name: skill-placement-policy
+  skill_name_cn: Skill 放置策略
+  description_en: 'Where should a new behavior live? Decision tree for choosing between: a new SKILL.md, an existing skill''s
+    extension, a subagent, a slash command, or system-prompt overlay. ECC''s opinionated organization principle.'
+  author: affaan-m
+  license: MIT
+  source_type: plugin-doc
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: ecc_doc_skill-placement-policy
+- id: pua-workflow
+  source_url: https://github.com/tanweai/pua
+  raw_url: https://raw.githubusercontent.com/tanweai/pua/main/README.md
+  repo_url: https://github.com/tanweai/pua
+  skill_path: null
+  skill_name: pua-workflow
+  skill_name_cn: PUA 多人格 Coding 助手集
+  description_en: 中文 Claude Code 人格切换插件集，用各种"老板/产品/打工人"人设逼 AI 把活干漂亮。
+  author: tanweai
+  license: Unlicense
+  source_type: plugin-overview
+  plugin: pua
+  sibling_skills:
+  - pua
+  - p7
+  - p9
+  - p10
+  - pro
+  - mama
+  - 'yes'
+  - pua-loop
+  status: approved
+  _cached_name: tanweai_pua.readme.json
+- id: ecc-workflow
+  source_url: https://github.com/affaan-m/ecc
+  raw_url: https://raw.githubusercontent.com/affaan-m/ecc/main/README.md
+  repo_url: https://github.com/affaan-m/ecc
+  skill_path: null
+  skill_name: ecc-workflow
+  skill_name_cn: ECC 持续学习 Skills 大全
+  description_en: Everything Claude Code (ECC) — 一套 249 个 SKILL.md 的"持续学习"工具箱，覆盖 TDD、安全审计、检索、评测、自治 loop 等场景。
+  author: affaan-m
+  license: MIT
+  source_type: plugin-overview
+  plugin: ecc
+  sibling_skills:
+  - continuous-learning-v2
+  - tdd-workflow
+  - security-review
+  - iterative-retrieval
+  - strategic-compact
+  - eval-harness
+  - verification-loop
+  - search-first
+  - skill-stocktake
+  - autonomous-loops
+  status: approved
+  _cached_name: affaan-m_ecc.readme.json
+- id: oh-my-claudecode-workflow
+  source_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  raw_url: https://raw.githubusercontent.com/Yeachan-Heo/oh-my-claudecode/main/README.md
+  repo_url: https://github.com/Yeachan-Heo/oh-my-claudecode
+  skill_path: null
+  skill_name: oh-my-claudecode-workflow
+  skill_name_cn: Oh-My-ClaudeCode 个人工作流
+  description_en: 韩国独立开发者 Yeachan-Heo 的 Claude Code 个人 plugin，包含 autopilot/ralph/ultrawork/deep-interview/team 等 8 个核心 SKILL，主打"长跑式"研发自治。
+  author: Yeachan-Heo
+  license: MIT
+  source_type: plugin-overview
+  plugin: oh-my-claudecode
+  sibling_skills:
+  - autopilot
+  - ralph
+  - ultrawork
+  - deep-interview
+  - team
+  - ccg
+  - ask
+  - autoresearch
+  status: approved
+  _cached_name: Yeachan-Heo_oh-my-claudecode.readme.json
+- id: gstack-workflow
+  source_url: https://github.com/garrytan/gstack
+  raw_url: https://raw.githubusercontent.com/garrytan/gstack/main/README.md
+  repo_url: https://github.com/garrytan/gstack
+  skill_path: null
+  skill_name: gstack-workflow
+  skill_name_cn: gstack 创业全流程 Skills
+  description_en: Y Combinator 总裁 Garry Tan 的个人 Claude Code 工具集：从 office-hours 头脑风暴 → CEO/Eng 双重计划评审 → 设计 → QA → ship 部署，覆盖创业团队完整研发链路。
+  author: Garry Tan
+  license: MIT
+  source_type: plugin-overview
+  plugin: gstack
+  sibling_skills:
+  - office-hours
+  - plan-ceo-review
+  - plan-eng-review
+  - review
+  - qa
+  - ship
+  - investigate
+  - design-shotgun
+  - autoplan
+  - spec
+  status: approved
+  _cached_name: garrytan_gstack.readme.json
+- id: claude-mem-workflow
+  source_url: https://github.com/thedotmack/claude-mem
+  raw_url: https://raw.githubusercontent.com/thedotmack/claude-mem/main/README.md
+  repo_url: https://github.com/thedotmack/claude-mem
+  skill_path: null
+  skill_name: claude-mem-workflow
+  skill_name_cn: claude-mem 持久记忆系统
+  description_en: 为 Claude Code 提供跨 session 持久记忆压缩系统：自动观察工具调用、生成语义摘要、注入新 session。配套 SQLite + Chroma 向量库 + 10 个 MCP 搜索接口。
+  author: Alex Newman
+  license: Apache-2.0
+  source_type: plugin-overview
+  plugin: claude-mem
+  sibling_skills:
+  - mem-search
+  - knowledge-agent
+  - learn-codebase
+  - smart-explore
+  - timeline-report
+  - make-plan
+  - pathfinder
+  - weekly-digests
+  - babysit
+  - design-is
+  status: approved
+  _cached_name: thedotmack_claude-mem.readme.json
+- id: ralph-workflow
+  source_url: https://github.com/snarktank/ralph
+  raw_url: https://raw.githubusercontent.com/snarktank/ralph/main/README.md
+  repo_url: https://github.com/snarktank/ralph
+  skill_path: null
+  skill_name: ralph-workflow
+  skill_name_cn: Ralph 自治 Agent 系统
+  description_en: Ralph 是一个自治 Agent 系统，吃 PRD 自己干活直到完成。仓库附带 prd 起草 + ralph PRD-JSON 转换两个 SKILL，是 Ralph 工作流的入口。
+  author: snarktank
+  license: MIT
+  source_type: plugin-overview
+  plugin: ralph
+  sibling_skills:
+  - prd
+  - ralph
+  status: approved
+  _cached_name: snarktank_ralph.readme.json
+- id: ui-ux-pro-max-workflow
+  source_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  raw_url: https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/README.md
+  repo_url: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  skill_path: null
+  skill_name: ui-ux-pro-max-skill-workflow
+  skill_name_cn: UI/UX Pro Max 设计套件
+  description_en: 一站式品牌/设计系统/UI 样式/Banner/Slides/Logo/CIP 全套 UI 设计 Skills，搭配 Gemini 3.1 Pro 与 Chart.js 生成视觉素材，55 种 Logo 风格
+    + 50 件 CIP 物料。
+  author: nextlevelbuilder
+  license: MIT
+  source_type: plugin-overview
+  plugin: ui-ux-pro-max-skill
+  sibling_skills:
+  - banner-design
+  - brand
+  - design-system
+  - design
+  - slides
+  - ui-styling
+  - ui-ux-pro-max
+  status: approved
+  _cached_name: nextlevelbuilder_ui-ux-pro-max-skill.readme.json

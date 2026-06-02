@@ -156,6 +156,18 @@ def build_user_message_single_or_plugin_skill(entry, skill_md_content):
     return "\n".join(parts)
 
 
+SIBLING_TRUNCATE_CHARS = 6000  # ~2K tokens per sibling in plugin-overview
+
+
+def _truncate_skill_for_overview(content, max_chars=SIBLING_TRUNCATE_CHARS):
+    """Trim a SKILL.md to its frontmatter + opening section so the
+    plugin-overview prompt fits within Opus's 200K context window even
+    when a plugin has 10 enterprise-class SKILLs (e.g. gstack)."""
+    if len(content) <= max_chars:
+        return content
+    return content[:max_chars] + f"\n\n...[已截断,完整 SKILL.md {len(content)} 字符,见单 Skill 文章]"
+
+
 def build_user_message_plugin_overview(entry, readme_content, sibling_skill_contents):
     """For plugin-overview. sibling_skill_contents: dict[skill_name] = SKILL.md 全文."""
     parts = [
@@ -175,12 +187,12 @@ def build_user_message_plugin_overview(entry, readme_content, sibling_skill_cont
         _with_line_numbers(readme_content),
         "```",
         "",
-        f"以下是本 plugin 全部 {len(sibling_skill_contents)} 个 SKILL.md 的内容（按 skill_name 字典序）。",
+        f"以下是本 plugin 全部 {len(sibling_skill_contents)} 个 SKILL.md 的内容(按 skill_name 字典序,过长的会截断保留前 {SIBLING_TRUNCATE_CHARS} 字符)。",
         "请基于这些内容总结：包含哪些 Skills、典型工作流串讲、Skill 间协作关系。",
         "",
     ]
     for skill_name in sorted(sibling_skill_contents.keys()):
-        content = sibling_skill_contents[skill_name]
+        content = _truncate_skill_for_overview(sibling_skill_contents[skill_name])
         parts.extend([
             f"### SKILL: {skill_name}",
             "",
@@ -205,25 +217,47 @@ def _with_line_numbers(text):
 # ────────────────────────── Entry processing ──────────────────────────
 
 
-def fetch_sources_for_entry(entry, batch_entries, gh_token):
-    """Fetch SKILL.md (and for plugin-overview, README + all sibling SKILL.md)."""
+def load_cached(cache_dir, cached_name):
+    """If sources/cache/<batch>/_decoded/<cached_name>.md exists, return its content."""
+    if not cache_dir or not cached_name:
+        return None
+    p = Path(cache_dir) / "_decoded" / f"{cached_name}.md"
+    if p.exists():
+        return p.read_text(encoding="utf-8")
+    return None
+
+
+def fetch_with_cache(entry, cache_dir, owner, repo, path, branch, gh_token):
+    """Prefer local cache (via entry['_cached_name']); fall back to Contents API."""
+    cached_name = entry.get("_cached_name") if isinstance(entry, dict) else None
+    cached = load_cached(cache_dir, cached_name)
+    if cached is not None:
+        return cached
+    return fetch_file_via_contents_api(owner, repo, path, branch, token=gh_token)
+
+
+def fetch_sources_for_entry(entry, batch_entries, gh_token, cache_dir=None):
+    """Fetch SKILL.md (and for plugin-overview, README + all sibling SKILL.md).
+
+    Prefers cache_dir/_decoded/<entry._cached_name>.md when available.
+    """
     source_type = entry["source_type"]
 
-    if source_type in ("single-skill", "plugin-skill"):
+    if source_type in ("single-skill", "plugin-skill", "plugin-doc"):
         owner, repo, branch, path = parse_github_blob_url(entry["source_url"])
-        content = fetch_file_via_contents_api(owner, repo, path, branch, token=gh_token)
+        content = fetch_with_cache(entry, cache_dir, owner, repo, path, branch, gh_token)
         return {"skill_md": content}
 
     elif source_type == "plugin-overview":
         # entry.repo_url 是 plugin 仓库；source_url 也是仓库主页
         owner, repo = parse_github_repo_url(entry["repo_url"])
-        # 优先 main，找不到再 master
-        try:
-            readme = fetch_file_via_contents_api(owner, repo, "README.md", "main", token=gh_token)
-            branch = "main"
-        except Exception:
-            readme = fetch_file_via_contents_api(owner, repo, "README.md", "master", token=gh_token)
-            branch = "master"
+        # 优先用 cache;cache 缺失再走 GH(main → master)
+        readme = load_cached(cache_dir, entry.get("_cached_name"))
+        if readme is None:
+            try:
+                readme = fetch_file_via_contents_api(owner, repo, "README.md", "main", token=gh_token)
+            except Exception:
+                readme = fetch_file_via_contents_api(owner, repo, "README.md", "master", token=gh_token)
 
         # 找出本 plugin 下所有 sibling 的 SKILL.md（从 batch_entries 中匹配同 plugin 的 plugin-skill）
         plugin_name = entry["plugin"]
@@ -232,7 +266,7 @@ def fetch_sources_for_entry(entry, batch_entries, gh_token):
             if sib["source_type"] == "plugin-skill" and sib.get("plugin") == plugin_name:
                 so, sr, sb, sp = parse_github_blob_url(sib["source_url"])
                 try:
-                    c = fetch_file_via_contents_api(so, sr, sp, sb, token=gh_token)
+                    c = fetch_with_cache(sib, cache_dir, so, sr, sp, sb, gh_token)
                     sibling_contents[sib["skill_name"]] = c
                 except Exception as e:
                     print(f"  ⚠ sibling fetch failed {sib['skill_name']}: {e}", file=sys.stderr)
@@ -241,18 +275,18 @@ def fetch_sources_for_entry(entry, batch_entries, gh_token):
     raise ValueError(f"unknown source_type: {source_type}")
 
 
-def generate_one(entry, batch_entries, system_prompt, client, gh_token, output_dir, dry_run=False):
+def generate_one(entry, batch_entries, system_prompt, client, gh_token, output_dir, dry_run=False, cache_dir=None):
     eid = entry["id"]
     print(f"[{eid}] fetching sources...", file=sys.stderr)
     t0 = time.time()
     try:
-        sources = fetch_sources_for_entry(entry, batch_entries, gh_token)
+        sources = fetch_sources_for_entry(entry, batch_entries, gh_token, cache_dir=cache_dir)
     except Exception as e:
         return {"id": eid, "ok": False, "error": f"fetch: {e}"}
     fetch_secs = time.time() - t0
 
     # 组装 user message
-    if entry["source_type"] in ("single-skill", "plugin-skill"):
+    if entry["source_type"] in ("single-skill", "plugin-skill", "plugin-doc"):
         user_msg = build_user_message_single_or_plugin_skill(entry, sources["skill_md"])
     else:
         user_msg = build_user_message_plugin_overview(entry, sources["readme"], sources["sibling_skills"])
@@ -352,10 +386,22 @@ def main():
     client = anthropic.Anthropic(**client_kwargs)
     system_prompt = load_system_prompt(args.prompt)
 
-    with Path(args.batch).open() as f:
+    batch_path = Path(args.batch)
+    with batch_path.open() as f:
         batch = yaml.safe_load(f)
     all_entries = batch["entries"]
     approved = [e for e in all_entries if e.get("status") == "approved"]
+
+    # cache_dir: sources/cache/<yaml-stem>/ —— fetch_sources_for_entry 优先读此目录
+    # 命名约定:cache 目录与 yaml 文件同 stem(如 2026-06-02-batch.yaml ↔ cache/2026-06-02-batch/)
+    cache_dir = batch_path.parent / "cache" / batch_path.stem
+    if not cache_dir.exists():
+        cache_dir = batch_path.parent / "cache" / (batch.get("batch_id") or "")
+    if cache_dir.exists():
+        print(f"using cache_dir: {cache_dir}", file=sys.stderr)
+    else:
+        cache_dir = None
+        print("no cache_dir found, all fetches via GH Contents API", file=sys.stderr)
 
     if args.only:
         approved = [e for e in approved if e["id"] == args.only]
@@ -374,7 +420,7 @@ def main():
     results = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.max_workers) as ex:
         futures = {
-            ex.submit(generate_one, e, all_entries, system_prompt, client, gh_token, output_dir, args.dry_run): e["id"]
+            ex.submit(generate_one, e, all_entries, system_prompt, client, gh_token, output_dir, args.dry_run, cache_dir): e["id"]
             for e in approved
         }
         for fut in concurrent.futures.as_completed(futures):

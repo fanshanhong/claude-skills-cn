@@ -1,0 +1,779 @@
+{
+  "sha": "b469d6954dd10be20d3e8d9bb59463584d42efbb",
+  "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/b469d6954dd10be20d3e8d9bb59463584d42efbb",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e3f301ed1ca11061511dd5399912ec5430bd600",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/3e3f301ed1ca11061511dd5399912ec5430bd600"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5dde9aedbb868bac19948ae7d07c53a086e2b453",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/5dde9aedbb868bac19948ae7d07c53a086e2b453"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/agent-request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87bb65f537857f583e7e095900ffc06b3e02a1f7",
+      "size": 1414,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/87bb65f537857f583e7e095900ffc06b3e02a1f7"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug-report.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8dccb585d88c8c091da5dd9613a87fc17212032",
+      "size": 1839,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/e8dccb585d88c8c091da5dd9613a87fc17212032"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b26c79b747871b0a924c9d24ae675e49c970c3f",
+      "size": 302,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/9b26c79b747871b0a924c9d24ae675e49c970c3f"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature-request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8d4da3d5ad5cf3648c9abc24334cbf9d26d9f69",
+      "size": 1086,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/c8d4da3d5ad5cf3648c9abc24334cbf9d26d9f69"
+    },
+    {
+      "path": ".github/RELEASE_TEMPLATE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8bd8f097f2e5582647d091dfd4173c68b3eba74",
+      "size": 61,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/e8bd8f097f2e5582647d091dfd4173c68b3eba74"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92863c69e6233866b4cabeb9a0e7d8fd5ff06fc2",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/92863c69e6233866b4cabeb9a0e7d8fd5ff06fc2"
+    },
+    {
+      "path": ".github/workflows/agents.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d68aac9e28be2a3e2e41d6215a64851ca646321",
+      "size": 1724,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/3d68aac9e28be2a3e2e41d6215a64851ca646321"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "258032fed2e4ee618758f7347272d563fcbb849a",
+      "size": 782,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/258032fed2e4ee618758f7347272d563fcbb849a"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ef29950692a9f2c19afbf1a3ca56b293a14ad3b",
+      "size": 3114,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/5ef29950692a9f2c19afbf1a3ca56b293a14ad3b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70e87be13c2f09378729c892d7f1d7e3d12ca944",
+      "size": 575,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/70e87be13c2f09378729c892d7f1d7e3d12ca944"
+    },
+    {
+      "path": ".husky",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4b16e20c064417c54d82fe462b5a9cfcca5369e",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/f4b16e20c064417c54d82fe462b5a9cfcca5369e"
+    },
+    {
+      "path": ".husky/pre-commit",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb2c84d5c3c6cf8a76a3f007b875398b854369ca",
+      "size": 17,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/cb2c84d5c3c6cf8a76a3f007b875398b854369ca"
+    },
+    {
+      "path": ".prettierrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a95cb0538ce3c313951a42f4a80b55f39421205a",
+      "size": 106,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/a95cb0538ce3c313951a42f4a80b55f39421205a"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01786e8531cf801e46647041cce312db028cc199",
+      "size": 6959,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/01786e8531cf801e46647041cce312db028cc199"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "271e32af4d9f9074e807b8b634753f32f11ef56d",
+      "size": 24763,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/271e32af4d9f9074e807b8b634753f32f11ef56d"
+    },
+    {
+      "path": "ThirdPartyNoticeText.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af8921ee8c9dcecb982aeb00782b01e5eacb3918",
+      "size": 6586,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/af8921ee8c9dcecb982aeb00782b01e5eacb3918"
+    },
+    {
+      "path": "bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26efae910d2fa7de3bac398b3847088b8343ad82",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/26efae910d2fa7de3bac398b3847088b8343ad82"
+    },
+    {
+      "path": "bin/cli.mjs",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2f302766673d74d5862f2ed5bb38c03c4aae970e",
+      "size": 305,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/2f302766673d74d5862f2ed5bb38c03c4aae970e"
+    },
+    {
+      "path": "build.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "948f2727f3cd55b760562c0fd4a6b908fda63a61",
+      "size": 181,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/948f2727f3cd55b760562c0fd4a6b908fda63a61"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd2bbdbf6e759126656436767d0151fd801c515f",
+      "size": 2755,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/bd2bbdbf6e759126656436767d0151fd801c515f"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "033534878e084bea7c4e7ba73a29a8744b5d1686",
+      "size": 58772,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/033534878e084bea7c4e7ba73a29a8744b5d1686"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61cd8ec8800350f217a41dfc06325aaaa171c0b2",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/61cd8ec8800350f217a41dfc06325aaaa171c0b2"
+    },
+    {
+      "path": "scripts/execute-tests.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15871283306753c9af3d79476b5b13df30d4ef3f",
+      "size": 3178,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/15871283306753c9af3d79476b5b13df30d4ef3f"
+    },
+    {
+      "path": "scripts/generate-licenses.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34c49fcf6ef637edaa616c33b9024139892f123e",
+      "size": 6000,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/34c49fcf6ef637edaa616c33b9024139892f123e"
+    },
+    {
+      "path": "scripts/sync-agents.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d47596a1c12993bf6fae47f455e969b8149da15",
+      "size": 3690,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/9d47596a1c12993bf6fae47f455e969b8149da15"
+    },
+    {
+      "path": "scripts/validate-agents.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c606fd85f4e6ac97a548b66dc59aac7b077db3d",
+      "size": 2880,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/0c606fd85f4e6ac97a548b66dc59aac7b077db3d"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1277025c9276459167aed6c891524d190315acf",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/f1277025c9276459167aed6c891524d190315acf"
+    },
+    {
+      "path": "skills/find-skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d"
+    },
+    {
+      "path": "skills/find-skills/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "114c6637a18676ac99b8bd34ffc7c9da61d072cb",
+      "size": 5446,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/114c6637a18676ac99b8bd34ffc7c9da61d072cb"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b58d2367ed0766ee84984c60e212e25d013d9f4",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/1b58d2367ed0766ee84984c60e212e25d013d9f4"
+    },
+    {
+      "path": "src/add-prompt.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b74e500cd09fb11fa2b29576f7b178e32a0f7a03",
+      "size": 3718,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/b74e500cd09fb11fa2b29576f7b178e32a0f7a03"
+    },
+    {
+      "path": "src/add.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab160ab66b013b7e5455421cd0fbb6e1673571a1",
+      "size": 15758,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/ab160ab66b013b7e5455421cd0fbb6e1673571a1"
+    },
+    {
+      "path": "src/add.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efb2fe660de51d5b5cee3175ead766ec6b210baa",
+      "size": 65434,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/efb2fe660de51d5b5cee3175ead766ec6b210baa"
+    },
+    {
+      "path": "src/agents.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f09afac15905f7a0b4ca83832ff5aff4cb43337b",
+      "size": 16942,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/f09afac15905f7a0b4ca83832ff5aff4cb43337b"
+    },
+    {
+      "path": "src/blob.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1104db9cf6e6a589ccc7ccf03b01dc273a4695da",
+      "size": 17025,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/1104db9cf6e6a589ccc7ccf03b01dc273a4695da"
+    },
+    {
+      "path": "src/cli.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4151f8d17bb085482bde3a4f469f8a25fe3d9e2",
+      "size": 3023,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/b4151f8d17bb085482bde3a4f469f8a25fe3d9e2"
+    },
+    {
+      "path": "src/cli.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47298d0dd1d985b08626f761fa9dc60a3ed7ed36",
+      "size": 13319,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/47298d0dd1d985b08626f761fa9dc60a3ed7ed36"
+    },
+    {
+      "path": "src/constants.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28be1ae2649e8ea7d6f557c0ee3c0cdb8ca05ec8",
+      "size": 130,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/28be1ae2649e8ea7d6f557c0ee3c0cdb8ca05ec8"
+    },
+    {
+      "path": "src/detect-agent.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b097a1169c9d4010e1fde6e96d16369fa477c511",
+      "size": 1971,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/b097a1169c9d4010e1fde6e96d16369fa477c511"
+    },
+    {
+      "path": "src/find.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca78814130cede84c6a0b17a36da56caacea79c2",
+      "size": 10548,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/ca78814130cede84c6a0b17a36da56caacea79c2"
+    },
+    {
+      "path": "src/frontmatter.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c48723019131db194c6351323f905968b650c558",
+      "size": 595,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/c48723019131db194c6351323f905968b650c558"
+    },
+    {
+      "path": "src/git.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8362421a36c2e5d8825142fa4d0f34c11e67c743",
+      "size": 4568,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/8362421a36c2e5d8825142fa4d0f34c11e67c743"
+    },
+    {
+      "path": "src/init.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66e4ce19db58af7d4ef1b9e1c40b90e0deeaf962",
+      "size": 3562,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/66e4ce19db58af7d4ef1b9e1c40b90e0deeaf962"
+    },
+    {
+      "path": "src/install.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdc29c4b0555c17e028472cc4e82bb3d2fc5e440",
+      "size": 3016,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/bdc29c4b0555c17e028472cc4e82bb3d2fc5e440"
+    },
+    {
+      "path": "src/installer.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc94c14c1fea8160bedf3b7be1d8f14a04d62348",
+      "size": 34704,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/dc94c14c1fea8160bedf3b7be1d8f14a04d62348"
+    },
+    {
+      "path": "src/list.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f6aa30e95bd78863ac4fd7d305103a8bfbb13f6",
+      "size": 11590,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/4f6aa30e95bd78863ac4fd7d305103a8bfbb13f6"
+    },
+    {
+      "path": "src/list.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "095e9ee12272148155a2fc8155a60e7ce09a94c4",
+      "size": 5751,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/095e9ee12272148155a2fc8155a60e7ce09a94c4"
+    },
+    {
+      "path": "src/local-lock.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a5546413ac3181faba8bbddfb4d5a2b1335dca4",
+      "size": 5802,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/9a5546413ac3181faba8bbddfb4d5a2b1335dca4"
+    },
+    {
+      "path": "src/plugin-manifest.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abab7ccffb5efb976b271ac96c8edba68b666f73",
+      "size": 6778,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/abab7ccffb5efb976b271ac96c8edba68b666f73"
+    },
+    {
+      "path": "src/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d43e095f7de95d47312dadc51f07b0c18b24449a",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/d43e095f7de95d47312dadc51f07b0c18b24449a"
+    },
+    {
+      "path": "src/prompts/search-multiselect.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d47d17a414f4ab316362efeb27e922fa758d40e",
+      "size": 12745,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/3d47d17a414f4ab316362efeb27e922fa758d40e"
+    },
+    {
+      "path": "src/providers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e528def441f4d0d839388969064c167f5d470168",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/e528def441f4d0d839388969064c167f5d470168"
+    },
+    {
+      "path": "src/providers/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f6f34c6ad7b1ce65d5368fe0ec49fe8fea2043c",
+      "size": 410,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/8f6f34c6ad7b1ce65d5368fe0ec49fe8fea2043c"
+    },
+    {
+      "path": "src/providers/registry.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "447704e795458b9cc9a2d95cb7fbdced13fdcc05",
+      "size": 1251,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/447704e795458b9cc9a2d95cb7fbdced13fdcc05"
+    },
+    {
+      "path": "src/providers/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e22845875af48e2abec71a8f5e040de307a670b1",
+      "size": 2813,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/e22845875af48e2abec71a8f5e040de307a670b1"
+    },
+    {
+      "path": "src/providers/wellknown.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7eca02d03b15f1686a22742ec3ed726a26c7cc",
+      "size": 27097,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/ee7eca02d03b15f1686a22742ec3ed726a26c7cc"
+    },
+    {
+      "path": "src/remove.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a177710dca646294ddb4b8b3a03968a528feaab1",
+      "size": 11365,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/a177710dca646294ddb4b8b3a03968a528feaab1"
+    },
+    {
+      "path": "src/remove.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20ad0cff4e9194c7deb71a5289d51451dcebf7e8",
+      "size": 9800,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/20ad0cff4e9194c7deb71a5289d51451dcebf7e8"
+    },
+    {
+      "path": "src/sanitize.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ddfad22b9eb851a6740fe4c24f7cb6b0f8e78f2",
+      "size": 2712,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/1ddfad22b9eb851a6740fe4c24f7cb6b0f8e78f2"
+    },
+    {
+      "path": "src/skill-lock.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fb01eda95fa91edf712e63d7ab56d67aaf1efed",
+      "size": 9717,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/6fb01eda95fa91edf712e63d7ab56d67aaf1efed"
+    },
+    {
+      "path": "src/skills.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b74ba3ef1253913b7751adece90f13d15d37c91",
+      "size": 10369,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/8b74ba3ef1253913b7751adece90f13d15d37c91"
+    },
+    {
+      "path": "src/source-parser.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58511902f169b8d6cf9125aca18e376404cf5847",
+      "size": 4348,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/58511902f169b8d6cf9125aca18e376404cf5847"
+    },
+    {
+      "path": "src/source-parser.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8fffacde233694a8cd85f9b0da4aaf34a3d4b02",
+      "size": 13608,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/e8fffacde233694a8cd85f9b0da4aaf34a3d4b02"
+    },
+    {
+      "path": "src/sync.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a35ebe51bca2b29139fa3b53aae6f347bdbbb9fa",
+      "size": 14199,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/a35ebe51bca2b29139fa3b53aae6f347bdbbb9fa"
+    },
+    {
+      "path": "src/telemetry.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12bc7192192b6944033627be16e4f5a0a457feba",
+      "size": 4736,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/12bc7192192b6944033627be16e4f5a0a457feba"
+    },
+    {
+      "path": "src/test-utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310e1e51feaa337d47b0fdcd63228e2a0f0bc36f",
+      "size": 2067,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/310e1e51feaa337d47b0fdcd63228e2a0f0bc36f"
+    },
+    {
+      "path": "src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3822ef0df200e53722bcc724ee7f68f61d6b024",
+      "size": 2462,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/a3822ef0df200e53722bcc724ee7f68f61d6b024"
+    },
+    {
+      "path": "src/update-source.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57659f647d942f46555d5aec7efef7257e1c4576",
+      "size": 2851,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/57659f647d942f46555d5aec7efef7257e1c4576"
+    },
+    {
+      "path": "src/update-source.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2657b9c61fbc5253940f161667b0cafcbe0d7055",
+      "size": 1920,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/2657b9c61fbc5253940f161667b0cafcbe0d7055"
+    },
+    {
+      "path": "src/update.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4cfbc393f645b1bdf08f58da579e19294466963",
+      "size": 19503,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/b4cfbc393f645b1bdf08f58da579e19294466963"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c0e8066a1f22bec177eb84ee4d4164cb417da6f",
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/trees/8c0e8066a1f22bec177eb84ee4d4164cb417da6f"
+    },
+    {
+      "path": "tests/blob-fetch-tree-auth.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "927ee4e4909a9d2b695ba989a7e3aa4498a4b0ad",
+      "size": 5589,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/927ee4e4909a9d2b695ba989a7e3aa4498a4b0ad"
+    },
+    {
+      "path": "tests/cross-platform-paths.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58e98b8d11f8e39c954aa16c5261ea2164cd9800",
+      "size": 9667,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/58e98b8d11f8e39c954aa16c5261ea2164cd9800"
+    },
+    {
+      "path": "tests/dist.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47302bd73d53bcd66b791dfb0130a249f7433451",
+      "size": 605,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/47302bd73d53bcd66b791dfb0130a249f7433451"
+    },
+    {
+      "path": "tests/full-depth-discovery.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51eeb2fd4b8a08bf85115f8aea5d3828bfd8b98d",
+      "size": 4956,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/51eeb2fd4b8a08bf85115f8aea5d3828bfd8b98d"
+    },
+    {
+      "path": "tests/installer-copy.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b97f26cf8f4a4c94b9b2b5dac7fdc5ab164dd1d",
+      "size": 1939,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/2b97f26cf8f4a4c94b9b2b5dac7fdc5ab164dd1d"
+    },
+    {
+      "path": "tests/installer-symlink.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9bd60d35b9625bf82bd71d7b54aefebf40f29d2",
+      "size": 7507,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/c9bd60d35b9625bf82bd71d7b54aefebf40f29d2"
+    },
+    {
+      "path": "tests/list-installed.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99ca8aae34edec3634a2bd307a912af705443e90",
+      "size": 8039,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/99ca8aae34edec3634a2bd307a912af705443e90"
+    },
+    {
+      "path": "tests/local-lock.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e60b9ba9371013ca15bc3088f0d7c844a21fe2cd",
+      "size": 14264,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/e60b9ba9371013ca15bc3088f0d7c844a21fe2cd"
+    },
+    {
+      "path": "tests/nested-container-discovery.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8326b315e3e962cd8dd149b56892645a08b805e",
+      "size": 8200,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/f8326b315e3e962cd8dd149b56892645a08b805e"
+    },
+    {
+      "path": "tests/openclaw-paths.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bd19dbb0498f7305c0afc6a670bd67aeacfc162",
+      "size": 1217,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/1bd19dbb0498f7305c0afc6a670bd67aeacfc162"
+    },
+    {
+      "path": "tests/plugin-grouping.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad983faa2c308843dde886cc07bd1442d7354e37",
+      "size": 2316,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/ad983faa2c308843dde886cc07bd1442d7354e37"
+    },
+    {
+      "path": "tests/plugin-manifest-discovery.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7ead141414d7ceb51f67cd6d384176f5373f268",
+      "size": 17456,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/c7ead141414d7ceb51f67cd6d384176f5373f268"
+    },
+    {
+      "path": "tests/remove-canonical.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4b0d503a6276120e39ffabed7ad8f1f5e0cfe34",
+      "size": 3949,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/d4b0d503a6276120e39ffabed7ad8f1f5e0cfe34"
+    },
+    {
+      "path": "tests/sanitize-name.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7be5c4b645e5b3c720c21ea345415536d7f1e858",
+      "size": 4723,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/7be5c4b645e5b3c720c21ea345415536d7f1e858"
+    },
+    {
+      "path": "tests/sanitize-terminal.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f021695635775d93324b0de6a764fb34ad7871da",
+      "size": 7641,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/f021695635775d93324b0de6a764fb34ad7871da"
+    },
+    {
+      "path": "tests/search-multiselect-visual-rows.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0679e76b47186f8367ba94db01e204dfb40325af",
+      "size": 1302,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/0679e76b47186f8367ba94db01e204dfb40325af"
+    },
+    {
+      "path": "tests/skill-matching.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0205cfb7113fa5a6658d495f4f85c467b3846446",
+      "size": 5212,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/0205cfb7113fa5a6658d495f4f85c467b3846446"
+    },
+    {
+      "path": "tests/skill-path.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69d8c1658256afc189657769bb02f50cd711a650",
+      "size": 5293,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/69d8c1658256afc189657769bb02f50cd711a650"
+    },
+    {
+      "path": "tests/source-parser.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b15f7044b3d10c675fc7b63c907880943e2f6416",
+      "size": 19119,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/b15f7044b3d10c675fc7b63c907880943e2f6416"
+    },
+    {
+      "path": "tests/subpath-traversal.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "938e31572e7cf593004c8d8579d13125f92704e5",
+      "size": 4449,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/938e31572e7cf593004c8d8579d13125f92704e5"
+    },
+    {
+      "path": "tests/sync.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3241eba30116dab73056e1b865ef5fbf6075b0fa",
+      "size": 7585,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/3241eba30116dab73056e1b865ef5fbf6075b0fa"
+    },
+    {
+      "path": "tests/update.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee9f8fa92878c52abdcc9ce0e07353f4f303839",
+      "size": 7393,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/9ee9f8fa92878c52abdcc9ce0e07353f4f303839"
+    },
+    {
+      "path": "tests/wellknown-provider.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4877deb46370e67f0bd076c5b202677b1d7cab",
+      "size": 14378,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/7a4877deb46370e67f0bd076c5b202677b1d7cab"
+    },
+    {
+      "path": "tests/xdg-config-paths.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d4c198e98c8f2b5b01281f645df747d32ab2d7",
+      "size": 3577,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/41d4c198e98c8f2b5b01281f645df747d32ab2d7"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88c07fd2c764807c8ab870f3036770596cb3d535",
+      "size": 774,
+      "url": "https://api.github.com/repos/vercel-labs/skills/git/blobs/88c07fd2c764807c8ab870f3036770596cb3d535"
+    }
+  ],
+  "truncated": false
+}

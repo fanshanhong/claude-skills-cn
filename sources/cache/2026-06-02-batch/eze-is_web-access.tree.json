@@ -1,0 +1,154 @@
+{
+  "sha": "7af34af6a25940d917905f0e5f2a7ef056952971",
+  "url": "https://api.github.com/repos/eze-is/web-access/git/trees/7af34af6a25940d917905f0e5f2a7ef056952971",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee291a9a8cc725870bac6d2e474c5d7d8533bf6f",
+      "url": "https://api.github.com/repos/eze-is/web-access/git/trees/ee291a9a8cc725870bac6d2e474c5d7d8533bf6f"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55668f0a788bdde22119b7f28071b030c8518892",
+      "size": 463,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/55668f0a788bdde22119b7f28071b030c8518892"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbeb37f953aaf3f80dd8c20b71f5ae3e6000031d",
+      "size": 474,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/fbeb37f953aaf3f80dd8c20b71f5ae3e6000031d"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e642981410b04aa40b65adba232792d3016a83b8",
+      "size": 66,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/e642981410b04aa40b65adba232792d3016a83b8"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022cc9fe91abf6b651559119019a0b1332ea801a",
+      "size": 10682,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/022cc9fe91abf6b651559119019a0b1332ea801a"
+    },
+    {
+      "path": "SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce2cbf0924e3c7f6b5f18860d2248edf75cc418e",
+      "size": 17529,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/ce2cbf0924e3c7f6b5f18860d2248edf75cc418e"
+    },
+    {
+      "path": "references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "422c19403aa6b4be20a845895dc219101cbf17a9",
+      "url": "https://api.github.com/repos/eze-is/web-access/git/trees/422c19403aa6b4be20a845895dc219101cbf17a9"
+    },
+    {
+      "path": "references/cdp-api.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc1d66645804b5fae136ad7f77dfe520fe474659",
+      "size": 4474,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/cc1d66645804b5fae136ad7f77dfe520fe474659"
+    },
+    {
+      "path": "references/migration-2.5.3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47fc01682930ab2a2e4ac0504d3d58b7349dcfc4",
+      "size": 4502,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/47fc01682930ab2a2e4ac0504d3d58b7349dcfc4"
+    },
+    {
+      "path": "references/site-patterns",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+      "url": "https://api.github.com/repos/eze-is/web-access/git/trees/d564d0bc3dd917926892c55e3706cc116d5b165e"
+    },
+    {
+      "path": "references/site-patterns/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51fd476e5c70df3384627f3d13cf3c9658d49737",
+      "url": "https://api.github.com/repos/eze-is/web-access/git/trees/51fd476e5c70df3384627f3d13cf3c9658d49737"
+    },
+    {
+      "path": "scripts/browser-discovery.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac6f160b0c29de9ad4dfcb12d6c3709b6c574f8e",
+      "size": 6199,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/ac6f160b0c29de9ad4dfcb12d6c3709b6c574f8e"
+    },
+    {
+      "path": "scripts/cdp-proxy.mjs",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "94574058f5d05fbd5e14ce6fcec6c0f87cc039f2",
+      "size": 25415,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/94574058f5d05fbd5e14ce6fcec6c0f87cc039f2"
+    },
+    {
+      "path": "scripts/check-deps.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87c49ba4a1219cad6a23e8ac1ebba97e59a5e931",
+      "size": 8384,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/87c49ba4a1219cad6a23e8ac1ebba97e59a5e931"
+    },
+    {
+      "path": "scripts/find-url.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47cf74054d768598f66f8defd22bb67082a45875",
+      "size": 11412,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/47cf74054d768598f66f8defd22bb67082a45875"
+    },
+    {
+      "path": "scripts/match-site.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36f6c47513c79d4cd4eb0c9b5466359c1b3830eb",
+      "size": 1664,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/36f6c47513c79d4cd4eb0c9b5466359c1b3830eb"
+    },
+    {
+      "path": "templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c87e65a6cd7fe55bc34027956171e6c378a0c06",
+      "url": "https://api.github.com/repos/eze-is/web-access/git/trees/5c87e65a6cd7fe55bc34027956171e6c378a0c06"
+    },
+    {
+      "path": "templates/config.env.template",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5070f805d479e69828fd61a5b4ab6a217d71a01",
+      "size": 390,
+      "url": "https://api.github.com/repos/eze-is/web-access/git/blobs/e5070f805d479e69828fd61a5b4ab6a217d71a01"
+    }
+  ],
+  "truncated": false
+}

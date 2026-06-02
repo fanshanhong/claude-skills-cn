@@ -32,3 +32,29 @@ seeds:
     repo: obra/superpowers
     pack_mode: plugin
     author_override: Jesse Vincent (obra)
+
+# ───────────────────────────────────────────────────────────────────
+# 2026-06-02 batch — 13 个 Claude 生态仓库，手工挑选核心 SKILL
+# ───────────────────────────────────────────────────────────────────
+#
+# 用户规则：仓库 SKILL 数 ≥6 时挑核心 6-10 篇展开；<6 时全展。
+# 非 Skill 仓库（Tool/Framework/Subagent）也录入，用 kind 字段标记。
+#
+# pack_mode:plugin 会扫描整仓所有 SKILL.md（如 ecc 249 个），不符合
+# "核心挑选"规则；这批整体走手工 batch 流程，不通过 scrape_skills.py。
+# 详见 sources/2026-06-02-batch.yaml（70 entries，全部 status:approved）。
+#
+# 13 仓库清单：
+#   tanweai/pua                          (Plugin, 8 SKILL + Overview)
+#   affaan-m/ecc                         (Plugin, 10 SKILL + 2 docs + Overview)
+#   Yeachan-Heo/oh-my-claudecode         (Plugin, 8 SKILL + Overview)
+#   Fission-AI/OpenSpec                  (Framework, 1 篇)
+#   garrytan/gstack                      (Plugin, 10 SKILL + Overview)
+#   vercel-labs/agent-browser            (Tool, 1 篇)
+#   vercel-labs/skills (find-skills)     (single-skill, 1 篇)
+#   eze-is/web-access                    (single-skill, 1 篇)
+#   OthmanAdi/planning-with-files        (single-skill, 1 篇)
+#   nextlevelbuilder/ui-ux-pro-max-skill (Plugin, 7 SKILL + Overview)
+#   anthropics/claude-plugins-official/code-simplifier (Subagent, 1 篇)
+#   snarktank/ralph                      (Plugin, 2 SKILL + Overview)
+#   thedotmack/claude-mem                (Plugin, 10 SKILL + Overview)

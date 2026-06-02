@@ -1,0 +1,2483 @@
+{
+  "sha": "196032e7d2c441c1b7ae6a951a3616a691abeed9",
+  "url": "https://api.github.com/repos/tanweai/pua/git/trees/196032e7d2c441c1b7ae6a951a3616a691abeed9",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "205fe4866201b5dd981c7249fab202f45782f402",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/205fe4866201b5dd981c7249fab202f45782f402"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "400a9607b49f62e91766fff822bcd83a1bddcb6a",
+      "size": 1274,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/400a9607b49f62e91766fff822bcd83a1bddcb6a"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5c512f43160ec719cb9d64c5cdd8d0d3ddd174f",
+      "size": 1229,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d5c512f43160ec719cb9d64c5cdd8d0d3ddd174f"
+    },
+    {
+      "path": ".codebuddy-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62681e9ca6402516a12fb0cc62c0ef048c5fb01e",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/62681e9ca6402516a12fb0cc62c0ef048c5fb01e"
+    },
+    {
+      "path": ".codebuddy-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11e35aa821f8270a5189a7f65f0d48b4f7f38515",
+      "size": 744,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/11e35aa821f8270a5189a7f65f0d48b4f7f38515"
+    },
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "618b23ad9ebf7f562758ef35714a580c027a57ea",
+      "size": 1069,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/618b23ad9ebf7f562758ef35714a580c027a57ea"
+    },
+    {
+      "path": ".codex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "911d5b298d1165ff62da9d4f958887826da38166",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/911d5b298d1165ff62da9d4f958887826da38166"
+    },
+    {
+      "path": ".codex/INSTALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c34416669aa85b837ee797ca0322ff28702dba5f",
+      "size": 3194,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/c34416669aa85b837ee797ca0322ff28702dba5f"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10fbfd7d3a97a05c755722af52182667560ae31a",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/10fbfd7d3a97a05c755722af52182667560ae31a"
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31657eb1c966f29536da7db635794712813fc213",
+      "size": 5701,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/31657eb1c966f29536da7db635794712813fc213"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0616e98063f9b06aaff3b1f14cb3f7ef369cd9d8",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/0616e98063f9b06aaff3b1f14cb3f7ef369cd9d8"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f801990a7ac32ed993499c7ecde5f0dc6f551a",
+      "size": 496,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d6f801990a7ac32ed993499c7ecde5f0dc6f551a"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a77c6d1a73ed62ea122c76af9673b8ebbda2e68",
+      "size": 347,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/1a77c6d1a73ed62ea122c76af9673b8ebbda2e68"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f372a8cffc1fab395977570f7d8cdfa6c1f90a53",
+      "size": 365,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f372a8cffc1fab395977570f7d8cdfa6c1f90a53"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/question.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48a765a1cb83f4898b88baae045300489ea2151",
+      "size": 365,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/a48a765a1cb83f4898b88baae045300489ea2151"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bf48b00b242a0753e816024d4d6ff2001353950",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/3bf48b00b242a0753e816024d4d6ff2001353950"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "091ede21d810325d3babc4eab7f7981b2fe280cc",
+      "size": 397,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/091ede21d810325d3babc4eab7f7981b2fe280cc"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f66ca38efac4bf1660752fea2fe6ef7c24368a8",
+      "size": 66,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/3f66ca38efac4bf1660752fea2fe6ef7c24368a8"
+    },
+    {
+      "path": ".trae",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5442123ab19af0aa479208c215b7896de08fce4a",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/5442123ab19af0aa479208c215b7896de08fce4a"
+    },
+    {
+      "path": ".trae/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb991966e6b1dcc0507cd905101b9c02ffa5f42b",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/cb991966e6b1dcc0507cd905101b9c02ffa5f42b"
+    },
+    {
+      "path": ".trae/skills/pua-en",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8187e135f3feac175ca62374b7b83dcf73b38cf6",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/8187e135f3feac175ca62374b7b83dcf73b38cf6"
+    },
+    {
+      "path": ".trae/skills/pua-en/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89821ae419da136ed4e8e9ecd8b91328f7fa4d6f",
+      "size": 3597,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/89821ae419da136ed4e8e9ecd8b91328f7fa4d6f"
+    },
+    {
+      "path": ".trae/skills/pua-trae",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d74bbf9bfd8514795ea1a36f6253076daa5f1a8f",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/d74bbf9bfd8514795ea1a36f6253076daa5f1a8f"
+    },
+    {
+      "path": ".trae/skills/pua-trae/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b6281ea00e2b24e6ee0ec8cfd0431e342a8dbe",
+      "size": 3776,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/a8b6281ea00e2b24e6ee0ec8cfd0431e342a8dbe"
+    },
+    {
+      "path": ".trae/skills/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38a3b1e5e11da3ae062ff68088324123f4eadb10",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/38a3b1e5e11da3ae062ff68088324123f4eadb10"
+    },
+    {
+      "path": ".trae/skills/pua/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23dc0119d78d141887d98fcf8b747e3c5e3b0ad6",
+      "size": 3748,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/23dc0119d78d141887d98fcf8b747e3c5e3b0ad6"
+    },
+    {
+      "path": "README.ja.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d52b996d8fad6e71b6e8d08bf93f3ca5d8429ea2",
+      "size": 34391,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d52b996d8fad6e71b6e8d08bf93f3ca5d8429ea2"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f8952fb317365f97f02089d8539108ccb1e138f",
+      "size": 34823,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6f8952fb317365f97f02089d8539108ccb1e138f"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a37498784b52fd873cf6795f698004db5b2d098",
+      "size": 30688,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/4a37498784b52fd873cf6795f698004db5b2d098"
+    },
+    {
+      "path": "agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "69e05118f85637a23a69d982db437acbde571095",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/69e05118f85637a23a69d982db437acbde571095"
+    },
+    {
+      "path": "agents/cto-p10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df96bf057a44013e58598bd388bc7cff3c63b084",
+      "size": 3294,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/df96bf057a44013e58598bd388bc7cff3c63b084"
+    },
+    {
+      "path": "agents/pua-action-executor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbd0d66649a533650a3eaacac16a749bef3ad2cb",
+      "size": 2746,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/bbd0d66649a533650a3eaacac16a749bef3ad2cb"
+    },
+    {
+      "path": "agents/pua-policy-guardian.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dea6df5ec2cc0ea6cdc17cadbf9092ce0382865",
+      "size": 2641,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/5dea6df5ec2cc0ea6cdc17cadbf9092ce0382865"
+    },
+    {
+      "path": "agents/pua-self-reviewer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8353b46e63bf0c6f07384ea0786f8a50fc11636",
+      "size": 2570,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e8353b46e63bf0c6f07384ea0786f8a50fc11636"
+    },
+    {
+      "path": "agents/pua-verifier.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c217ac28c5d52e60a49626b173daa437311641d",
+      "size": 2580,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/7c217ac28c5d52e60a49626b173daa437311641d"
+    },
+    {
+      "path": "agents/senior-engineer-p7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd4446bc726d4c4ecfb06a70ea698f271cc18eb9",
+      "size": 5292,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/cd4446bc726d4c4ecfb06a70ea698f271cc18eb9"
+    },
+    {
+      "path": "agents/tech-lead-p9.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f300dcb7cec4e1d2f1c21f74171f92897adddea8",
+      "size": 4596,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f300dcb7cec4e1d2f1c21f74171f92897adddea8"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc9d3aebf0b7212797eb1f000b0a0b23b81a1988",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/bc9d3aebf0b7212797eb1f000b0a0b23b81a1988"
+    },
+    {
+      "path": "assets/hero.jpeg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9984979591659eac4ac1844c48f841016ae40b35",
+      "size": 1745251,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9984979591659eac4ac1844c48f841016ae40b35"
+    },
+    {
+      "path": "assets/pua-skill-lockup.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7efe3c52a87548b38c69e1f949c61a7d971b4cfe",
+      "size": 1436,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/7efe3c52a87548b38c69e1f949c61a7d971b4cfe"
+    },
+    {
+      "path": "assets/pua-skill-logo.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "578489f5af83e2516432cbacec302d8bf6145c5d",
+      "size": 1047,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/578489f5af83e2516432cbacec302d8bf6145c5d"
+    },
+    {
+      "path": "assets/pua1.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "201e13b3076c618a985450cb20bb8c9af53b5f37",
+      "size": 352676,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/201e13b3076c618a985450cb20bb8c9af53b5f37"
+    },
+    {
+      "path": "assets/pua2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09330d8651d6b1c079dd7345fa29604eeaa18cfb",
+      "size": 244474,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/09330d8651d6b1c079dd7345fa29604eeaa18cfb"
+    },
+    {
+      "path": "assets/pua3.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b66f9e098a0a16099ff1b263cf1af2151a0e495c",
+      "size": 146716,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b66f9e098a0a16099ff1b263cf1af2151a0e495c"
+    },
+    {
+      "path": "assets/wechat-qr.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3745d976e05552e33fef3f3902cd676d1597e7bf",
+      "size": 163922,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/3745d976e05552e33fef3f3902cd676d1597e7bf"
+    },
+    {
+      "path": "assets/xiao.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4a9d2c724bbf6cbd0410cabdd9be194c6b23ca",
+      "size": 212008,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/eb4a9d2c724bbf6cbd0410cabdd9be194c6b23ca"
+    },
+    {
+      "path": "codebuddy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ea64a54946dc65eb0ae18ddbcc16dfb983f1f32",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/6ea64a54946dc65eb0ae18ddbcc16dfb983f1f32"
+    },
+    {
+      "path": "codebuddy/pua-en",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fedf3af13dbe958e08f9f6e3bc04750e2e961815",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/fedf3af13dbe958e08f9f6e3bc04750e2e961815"
+    },
+    {
+      "path": "codebuddy/pua-en/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f",
+      "size": 27734,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f"
+    },
+    {
+      "path": "codebuddy/pua-ja",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b83849f1679802e8a059814a320e37a2fbdc8c4",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/7b83849f1679802e8a059814a320e37a2fbdc8c4"
+    },
+    {
+      "path": "codebuddy/pua-ja/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9de98027162cb7d2ae1e1a7f3b49d72142992929",
+      "size": 37296,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9de98027162cb7d2ae1e1a7f3b49d72142992929"
+    },
+    {
+      "path": "codebuddy/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "122a4979a7fa98209e3fd8dddce517eb46ef35d2",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/122a4979a7fa98209e3fd8dddce517eb46ef35d2"
+    },
+    {
+      "path": "codebuddy/pua/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e3f9efac82c44d0097328bd13101c8ddd7a57d",
+      "size": 29677,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/35e3f9efac82c44d0097328bd13101c8ddd7a57d"
+    },
+    {
+      "path": "codex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c233abdf9e9321943caaa381b4addd637635508",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/8c233abdf9e9321943caaa381b4addd637635508"
+    },
+    {
+      "path": "codex/pua-cancel-loop",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32f3479ef2be883e8a9b24738557fd7da1939f12",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/32f3479ef2be883e8a9b24738557fd7da1939f12"
+    },
+    {
+      "path": "codex/pua-cancel-loop/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd35d5cc543bd5ff5d3b16badc498da39650b7fb",
+      "size": 543,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/fd35d5cc543bd5ff5d3b16badc498da39650b7fb"
+    },
+    {
+      "path": "codex/pua-en",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fedf3af13dbe958e08f9f6e3bc04750e2e961815",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/fedf3af13dbe958e08f9f6e3bc04750e2e961815"
+    },
+    {
+      "path": "codex/pua-en/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f",
+      "size": 27734,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f"
+    },
+    {
+      "path": "codex/pua-flavor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08f0c63359496336f38e07fc90160a784d34c438",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/08f0c63359496336f38e07fc90160a784d34c438"
+    },
+    {
+      "path": "codex/pua-flavor/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1d5aa48af872a75cd1fe8018f4743323fd780cc",
+      "size": 542,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d1d5aa48af872a75cd1fe8018f4743323fd780cc"
+    },
+    {
+      "path": "codex/pua-ja",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b83849f1679802e8a059814a320e37a2fbdc8c4",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/7b83849f1679802e8a059814a320e37a2fbdc8c4"
+    },
+    {
+      "path": "codex/pua-ja/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9de98027162cb7d2ae1e1a7f3b49d72142992929",
+      "size": 37296,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9de98027162cb7d2ae1e1a7f3b49d72142992929"
+    },
+    {
+      "path": "codex/pua-kpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16923c78826d3b5ec70ad564838711b17f1d1d5d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/16923c78826d3b5ec70ad564838711b17f1d1d5d"
+    },
+    {
+      "path": "codex/pua-kpi/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa4a6377d8883302f78f58e6da85778a073cb343",
+      "size": 459,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/aa4a6377d8883302f78f58e6da85778a073cb343"
+    },
+    {
+      "path": "codex/pua-loop",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0513eac590a437d8be29c85462849b6a05192a74",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/0513eac590a437d8be29c85462849b6a05192a74"
+    },
+    {
+      "path": "codex/pua-loop/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5143198eb78aaa879ddef87325ebbe737e4566c",
+      "size": 545,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/c5143198eb78aaa879ddef87325ebbe737e4566c"
+    },
+    {
+      "path": "codex/pua-mama",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb7639c06d0fac10184289c91c2b5b77b34f884e",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/bb7639c06d0fac10184289c91c2b5b77b34f884e"
+    },
+    {
+      "path": "codex/pua-mama/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd03ae2e2da0f2b20f560098d5f5a28d65611ba",
+      "size": 557,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/afd03ae2e2da0f2b20f560098d5f5a28d65611ba"
+    },
+    {
+      "path": "codex/pua-off",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "60cfc306276412666578b1d26768991c17ea5d11",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/60cfc306276412666578b1d26768991c17ea5d11"
+    },
+    {
+      "path": "codex/pua-off/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c81b15b6957a57f4a89cd633ca18df12526ae9b9",
+      "size": 522,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/c81b15b6957a57f4a89cd633ca18df12526ae9b9"
+    },
+    {
+      "path": "codex/pua-offline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ffda32eb43828ad0cce0599186c95968ddf8875",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/0ffda32eb43828ad0cce0599186c95968ddf8875"
+    },
+    {
+      "path": "codex/pua-offline/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e3fd09be56cc8b6a3238f52966c6fb63c2934c9",
+      "size": 570,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/5e3fd09be56cc8b6a3238f52966c6fb63c2934c9"
+    },
+    {
+      "path": "codex/pua-on",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a9f91c16cd5b119aa02f0397d2f5d93c775face",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/9a9f91c16cd5b119aa02f0397d2f5d93c775face"
+    },
+    {
+      "path": "codex/pua-on/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f0eb8fa11c91e6763f85a5e0bb86ebbc503554f",
+      "size": 548,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2f0eb8fa11c91e6763f85a5e0bb86ebbc503554f"
+    },
+    {
+      "path": "codex/pua-p10",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6172a6f0d0e33351cc0109207075d37e2f11c7fe",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/6172a6f0d0e33351cc0109207075d37e2f11c7fe"
+    },
+    {
+      "path": "codex/pua-p10/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "754524711ab1f4393097725da7f1980641f46af9",
+      "size": 532,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/754524711ab1f4393097725da7f1980641f46af9"
+    },
+    {
+      "path": "codex/pua-p7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "061557f818a0b265b844d83ac922af2b70e06839",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/061557f818a0b265b844d83ac922af2b70e06839"
+    },
+    {
+      "path": "codex/pua-p7/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62afd4ee32ddee34957a4c59a9bd9cbcd0322972",
+      "size": 546,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/62afd4ee32ddee34957a4c59a9bd9cbcd0322972"
+    },
+    {
+      "path": "codex/pua-p9",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f72949f49df8cb34ef9ce575986d59c8f770690",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/9f72949f49df8cb34ef9ce575986d59c8f770690"
+    },
+    {
+      "path": "codex/pua-p9/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "739f56f526a792e525cb53eec42fe63921135119",
+      "size": 568,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/739f56f526a792e525cb53eec42fe63921135119"
+    },
+    {
+      "path": "codex/pua-pro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1cf3d540b62b3d6685c6d9c7e7a8904c82295c2",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/e1cf3d540b62b3d6685c6d9c7e7a8904c82295c2"
+    },
+    {
+      "path": "codex/pua-pro/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd63cfbc8cdb49c987ca946cd58ec95f688aabca",
+      "size": 505,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/dd63cfbc8cdb49c987ca946cd58ec95f688aabca"
+    },
+    {
+      "path": "codex/pua-reap-orphans",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aa2a1be576e307a632459137417525e913c194f9",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/aa2a1be576e307a632459137417525e913c194f9"
+    },
+    {
+      "path": "codex/pua-reap-orphans/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daa0b3dca177184b3fa878d75f814fd6710ce837",
+      "size": 544,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/daa0b3dca177184b3fa878d75f814fd6710ce837"
+    },
+    {
+      "path": "codex/pua-survey",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e832e9e628580a7a202ef6b1e7b5783d313f764d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/e832e9e628580a7a202ef6b1e7b5783d313f764d"
+    },
+    {
+      "path": "codex/pua-survey/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9795a06923f3b43b7f22d23c8b4e63d8b5991e18",
+      "size": 508,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9795a06923f3b43b7f22d23c8b4e63d8b5991e18"
+    },
+    {
+      "path": "codex/pua-team-status",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef9e878fb430725d6bedc35364fcd095d46a0180",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/ef9e878fb430725d6bedc35364fcd095d46a0180"
+    },
+    {
+      "path": "codex/pua-team-status/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2badf118c42a79e49c53ee54f33c026610f36497",
+      "size": 533,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2badf118c42a79e49c53ee54f33c026610f36497"
+    },
+    {
+      "path": "codex/pua-teardown-all",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d1867e881d43ba57f0cc8c11fb4689af9a62df22",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/d1867e881d43ba57f0cc8c11fb4689af9a62df22"
+    },
+    {
+      "path": "codex/pua-teardown-all/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab1ed68012fab126a4971d784b387b3f0ca0212c",
+      "size": 587,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/ab1ed68012fab126a4971d784b387b3f0ca0212c"
+    },
+    {
+      "path": "codex/pua-yes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6401c041fa437bdb1df6ea4dcf185a4995b8a1d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/a6401c041fa437bdb1df6ea4dcf185a4995b8a1d"
+    },
+    {
+      "path": "codex/pua-yes/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1d643ffa9d97d4f1f14b7fc1f97a10c3c613e67",
+      "size": 527,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b1d643ffa9d97d4f1f14b7fc1f97a10c3c613e67"
+    },
+    {
+      "path": "codex/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "122a4979a7fa98209e3fd8dddce517eb46ef35d2",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/122a4979a7fa98209e3fd8dddce517eb46ef35d2"
+    },
+    {
+      "path": "codex/pua/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e3f9efac82c44d0097328bd13101c8ddd7a57d",
+      "size": 29677,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/35e3f9efac82c44d0097328bd13101c8ddd7a57d"
+    },
+    {
+      "path": "commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "701c861d6b93c764de1e3fe370b88e5e09b3809c",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/701c861d6b93c764de1e3fe370b88e5e09b3809c"
+    },
+    {
+      "path": "commands/cancel-pua-loop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a06f024cf957f333a35c97c4295cffaad15b747",
+      "size": 2247,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/7a06f024cf957f333a35c97c4295cffaad15b747"
+    },
+    {
+      "path": "commands/flavor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "648f763d14f3855ac197cb784ea5d94293ffa6aa",
+      "size": 328,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/648f763d14f3855ac197cb784ea5d94293ffa6aa"
+    },
+    {
+      "path": "commands/kpi.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "958ded0ff86e25827adf7cf1d056772f9f4c9e19",
+      "size": 315,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/958ded0ff86e25827adf7cf1d056772f9f4c9e19"
+    },
+    {
+      "path": "commands/mama.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14dd571d7fb4772d390a418624ff403ab00cbda1",
+      "size": 460,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/14dd571d7fb4772d390a418624ff403ab00cbda1"
+    },
+    {
+      "path": "commands/off.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd3673ca6c93477d7a6ab50605bc1e575e4ff5a0",
+      "size": 1514,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/fd3673ca6c93477d7a6ab50605bc1e575e4ff5a0"
+    },
+    {
+      "path": "commands/offline.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7586259b8809a1a8e086bbda5348e299fdab54ed",
+      "size": 1383,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/7586259b8809a1a8e086bbda5348e299fdab54ed"
+    },
+    {
+      "path": "commands/on.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d61d9a4edabdaef42a23413b1d6953ed032eb841",
+      "size": 937,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d61d9a4edabdaef42a23413b1d6953ed032eb841"
+    },
+    {
+      "path": "commands/p10.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4e8c2e3f048f80b9c195b7f06a5ba70d179052f",
+      "size": 235,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f4e8c2e3f048f80b9c195b7f06a5ba70d179052f"
+    },
+    {
+      "path": "commands/p7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "136c8fcaa2b0f854cc73002e1216d6668cfffd57",
+      "size": 237,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/136c8fcaa2b0f854cc73002e1216d6668cfffd57"
+    },
+    {
+      "path": "commands/p9.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a16d5ff6030bdf2eef6c4155fd47ae65fc885be6",
+      "size": 259,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/a16d5ff6030bdf2eef6c4155fd47ae65fc885be6"
+    },
+    {
+      "path": "commands/pro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9835c10efe2d95ce57124313979cd24fef37631",
+      "size": 224,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b9835c10efe2d95ce57124313979cd24fef37631"
+    },
+    {
+      "path": "commands/pua-loop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a3e04acae3b5410c9747ef148e922a794eeba50",
+      "size": 264,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2a3e04acae3b5410c9747ef148e922a794eeba50"
+    },
+    {
+      "path": "commands/pua.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "372e11e50af3a040706558660b26b33133246079",
+      "size": 3129,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/372e11e50af3a040706558660b26b33133246079"
+    },
+    {
+      "path": "commands/reap-orphans.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ced02c8b4d8973abb90d1d786aacea6abc2b099",
+      "size": 2207,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/7ced02c8b4d8973abb90d1d786aacea6abc2b099"
+    },
+    {
+      "path": "commands/survey.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea24b7f157fb16b3538425c1e95acb285de6d1e8",
+      "size": 479,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/ea24b7f157fb16b3538425c1e95acb285de6d1e8"
+    },
+    {
+      "path": "commands/team-status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0875c31fd34b00017179155f08654d0337c8e2d2",
+      "size": 1964,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/0875c31fd34b00017179155f08654d0337c8e2d2"
+    },
+    {
+      "path": "commands/teardown-all.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e576abdc0fac6536c5b99337b0302d9ac3abf9d6",
+      "size": 2736,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e576abdc0fac6536c5b99337b0302d9ac3abf9d6"
+    },
+    {
+      "path": "commands/yes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0225d410bc64d6211b3706a5365fd2cb18bf775",
+      "size": 274,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/c0225d410bc64d6211b3706a5365fd2cb18bf775"
+    },
+    {
+      "path": "cursor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff2204ce16330be6da570b1a51df88496fa0df38",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/ff2204ce16330be6da570b1a51df88496fa0df38"
+    },
+    {
+      "path": "cursor/rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6f3d0ab735c3608d90a4a089691a852a4d4abb1",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/a6f3d0ab735c3608d90a4a089691a852a4d4abb1"
+    },
+    {
+      "path": "cursor/rules/pua-en.mdc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dae59755d850790748c843e76c7779b95a4a0bb6",
+      "size": 15940,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/dae59755d850790748c843e76c7779b95a4a0bb6"
+    },
+    {
+      "path": "cursor/rules/pua-ja.mdc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f53dd5ac09384d2e51d7ca1b118c6c82429c6dca",
+      "size": 12008,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f53dd5ac09384d2e51d7ca1b118c6c82429c6dca"
+    },
+    {
+      "path": "cursor/rules/pua.mdc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcf5ea61e0f567ad2358a7891cb06457b0919bcb",
+      "size": 16898,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/dcf5ea61e0f567ad2358a7891cb06457b0919bcb"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8db34a9139d0c5742d2c539dd284a9cffb5c64f",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/a8db34a9139d0c5742d2c539dd284a9cffb5c64f"
+    },
+    {
+      "path": "docs/FAQ.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "916ca10265688e444960c7d7dc84d8dcb9777a41",
+      "size": 5487,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/916ca10265688e444960c7d7dc84d8dcb9777a41"
+    },
+    {
+      "path": "docs/plans",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "042de7a2e9f85e6d14210f3947b6aba37c35fe5a",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/042de7a2e9f85e6d14210f3947b6aba37c35fe5a"
+    },
+    {
+      "path": "docs/plans/2026-05-09-silent-heartbeat-design.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6470cb982594ad5b9abcbc48a8f0ed90069a9dba",
+      "size": 2021,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6470cb982594ad5b9abcbc48a8f0ed90069a9dba"
+    },
+    {
+      "path": "evals",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "66992c5532796a3ff932623b9c26074a1480f6f7",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/66992c5532796a3ff932623b9c26074a1480f6f7"
+    },
+    {
+      "path": "evals/run-trigger-test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "dbf212ac53294e59f4a74b0f39eda77ee4e49b9c",
+      "size": 3122,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/dbf212ac53294e59f4a74b0f39eda77ee4e49b9c"
+    },
+    {
+      "path": "evals/test-agent-governance.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0aa9049d4cf2daec3b139a496fecab5848d1cf16",
+      "size": 5178,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/0aa9049d4cf2daec3b139a496fecab5848d1cf16"
+    },
+    {
+      "path": "evals/test-behavior.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a58f4a04e2cac14c492f9b19863dba5ac4aa1284",
+      "size": 1977,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/a58f4a04e2cac14c492f9b19863dba5ac4aa1284"
+    },
+    {
+      "path": "evals/test-feedback-auth.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "576101a0a7dede4bf4f1e75f3232d86b06280969",
+      "size": 2045,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/576101a0a7dede4bf4f1e75f3232d86b06280969"
+    },
+    {
+      "path": "evals/test-heartbeat.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "58892bbc4c3252460456f8b2ea54279d077e28ac",
+      "size": 6173,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/58892bbc4c3252460456f8b2ea54279d077e28ac"
+    },
+    {
+      "path": "evals/test-helpers.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "227473e2186534d89a699e1a181d7ad90cae90c1",
+      "size": 2772,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/227473e2186534d89a699e1a181d7ad90cae90c1"
+    },
+    {
+      "path": "evals/test-integrity-guard.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1f2b9904e1a36ea880da79c3ffd09c4c38cfdedd",
+      "size": 7914,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/1f2b9904e1a36ea880da79c3ffd09c4c38cfdedd"
+    },
+    {
+      "path": "evals/test-issue-regressions.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ea907e805f86a4fbb52011f7c43343fb2e92050b",
+      "size": 5709,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/ea907e805f86a4fbb52011f7c43343fb2e92050b"
+    },
+    {
+      "path": "evals/test-microsoft-flavor.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "da1ef6dce9432876fe2976c049d3163fa1c60f33",
+      "size": 2319,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/da1ef6dce9432876fe2976c049d3163fa1c60f33"
+    },
+    {
+      "path": "evals/test-platform-compat.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3708a7d458ed5ca961052b31dd48a1f40185e7fb",
+      "size": 4137,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/3708a7d458ed5ca961052b31dd48a1f40185e7fb"
+    },
+    {
+      "path": "evals/test-pua-loop-hook.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "66dcaf5ccaaa4addc74e64860838b887da412996",
+      "size": 4108,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/66dcaf5ccaaa4addc74e64860838b887da412996"
+    },
+    {
+      "path": "evals/test-release-consistency.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c471154c07215816a31e05775bc24676edb158cd",
+      "size": 14226,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/c471154c07215816a31e05775bc24676edb158cd"
+    },
+    {
+      "path": "evals/test-upload-flow.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "870ff898d91cdd7e824e1ba448b3cab6c5f5a6a0",
+      "size": 3073,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/870ff898d91cdd7e824e1ba448b3cab6c5f5a6a0"
+    },
+    {
+      "path": "evals/test-windows-python-hooks.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "337a597c436968c72630f285ee9d20a34fd2a258",
+      "size": 4566,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/337a597c436968c72630f285ee9d20a34fd2a258"
+    },
+    {
+      "path": "evals/test-yaml-frontmatter.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "685a6f66cde5d9e90f835da8af698b516a9fea2d",
+      "size": 1396,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/685a6f66cde5d9e90f835da8af698b516a9fea2d"
+    },
+    {
+      "path": "evals/trigger-prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1c22e344ab36489075a8e724591c0c493a86a3c",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/a1c22e344ab36489075a8e724591c0c493a86a3c"
+    },
+    {
+      "path": "evals/trigger-prompts/should-not-trigger.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ad9c31cfe21cdc6bf3e3da45c77475d4e06d95d",
+      "size": 785,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/8ad9c31cfe21cdc6bf3e3da45c77475d4e06d95d"
+    },
+    {
+      "path": "evals/trigger-prompts/should-trigger.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aabacc83cf81040aa1d97c7e6aed0eec151ec40",
+      "size": 916,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/1aabacc83cf81040aa1d97c7e6aed0eec151ec40"
+    },
+    {
+      "path": "hermes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ea64a54946dc65eb0ae18ddbcc16dfb983f1f32",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/6ea64a54946dc65eb0ae18ddbcc16dfb983f1f32"
+    },
+    {
+      "path": "hermes/pua-en",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fedf3af13dbe958e08f9f6e3bc04750e2e961815",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/fedf3af13dbe958e08f9f6e3bc04750e2e961815"
+    },
+    {
+      "path": "hermes/pua-en/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f",
+      "size": 27734,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f"
+    },
+    {
+      "path": "hermes/pua-ja",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b83849f1679802e8a059814a320e37a2fbdc8c4",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/7b83849f1679802e8a059814a320e37a2fbdc8c4"
+    },
+    {
+      "path": "hermes/pua-ja/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9de98027162cb7d2ae1e1a7f3b49d72142992929",
+      "size": 37296,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9de98027162cb7d2ae1e1a7f3b49d72142992929"
+    },
+    {
+      "path": "hermes/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "122a4979a7fa98209e3fd8dddce517eb46ef35d2",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/122a4979a7fa98209e3fd8dddce517eb46ef35d2"
+    },
+    {
+      "path": "hermes/pua/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e3f9efac82c44d0097328bd13101c8ddd7a57d",
+      "size": 29677,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/35e3f9efac82c44d0097328bd13101c8ddd7a57d"
+    },
+    {
+      "path": "hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22cb8e9388f510e20b9f5e5f5dd843049cd95308",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/22cb8e9388f510e20b9f5e5f5dd843049cd95308"
+    },
+    {
+      "path": "hooks/failure-detector.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2b8d31dda22dca654f078de9a441fbabb8a83efa",
+      "size": 16761,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2b8d31dda22dca654f078de9a441fbabb8a83efa"
+    },
+    {
+      "path": "hooks/flavor-helper.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3da0e70f684f9dc2bb24b35947fce9ec0f7fa097",
+      "size": 27210,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/3da0e70f684f9dc2bb24b35947fce9ec0f7fa097"
+    },
+    {
+      "path": "hooks/frustration-trigger.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0b40fbae39e2eb5905f69f9e75ca8cd28b0060ee",
+      "size": 2646,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/0b40fbae39e2eb5905f69f9e75ca8cd28b0060ee"
+    },
+    {
+      "path": "hooks/heartbeat.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "bc0afa4113d0786a282fda4b15283d96b6db829c",
+      "size": 4166,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/bc0afa4113d0786a282fda4b15283d96b6db829c"
+    },
+    {
+      "path": "hooks/hooks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da1fa0447374e686302657938fa87c26ecf46028",
+      "size": 4216,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/da1fa0447374e686302657938fa87c26ecf46028"
+    },
+    {
+      "path": "hooks/integrity-guard.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "05b7b3587f1da588c59dc2cc0e01632f12edbd57",
+      "size": 10524,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/05b7b3587f1da588c59dc2cc0e01632f12edbd57"
+    },
+    {
+      "path": "hooks/pua-loop-hook.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8fdaec2b2fe2a0bfb7e1c913447067a1babde29f",
+      "size": 16563,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/8fdaec2b2fe2a0bfb7e1c913447067a1babde29f"
+    },
+    {
+      "path": "hooks/sanitize-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4c3600e8478d5890f23a166190d2e05b9488373d",
+      "size": 8182,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/4c3600e8478d5890f23a166190d2e05b9488373d"
+    },
+    {
+      "path": "hooks/session-restore.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8df64b34b42a9a977a1a9d396dfa737cfe8e80e7",
+      "size": 10193,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/8df64b34b42a9a977a1a9d396dfa737cfe8e80e7"
+    },
+    {
+      "path": "hooks/stop-feedback.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "aaf7c3ff0df0af6e266c27880aa418d552ba1f8d",
+      "size": 7968,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/aaf7c3ff0df0af6e266c27880aa418d552ba1f8d"
+    },
+    {
+      "path": "hooks/subagent-teardown.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "6897e2343f1d6eb7389793324bc4892757cd29f0",
+      "size": 2032,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6897e2343f1d6eb7389793324bc4892757cd29f0"
+    },
+    {
+      "path": "kimi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ea64a54946dc65eb0ae18ddbcc16dfb983f1f32",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/6ea64a54946dc65eb0ae18ddbcc16dfb983f1f32"
+    },
+    {
+      "path": "kimi/pua-en",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fedf3af13dbe958e08f9f6e3bc04750e2e961815",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/fedf3af13dbe958e08f9f6e3bc04750e2e961815"
+    },
+    {
+      "path": "kimi/pua-en/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f",
+      "size": 27734,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f"
+    },
+    {
+      "path": "kimi/pua-ja",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b83849f1679802e8a059814a320e37a2fbdc8c4",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/7b83849f1679802e8a059814a320e37a2fbdc8c4"
+    },
+    {
+      "path": "kimi/pua-ja/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9de98027162cb7d2ae1e1a7f3b49d72142992929",
+      "size": 37296,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9de98027162cb7d2ae1e1a7f3b49d72142992929"
+    },
+    {
+      "path": "kimi/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "122a4979a7fa98209e3fd8dddce517eb46ef35d2",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/122a4979a7fa98209e3fd8dddce517eb46ef35d2"
+    },
+    {
+      "path": "kimi/pua/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e3f9efac82c44d0097328bd13101c8ddd7a57d",
+      "size": 29677,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/35e3f9efac82c44d0097328bd13101c8ddd7a57d"
+    },
+    {
+      "path": "kiro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c0150027935b93cbb6e9d7296d0d4d5669ea870",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/3c0150027935b93cbb6e9d7296d0d4d5669ea870"
+    },
+    {
+      "path": "kiro/steering",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4ce4e67e63feebe9adb1b4602a572d4977f90e6",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/e4ce4e67e63feebe9adb1b4602a572d4977f90e6"
+    },
+    {
+      "path": "kiro/steering/pua-en.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cd825087532ba8186e458e158c3bb563391a0c0",
+      "size": 9379,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/7cd825087532ba8186e458e158c3bb563391a0c0"
+    },
+    {
+      "path": "kiro/steering/pua-ja.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12fba864305adc423ea54015bfe6bdef7ccfe63d",
+      "size": 10176,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/12fba864305adc423ea54015bfe6bdef7ccfe63d"
+    },
+    {
+      "path": "kiro/steering/pua.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3b295293204cb3abf54fb981214296f93e12e93",
+      "size": 11860,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d3b295293204cb3abf54fb981214296f93e12e93"
+    },
+    {
+      "path": "landing.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83faf302b4a39398b558b1e4e5de66742387df1",
+      "size": 29165,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d83faf302b4a39398b558b1e4e5de66742387df1"
+    },
+    {
+      "path": "landing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bef63cb796165f3e16420bc13d025950a1bd43f4",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/bef63cb796165f3e16420bc13d025950a1bd43f4"
+    },
+    {
+      "path": "landing/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a547bf36d8d11a4f89c59c144f24795749086dd1",
+      "size": 253,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/a547bf36d8d11a4f89c59c144f24795749086dd1"
+    },
+    {
+      "path": "landing/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2e77611fd3d959fee0487c41bd27b318be32b04",
+      "size": 2555,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d2e77611fd3d959fee0487c41bd27b318be32b04"
+    },
+    {
+      "path": "landing/components.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15addee81fadab3e2f43e23425168d57f800bd8f",
+      "size": 515,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/15addee81fadab3e2f43e23425168d57f800bd8f"
+    },
+    {
+      "path": "landing/dist",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8f42b5e74d29308287ad04489ee11a397d948eb",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/e8f42b5e74d29308287ad04489ee11a397d948eb"
+    },
+    {
+      "path": "landing/dist/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b59667541054dbe9925667598e46ed182c0008",
+      "size": 1200,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e7b59667541054dbe9925667598e46ed182c0008"
+    },
+    {
+      "path": "landing/dist/pua1.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "201e13b3076c618a985450cb20bb8c9af53b5f37",
+      "size": 352676,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/201e13b3076c618a985450cb20bb8c9af53b5f37"
+    },
+    {
+      "path": "landing/dist/pua2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09330d8651d6b1c079dd7345fa29604eeaa18cfb",
+      "size": 244474,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/09330d8651d6b1c079dd7345fa29604eeaa18cfb"
+    },
+    {
+      "path": "landing/dist/pua3.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b66f9e098a0a16099ff1b263cf1af2151a0e495c",
+      "size": 146716,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b66f9e098a0a16099ff1b263cf1af2151a0e495c"
+    },
+    {
+      "path": "landing/dist/vite.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b8dfb1b2a60bd50538bec9f876511b9cac21e3",
+      "size": 1497,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e7b8dfb1b2a60bd50538bec9f876511b9cac21e3"
+    },
+    {
+      "path": "landing/dist/wechat-qr.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53a9a3863ad7621f3dffb17c6407c81b32396131",
+      "size": 164084,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/53a9a3863ad7621f3dffb17c6407c81b32396131"
+    },
+    {
+      "path": "landing/dist/xiao.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4a9d2c724bbf6cbd0410cabdd9be194c6b23ca",
+      "size": 212008,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/eb4a9d2c724bbf6cbd0410cabdd9be194c6b23ca"
+    },
+    {
+      "path": "landing/eslint.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6b472f583e34a1cca751440d4f241495475723",
+      "size": 616,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/5e6b472f583e34a1cca751440d4f241495475723"
+    },
+    {
+      "path": "landing/functions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68a061bf39234072defae16f11b134d4aec8ee83",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/68a061bf39234072defae16f11b134d4aec8ee83"
+    },
+    {
+      "path": "landing/functions/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b68e7c7dcd1a1c0fded4e3f7341215de972983b5",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/b68e7c7dcd1a1c0fded4e3f7341215de972983b5"
+    },
+    {
+      "path": "landing/functions/api/_sanitize.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48d6be79e5a02cd14c8591987df3e04f3f99dc18",
+      "size": 7607,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/48d6be79e5a02cd14c8591987df3e04f3f99dc18"
+    },
+    {
+      "path": "landing/functions/api/_session.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03140eedf2128f1dc53035c968e0ac32c5902b6f",
+      "size": 1654,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/03140eedf2128f1dc53035c968e0ac32c5902b6f"
+    },
+    {
+      "path": "landing/functions/api/auth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c6c232db1ca38d8902dbbbc89728b91bd89083d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/7c6c232db1ca38d8902dbbbc89728b91bd89083d"
+    },
+    {
+      "path": "landing/functions/api/auth/callback.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb3c086a46b40b19e4007b4fb3d4c0f9bdafea60",
+      "size": 2022,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/cb3c086a46b40b19e4007b4fb3d4c0f9bdafea60"
+    },
+    {
+      "path": "landing/functions/api/auth/github.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec47d62979413c7368bfd3b4384d62d8d4ca9a3a",
+      "size": 800,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/ec47d62979413c7368bfd3b4384d62d8d4ca9a3a"
+    },
+    {
+      "path": "landing/functions/api/auth/logout.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a10c8179d27b0bb732f1f266ba7f5a8884a5dcb",
+      "size": 253,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2a10c8179d27b0bb732f1f266ba7f5a8884a5dcb"
+    },
+    {
+      "path": "landing/functions/api/feedback.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6230c09d3ca4624a1fa8d8cc8cef963d90dac159",
+      "size": 7538,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6230c09d3ca4624a1fa8d8cc8cef963d90dac159"
+    },
+    {
+      "path": "landing/functions/api/heartbeat.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f959a2928624277b3b1bb5a532885c044c1cd575",
+      "size": 11869,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f959a2928624277b3b1bb5a532885c044c1cd575"
+    },
+    {
+      "path": "landing/functions/api/leaderboard.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7cdad60f474e1c453b00e848335ff249b5fcc3",
+      "size": 6767,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/fb7cdad60f474e1c453b00e848335ff249b5fcc3"
+    },
+    {
+      "path": "landing/functions/api/me.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6270b95ff836ad8e6eb1dad83936e3d9c16f62a3",
+      "size": 684,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6270b95ff836ad8e6eb1dad83936e3d9c16f62a3"
+    },
+    {
+      "path": "landing/functions/api/upload.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1efc92e50057cc2e7908636e1ef942d082ee983a",
+      "size": 10053,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/1efc92e50057cc2e7908636e1ef942d082ee983a"
+    },
+    {
+      "path": "landing/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df44b4b2c1bd524acccb0c58a2da30ff561a01ba",
+      "size": 1102,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/df44b4b2c1bd524acccb0c58a2da30ff561a01ba"
+    },
+    {
+      "path": "landing/migrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0cd00e211c412f5ccef6cc77dc195cbcb20e920e",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/0cd00e211c412f5ccef6cc77dc195cbcb20e920e"
+    },
+    {
+      "path": "landing/migrations/0001_init.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b08e18d62f185707f0f83444cee7acccbb883808",
+      "size": 370,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b08e18d62f185707f0f83444cee7acccbb883808"
+    },
+    {
+      "path": "landing/migrations/0002_create_feedback.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb2d9f672e867cb04b771a5101b09df931448b22",
+      "size": 806,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/bb2d9f672e867cb04b771a5101b09df931448b22"
+    },
+    {
+      "path": "landing/migrations/0003_feedback_rate_limits.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96e56ae3e2e4c2a2702d4f6cd4de14584dcac9c4",
+      "size": 383,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/96e56ae3e2e4c2a2702d4f6cd4de14584dcac9c4"
+    },
+    {
+      "path": "landing/migrations/0004_heartbeat.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7ab900c3c01f4cbd5a1bcb8000f6ddf07d1e429",
+      "size": 1474,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/a7ab900c3c01f4cbd5a1bcb8000f6ddf07d1e429"
+    },
+    {
+      "path": "landing/migrations/0005_upload_rate_limits.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a0e8ca5fbd5988c8423de516972d1924c659c53",
+      "size": 376,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/5a0e8ca5fbd5988c8423de516972d1924c659c53"
+    },
+    {
+      "path": "landing/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "689738005d4711771155d4570b74790e7fffd957",
+      "size": 309376,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/689738005d4711771155d4570b74790e7fffd957"
+    },
+    {
+      "path": "landing/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4400688d287d9dadbad13a467fc326fbfa2665f6",
+      "size": 1213,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/4400688d287d9dadbad13a467fc326fbfa2665f6"
+    },
+    {
+      "path": "landing/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5866e5e817dccb2b3cd96ffbf7076bad1bd3d1f5",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/5866e5e817dccb2b3cd96ffbf7076bad1bd3d1f5"
+    },
+    {
+      "path": "landing/public/pua1.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "201e13b3076c618a985450cb20bb8c9af53b5f37",
+      "size": 352676,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/201e13b3076c618a985450cb20bb8c9af53b5f37"
+    },
+    {
+      "path": "landing/public/pua2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09330d8651d6b1c079dd7345fa29604eeaa18cfb",
+      "size": 244474,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/09330d8651d6b1c079dd7345fa29604eeaa18cfb"
+    },
+    {
+      "path": "landing/public/pua3.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b66f9e098a0a16099ff1b263cf1af2151a0e495c",
+      "size": 146716,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b66f9e098a0a16099ff1b263cf1af2151a0e495c"
+    },
+    {
+      "path": "landing/public/vite.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b8dfb1b2a60bd50538bec9f876511b9cac21e3",
+      "size": 1497,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e7b8dfb1b2a60bd50538bec9f876511b9cac21e3"
+    },
+    {
+      "path": "landing/public/wechat-qr.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53a9a3863ad7621f3dffb17c6407c81b32396131",
+      "size": 164084,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/53a9a3863ad7621f3dffb17c6407c81b32396131"
+    },
+    {
+      "path": "landing/public/xiao.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4a9d2c724bbf6cbd0410cabdd9be194c6b23ca",
+      "size": 212008,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/eb4a9d2c724bbf6cbd0410cabdd9be194c6b23ca"
+    },
+    {
+      "path": "landing/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7831cece3d83e5ad83675c35ccb86a1f681423c",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/b7831cece3d83e5ad83675c35ccb86a1f681423c"
+    },
+    {
+      "path": "landing/src/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20a9c5c906cb12bcaa70f855c58220fcd020257a",
+      "size": 46956,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/20a9c5c906cb12bcaa70f855c58220fcd020257a"
+    },
+    {
+      "path": "landing/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59ba764803f56d2a83a6a88c89939ade7f55b2de",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/59ba764803f56d2a83a6a88c89939ade7f55b2de"
+    },
+    {
+      "path": "landing/src/components/motion-primitives.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5df6161a7b18a7de9f93b1860898f6195e3db01",
+      "size": 8946,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e5df6161a7b18a7de9f93b1860898f6195e3db01"
+    },
+    {
+      "path": "landing/src/i18n.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d01f7b6f793d3548932b4d06fbd2c9b71689941",
+      "size": 86647,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9d01f7b6f793d3548932b4d06fbd2c9b71689941"
+    },
+    {
+      "path": "landing/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed2c185b9f4f45c3afb5d39ac160f3b663dc58f1",
+      "size": 31177,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/ed2c185b9f4f45c3afb5d39ac160f3b663dc58f1"
+    },
+    {
+      "path": "landing/src/main.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57f76e3ac32adcd4d67b3907be0e31152791cd7d",
+      "size": 225,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/57f76e3ac32adcd4d67b3907be0e31152791cd7d"
+    },
+    {
+      "path": "landing/src/pages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "240aa4f076ea0c702118c208cbfb45981e9619b6",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/240aa4f076ea0c702118c208cbfb45981e9619b6"
+    },
+    {
+      "path": "landing/src/pages/AdminStats.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01a4a96fba71a4ed1d2bfc8416e096b0c2bf7992",
+      "size": 10693,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/01a4a96fba71a4ed1d2bfc8416e096b0c2bf7992"
+    },
+    {
+      "path": "landing/src/pages/Contribute.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c26b9bdfe04cac661659169713048e9fbc89b31",
+      "size": 18743,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/7c26b9bdfe04cac661659169713048e9fbc89b31"
+    },
+    {
+      "path": "landing/src/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "349a440fed52aaee4ee6a130e20730128848e633",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/349a440fed52aaee4ee6a130e20730128848e633"
+    },
+    {
+      "path": "landing/src/test/setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "landing/src/test/upload-function.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2486e2f477e127e1ed6211234dc93c5373d5d57",
+      "size": 6543,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e2486e2f477e127e1ed6211234dc93c5373d5d57"
+    },
+    {
+      "path": "landing/tsconfig.app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eb2b5b4650050f35caadbf40531537e4a4293d0",
+      "size": 872,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/5eb2b5b4650050f35caadbf40531537e4a4293d0"
+    },
+    {
+      "path": "landing/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fec8c8e5c2180153eb5f3cab9eb70001cd99964b",
+      "size": 213,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/fec8c8e5c2180153eb5f3cab9eb70001cd99964b"
+    },
+    {
+      "path": "landing/tsconfig.node.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a67f62f4ceebff3424e6e8cd4b3c25b17347546",
+      "size": 653,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/8a67f62f4ceebff3424e6e8cd4b3c25b17347546"
+    },
+    {
+      "path": "landing/vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd299f6167ac8056f16ccc4f2bda3fbc1edaf78a",
+      "size": 299,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/cd299f6167ac8056f16ccc4f2bda3fbc1edaf78a"
+    },
+    {
+      "path": "landing/vitest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc97ce5ddc6a2ae8e732906d9d6f6dc83ac15198",
+      "size": 222,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/bc97ce5ddc6a2ae8e732906d9d6f6dc83ac15198"
+    },
+    {
+      "path": "landing/wrangler.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44240ee6edb92bb7b422391214b2713fcbee69a2",
+      "size": 369,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/44240ee6edb92bb7b422391214b2713fcbee69a2"
+    },
+    {
+      "path": "pi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a03a8036a65a4d457575666291c3e6f330727374",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/a03a8036a65a4d457575666291c3e6f330727374"
+    },
+    {
+      "path": "pi/package",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae5d74f9f46b3ecd07f00a2d14923d50cf55e82d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/ae5d74f9f46b3ecd07f00a2d14923d50cf55e82d"
+    },
+    {
+      "path": "pi/package/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dbc2e9a218af5d3cbebaae7e56368c8fb124852",
+      "size": 1161,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/4dbc2e9a218af5d3cbebaae7e56368c8fb124852"
+    },
+    {
+      "path": "pi/package/extensions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f1cc583426abbcb791be36a8e0248bdc64b8ddc",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/5f1cc583426abbcb791be36a8e0248bdc64b8ddc"
+    },
+    {
+      "path": "pi/package/extensions/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "66c1e44b5589da1971cc0e8cba05260d79e5a74d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/66c1e44b5589da1971cc0e8cba05260d79e5a74d"
+    },
+    {
+      "path": "pi/package/extensions/pua/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9817e56f1cb9bdc433e7e55feefe37611ac25507",
+      "size": 5241,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9817e56f1cb9bdc433e7e55feefe37611ac25507"
+    },
+    {
+      "path": "pi/package/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af6b34180091ea4d204184a74afd42b3af13aac7",
+      "size": 920,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/af6b34180091ea4d204184a74afd42b3af13aac7"
+    },
+    {
+      "path": "pi/package/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f952bd8e891aa57b7c22bb844533b2f97d52c989",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/f952bd8e891aa57b7c22bb844533b2f97d52c989"
+    },
+    {
+      "path": "pi/package/skills/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62d78ce52d8faed38eed7bb7e695d628efdbc36d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/62d78ce52d8faed38eed7bb7e695d628efdbc36d"
+    },
+    {
+      "path": "pi/package/skills/pua/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f96b09d3e9b42506d7f33343c1c6348a005946d8",
+      "size": 2316,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f96b09d3e9b42506d7f33343c1c6348a005946d8"
+    },
+    {
+      "path": "pi/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c8a7d5d84d9a59f938ea5a8cd1d742e2edc68dfe",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/c8a7d5d84d9a59f938ea5a8cd1d742e2edc68dfe"
+    },
+    {
+      "path": "pi/pua/INSTALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c8245f16d82576a3a833f664d87564163fed6d3",
+      "size": 1700,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/3c8245f16d82576a3a833f664d87564163fed6d3"
+    },
+    {
+      "path": "pi/pua/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "698da240dfec18f02dc1ae642317007f7ecc497d",
+      "size": 99,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/698da240dfec18f02dc1ae642317007f7ecc497d"
+    },
+    {
+      "path": "pi/pua/global.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6c2672d1aa00a052a0f1a7dd44fc712ad318939",
+      "size": 912,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e6c2672d1aa00a052a0f1a7dd44fc712ad318939"
+    },
+    {
+      "path": "pi/pua/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9817e56f1cb9bdc433e7e55feefe37611ac25507",
+      "size": 5241,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9817e56f1cb9bdc433e7e55feefe37611ac25507"
+    },
+    {
+      "path": "pi/pua/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6358c8071a0c8a4f803ff4dd5f188662994d9f3",
+      "size": 224,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f6358c8071a0c8a4f803ff4dd5f188662994d9f3"
+    },
+    {
+      "path": "plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bab21398d91f667c6902510ebd9fd40f0d1ca4dd",
+      "size": 1467,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/bab21398d91f667c6902510ebd9fd40f0d1ca4dd"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17dfda0c20a7272a631fb30330c760a429736318",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/17dfda0c20a7272a631fb30330c760a429736318"
+    },
+    {
+      "path": "scripts/setup-pua-loop.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "016470c23f6153721792c9b710ba5356512b5e70",
+      "size": 10286,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/016470c23f6153721792c9b710ba5356512b5e70"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da38d70d05c53efe3d1cfd45c2235636fc33fc64",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/da38d70d05c53efe3d1cfd45c2235636fc33fc64"
+    },
+    {
+      "path": "skills/mama",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ed60f5b70fba38df89496e1ecec631044f7e746",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/8ed60f5b70fba38df89496e1ecec631044f7e746"
+    },
+    {
+      "path": "skills/mama/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad05b000f0816d67a0faec5b40761f3f8d3a50de",
+      "size": 9878,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/ad05b000f0816d67a0faec5b40761f3f8d3a50de"
+    },
+    {
+      "path": "skills/p10",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ed5669ddac30a6fabbc652f85a6f747adfe1587",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/5ed5669ddac30a6fabbc652f85a6f747adfe1587"
+    },
+    {
+      "path": "skills/p10/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c1ab0a57670459f3301295ee961423a5b6e577a",
+      "size": 595,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/5c1ab0a57670459f3301295ee961423a5b6e577a"
+    },
+    {
+      "path": "skills/p7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1ffca75ba92ce326c4f0dabf64e36689da1f87d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/f1ffca75ba92ce326c4f0dabf64e36689da1f87d"
+    },
+    {
+      "path": "skills/p7/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f4239185ddf3cc8530a7c46d5697dfdcfe48c7a",
+      "size": 618,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6f4239185ddf3cc8530a7c46d5697dfdcfe48c7a"
+    },
+    {
+      "path": "skills/p9",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f7db036e9988f516a4487a40f1aca54ccd83e23",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/0f7db036e9988f516a4487a40f1aca54ccd83e23"
+    },
+    {
+      "path": "skills/p9/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b01fd52978545e4b6aa520a32e972573f32c1340",
+      "size": 671,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b01fd52978545e4b6aa520a32e972573f32c1340"
+    },
+    {
+      "path": "skills/pro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2c4691af543094409983fd6de9c16d0b5556fcb",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/f2c4691af543094409983fd6de9c16d0b5556fcb"
+    },
+    {
+      "path": "skills/pro/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fc1d1fa2ab13d16bdb628c2ef24ca8a87f2cfa9",
+      "size": 5774,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/4fc1d1fa2ab13d16bdb628c2ef24ca8a87f2cfa9"
+    },
+    {
+      "path": "skills/pua-en",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fedf3af13dbe958e08f9f6e3bc04750e2e961815",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/fedf3af13dbe958e08f9f6e3bc04750e2e961815"
+    },
+    {
+      "path": "skills/pua-en/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f",
+      "size": 27734,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/529c2301cfc98b7f3878fd20d5f4c5a74cf6ef9f"
+    },
+    {
+      "path": "skills/pua-ja",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b83849f1679802e8a059814a320e37a2fbdc8c4",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/7b83849f1679802e8a059814a320e37a2fbdc8c4"
+    },
+    {
+      "path": "skills/pua-ja/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9de98027162cb7d2ae1e1a7f3b49d72142992929",
+      "size": 37296,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9de98027162cb7d2ae1e1a7f3b49d72142992929"
+    },
+    {
+      "path": "skills/pua-loop",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50d0111bfbccea90e21d5f571eb8a6eaa660d66c",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/50d0111bfbccea90e21d5f571eb8a6eaa660d66c"
+    },
+    {
+      "path": "skills/pua-loop/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d18ae9cbd7541ef86d53808baaa30f93ce0db969",
+      "size": 6948,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/d18ae9cbd7541ef86d53808baaa30f93ce0db969"
+    },
+    {
+      "path": "skills/pua",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36755362cd7848ba0db9c83af716ff5e605aa8cc",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/36755362cd7848ba0db9c83af716ff5e605aa8cc"
+    },
+    {
+      "path": "skills/pua/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07b4f958dd64f06f42e3f74906bb5b6dcc29e7b1",
+      "size": 34021,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/07b4f958dd64f06f42e3f74906bb5b6dcc29e7b1"
+    },
+    {
+      "path": "skills/pua/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36b313529a3c12bc0e0996de0a005191b253bc7d",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/36b313529a3c12bc0e0996de0a005191b253bc7d"
+    },
+    {
+      "path": "skills/pua/references/agent-team.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fed283adde4f16934908d769d2c40555afbf27e8",
+      "size": 4645,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/fed283adde4f16934908d769d2c40555afbf27e8"
+    },
+    {
+      "path": "skills/pua/references/de-escalation-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4594db49a85c1ee81f3e8828fef6b6a8abc47fd1",
+      "size": 6058,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/4594db49a85c1ee81f3e8828fef6b6a8abc47fd1"
+    },
+    {
+      "path": "skills/pua/references/display-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ee984529fec006c735a5ab74a6be3c5a8ab8ad4",
+      "size": 3366,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/3ee984529fec006c735a5ab74a6be3c5a8ab8ad4"
+    },
+    {
+      "path": "skills/pua/references/evolution-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb6d3b7b4e393732c17e652d2077f1dd6cd2d059",
+      "size": 6731,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/cb6d3b7b4e393732c17e652d2077f1dd6cd2d059"
+    },
+    {
+      "path": "skills/pua/references/flavors.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e491f336db6e8b5a7a67644a94f44f7f63385c36",
+      "size": 19360,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e491f336db6e8b5a7a67644a94f44f7f63385c36"
+    },
+    {
+      "path": "skills/pua/references/harness-governance.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fafd384815072a6cbe6cd23792c76995ef7f5435",
+      "size": 8833,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/fafd384815072a6cbe6cd23792c76995ef7f5435"
+    },
+    {
+      "path": "skills/pua/references/methodology-alibaba.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76a997853253a47a66a2f2dbd995cdb21dafab24",
+      "size": 2039,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/76a997853253a47a66a2f2dbd995cdb21dafab24"
+    },
+    {
+      "path": "skills/pua/references/methodology-amazon.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb28b119c821d837ece30011b48cd3238d8c4509",
+      "size": 2912,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/bb28b119c821d837ece30011b48cd3238d8c4509"
+    },
+    {
+      "path": "skills/pua/references/methodology-apple.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1885da6f458f27a04bb1fe0386452430faf92fab",
+      "size": 2395,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/1885da6f458f27a04bb1fe0386452430faf92fab"
+    },
+    {
+      "path": "skills/pua/references/methodology-baidu.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b03706fd99d957f41f6a5e1f119844436913f4d1",
+      "size": 2050,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b03706fd99d957f41f6a5e1f119844436913f4d1"
+    },
+    {
+      "path": "skills/pua/references/methodology-bytedance.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "669e60c7265174c1215bac5a5bf17a888125b9a1",
+      "size": 2373,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/669e60c7265174c1215bac5a5bf17a888125b9a1"
+    },
+    {
+      "path": "skills/pua/references/methodology-huawei.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "724ad66bf2719eb642289c9060a54ec142a18031",
+      "size": 3999,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/724ad66bf2719eb642289c9060a54ec142a18031"
+    },
+    {
+      "path": "skills/pua/references/methodology-jd.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc901c4fb6fbcc5ad4b81b1fbb5b66bcef0e3cf3",
+      "size": 2634,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/dc901c4fb6fbcc5ad4b81b1fbb5b66bcef0e3cf3"
+    },
+    {
+      "path": "skills/pua/references/methodology-meituan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4e6be188ebba3dea50d4764e0eb4cd69fba35d8",
+      "size": 2433,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/b4e6be188ebba3dea50d4764e0eb4cd69fba35d8"
+    },
+    {
+      "path": "skills/pua/references/methodology-microsoft.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "180fd9eeb343f44561c75f1af621b50f8013479f",
+      "size": 6047,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/180fd9eeb343f44561c75f1af621b50f8013479f"
+    },
+    {
+      "path": "skills/pua/references/methodology-netflix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1759fb1225d2b699f22b74eae6098bceca0f0d9f",
+      "size": 2564,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/1759fb1225d2b699f22b74eae6098bceca0f0d9f"
+    },
+    {
+      "path": "skills/pua/references/methodology-pinduoduo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74f79cbacae9863a505ecafce522a092b89e1502",
+      "size": 2020,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/74f79cbacae9863a505ecafce522a092b89e1502"
+    },
+    {
+      "path": "skills/pua/references/methodology-router.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df70b5c9c565f23ae91ebf9e2f48f43b11e15c3e",
+      "size": 6279,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/df70b5c9c565f23ae91ebf9e2f48f43b11e15c3e"
+    },
+    {
+      "path": "skills/pua/references/methodology-tencent.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b5ee71aebaae758ce7f6e733a367b422a8e68ba",
+      "size": 2461,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2b5ee71aebaae758ce7f6e733a367b422a8e68ba"
+    },
+    {
+      "path": "skills/pua/references/methodology-tesla.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dbe6227901a51cea9223bd4a26add6ed5520e49",
+      "size": 2768,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9dbe6227901a51cea9223bd4a26add6ed5520e49"
+    },
+    {
+      "path": "skills/pua/references/methodology-xiaomi.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8867a65992ff0b452d6716656e9d74a3d0b46a78",
+      "size": 2989,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/8867a65992ff0b452d6716656e9d74a3d0b46a78"
+    },
+    {
+      "path": "skills/pua/references/p10-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f15aaea601b2b847a1d69f448db4d56b64b5dd7",
+      "size": 5670,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/9f15aaea601b2b847a1d69f448db4d56b64b5dd7"
+    },
+    {
+      "path": "skills/pua/references/p7-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa765da3b0871a7fd5846290b86f7f5c131acb4c",
+      "size": 11249,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/fa765da3b0871a7fd5846290b86f7f5c131acb4c"
+    },
+    {
+      "path": "skills/pua/references/p9-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f92c1f31921bfd62501ea47137a0007adb3d0170",
+      "size": 12109,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/f92c1f31921bfd62501ea47137a0007adb3d0170"
+    },
+    {
+      "path": "skills/pua/references/platform.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ff16ff1fb8c522ab472e40ade4346700dc7d04d",
+      "size": 14636,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2ff16ff1fb8c522ab472e40ade4346700dc7d04d"
+    },
+    {
+      "path": "skills/pua/references/survey.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e457b5ed2f0b9cb375e5791226c549b0441f2501",
+      "size": 11374,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e457b5ed2f0b9cb375e5791226c549b0441f2501"
+    },
+    {
+      "path": "skills/pua/references/teardown-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "608ee1a1832b22efea5111eb7d4970c5bd10dd67",
+      "size": 8380,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/608ee1a1832b22efea5111eb7d4970c5bd10dd67"
+    },
+    {
+      "path": "skills/shot",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e3990a8c0d2e728e855e9b173b55625cb38ec4f",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/8e3990a8c0d2e728e855e9b173b55625cb38ec4f"
+    },
+    {
+      "path": "skills/shot/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df3991d7e55e472dc46d553d86f59e85f67e8d0d",
+      "size": 27931,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/df3991d7e55e472dc46d553d86f59e85f67e8d0d"
+    },
+    {
+      "path": "skills/yes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17356639887192c4491f6b713a4b82673c3c2f16",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/17356639887192c4491f6b713a4b82673c3c2f16"
+    },
+    {
+      "path": "skills/yes/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "660314944d90a520c785b5566cc9b7e667e14404",
+      "size": 5289,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/660314944d90a520c785b5566cc9b7e667e14404"
+    },
+    {
+      "path": "trae",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "adf09da3cca0d09bcdcb94c743614d83b9302b8f",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/adf09da3cca0d09bcdcb94c743614d83b9302b8f"
+    },
+    {
+      "path": "trae/DIFF.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf6b7c8a6cc347afa58b42f5fe323a548cbcab1d",
+      "size": 1662,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/bf6b7c8a6cc347afa58b42f5fe323a548cbcab1d"
+    },
+    {
+      "path": "trae/INSTALL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20aa698a86d79625cccd7387948156e5f2b17090",
+      "size": 1961,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/20aa698a86d79625cccd7387948156e5f2b17090"
+    },
+    {
+      "path": "trae/pua-en.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e0dd70f9cc977e0edbd0c4f81c95b35d4622ebf",
+      "size": 909,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/0e0dd70f9cc977e0edbd0c4f81c95b35d4622ebf"
+    },
+    {
+      "path": "trae/pua.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31172319166fb52db15b1834c89afc948ac18761",
+      "size": 1135,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/31172319166fb52db15b1834c89afc948ac18761"
+    },
+    {
+      "path": "vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "108b928b078b1317ecd376176c98b66a5d431160",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/108b928b078b1317ecd376176c98b66a5d431160"
+    },
+    {
+      "path": "vscode/copilot-instructions-en.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a36ba053d6fe28595ad890635b4b1314ba08321",
+      "size": 9036,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/2a36ba053d6fe28595ad890635b4b1314ba08321"
+    },
+    {
+      "path": "vscode/copilot-instructions-ja.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76f4b4f1ec1b4b5d78752782f946604a79239a55",
+      "size": 9761,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/76f4b4f1ec1b4b5d78752782f946604a79239a55"
+    },
+    {
+      "path": "vscode/copilot-instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f47b38e003af8e0e12268342926406d525b5d56",
+      "size": 11471,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6f47b38e003af8e0e12268342926406d525b5d56"
+    },
+    {
+      "path": "vscode/instructions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac29c5e74ff529c2b1a677614ee9d2c7e5b10294",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/ac29c5e74ff529c2b1a677614ee9d2c7e5b10294"
+    },
+    {
+      "path": "vscode/instructions/pua-en.instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ffbe6129434e08637df4b268c9a4a19d49497a9",
+      "size": 9058,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/6ffbe6129434e08637df4b268c9a4a19d49497a9"
+    },
+    {
+      "path": "vscode/instructions/pua-ja.instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e251e4fb84b18afc3f59c0fd270457e532e52d08",
+      "size": 9783,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e251e4fb84b18afc3f59c0fd270457e532e52d08"
+    },
+    {
+      "path": "vscode/instructions/pua.instructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93cd63e9749443ef33500991f6d2ae7c22fd1dac",
+      "size": 11385,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/93cd63e9749443ef33500991f6d2ae7c22fd1dac"
+    },
+    {
+      "path": "vscode/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5795e663134b77f42f3198ac996e742ae3605977",
+      "url": "https://api.github.com/repos/tanweai/pua/git/trees/5795e663134b77f42f3198ac996e742ae3605977"
+    },
+    {
+      "path": "vscode/prompts/pua-en.prompt.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e098351a56df22a5b8fd75aec7a897185a771aaf",
+      "size": 9163,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/e098351a56df22a5b8fd75aec7a897185a771aaf"
+    },
+    {
+      "path": "vscode/prompts/pua-ja.prompt.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "211065fc271cbfcf12ff8a7b6103d900975dd4e4",
+      "size": 9898,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/211065fc271cbfcf12ff8a7b6103d900975dd4e4"
+    },
+    {
+      "path": "vscode/prompts/pua.prompt.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dad4b1a8fedc5132108f9ad9d537d49a28364c3d",
+      "size": 11462,
+      "url": "https://api.github.com/repos/tanweai/pua/git/blobs/dad4b1a8fedc5132108f9ad9d537d49a28364c3d"
+    }
+  ],
+  "truncated": false
+}

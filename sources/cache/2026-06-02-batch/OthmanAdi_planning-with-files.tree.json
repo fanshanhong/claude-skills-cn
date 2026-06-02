@@ -1,0 +1,3675 @@
+{
+  "sha": "6f94643bd2b77dad9ac30b68ace14a536e2e5619",
+  "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/6f94643bd2b77dad9ac30b68ace14a536e2e5619",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b237e828608a7a28587a6a950aef66f0947f7d5f",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/b237e828608a7a28587a6a950aef66f0947f7d5f"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31e1d529211e5471917d132f941171b9764d79be",
+      "size": 459,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/31e1d529211e5471917d132f941171b9764d79be"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cf3f9b87e3afbe5172c8efeab285b869283ab2b",
+      "size": 1029,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4cf3f9b87e3afbe5172c8efeab285b869283ab2b"
+    },
+    {
+      "path": ".codebuddy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b44473a273d288040ea0619e514a5d4f73ac2a40",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/b44473a273d288040ea0619e514a5d4f73ac2a40"
+    },
+    {
+      "path": ".codebuddy/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68e8ed58b9b048fd09ff93292fe5ecae764b892c",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/68e8ed58b9b048fd09ff93292fe5ecae764b892c"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a823dbd5a1e4cfd523272a2d1f1743900ff52b7",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/4a823dbd5a1e4cfd523272a2d1f1743900ff52b7"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d4e63319c856a862bfefdef34a560a5e6e4642a",
+      "size": 16979,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4d4e63319c856a862bfefdef34a560a5e6e4642a"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ade565f00ce1914a662587bd6dbf187884dab303",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ade565f00ce1914a662587bd6dbf187884dab303"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/references/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/references/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b412886c65db3233d363b74dd01c13f047a5785",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/9b412886c65db3233d363b74dd01c13f047a5785"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/scripts/set-active-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".codebuddy/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".codex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e2812e523bf6fd8ae64dc97abce011513f5cec6",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/1e2812e523bf6fd8ae64dc97abce011513f5cec6"
+    },
+    {
+      "path": ".codex/hooks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33d764fd57bbe88395e43d40e9af5fc1e0996165",
+      "size": 1941,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/33d764fd57bbe88395e43d40e9af5fc1e0996165"
+    },
+    {
+      "path": ".codex/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25ba6fdaada2b1ec4dfda9339df224f73c6eca15",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/25ba6fdaada2b1ec4dfda9339df224f73c6eca15"
+    },
+    {
+      "path": ".codex/hooks/codex_hook_adapter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9c75d10e55c8193938f50f9df1d8fb3e15f1ebc",
+      "size": 2486,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b9c75d10e55c8193938f50f9df1d8fb3e15f1ebc"
+    },
+    {
+      "path": ".codex/hooks/permission_request.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27d475a16e6249dff1bce3a4babdd69043a132aa",
+      "size": 967,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/27d475a16e6249dff1bce3a4babdd69043a132aa"
+    },
+    {
+      "path": ".codex/hooks/post-tool-use.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e82ea9a5dea894555da1fd700e16442a2452c320",
+      "size": 404,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/e82ea9a5dea894555da1fd700e16442a2452c320"
+    },
+    {
+      "path": ".codex/hooks/post_tool_use.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7d70a683e719ae87681a4c84e08c7c3829b7fb9",
+      "size": 516,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b7d70a683e719ae87681a4c84e08c7c3829b7fb9"
+    },
+    {
+      "path": ".codex/hooks/pre-tool-use.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ae28a7e7a44cc88ffc19af988de131bc708f8b3",
+      "size": 418,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/0ae28a7e7a44cc88ffc19af988de131bc708f8b3"
+    },
+    {
+      "path": ".codex/hooks/pre_tool_use.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3888493fd94102dc6b9c59d51e220bff04141278",
+      "size": 739,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3888493fd94102dc6b9c59d51e220bff04141278"
+    },
+    {
+      "path": ".codex/hooks/resolve-plan-dir.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4b309a58ef5a42b85db51896676e0b8fbba4bb67",
+      "size": 2199,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4b309a58ef5a42b85db51896676e0b8fbba4bb67"
+    },
+    {
+      "path": ".codex/hooks/session-start.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8de203ffd4b6fef65d55d20e9e673e48fbaa6e9b",
+      "size": 580,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8de203ffd4b6fef65d55d20e9e673e48fbaa6e9b"
+    },
+    {
+      "path": ".codex/hooks/stop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f7efc5d47da8c63570841a3a393192ae60325d7",
+      "size": 884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3f7efc5d47da8c63570841a3a393192ae60325d7"
+    },
+    {
+      "path": ".codex/hooks/stop.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "692a0c0c2ce828e4eaffd4bc8deda773bd1ba587",
+      "size": 1325,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/692a0c0c2ce828e4eaffd4bc8deda773bd1ba587"
+    },
+    {
+      "path": ".codex/hooks/user-prompt-submit.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "477b913a65e25aeac4b11c8b3a9a614c0edc6633",
+      "size": 1054,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/477b913a65e25aeac4b11c8b3a9a614c0edc6633"
+    },
+    {
+      "path": ".codex/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92225beecfef993ef8863234451dacb48571e6e5",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/92225beecfef993ef8863234451dacb48571e6e5"
+    },
+    {
+      "path": ".codex/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24b07e60f3dfef06051fcc3ecd843dfeedbbede2",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/24b07e60f3dfef06051fcc3ecd843dfeedbbede2"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a188a447f94d25b6eb28cecf6076bf71a915fcfe",
+      "size": 17052,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a188a447f94d25b6eb28cecf6076bf71a915fcfe"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ade565f00ce1914a662587bd6dbf187884dab303",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ade565f00ce1914a662587bd6dbf187884dab303"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/references/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/references/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b412886c65db3233d363b74dd01c13f047a5785",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/9b412886c65db3233d363b74dd01c13f047a5785"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/scripts/set-active-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".continue",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5ed27964a1983d76c84f116747055e04165e84a",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/a5ed27964a1983d76c84f116747055e04165e84a"
+    },
+    {
+      "path": ".continue/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "215659679dafe672051b24af1f0aec524551e469",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/215659679dafe672051b24af1f0aec524551e469"
+    },
+    {
+      "path": ".continue/prompts/planning-with-files.prompt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d9d20e07e4177b90d7a9dfec8fd97cf9a00001d",
+      "size": 1790,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6d9d20e07e4177b90d7a9dfec8fd97cf9a00001d"
+    },
+    {
+      "path": ".continue/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b84697f7bb316816c8d0881e662e9eb535bd196",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/6b84697f7bb316816c8d0881e662e9eb535bd196"
+    },
+    {
+      "path": ".continue/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b5c45dfe2fcf37a560ac4f41093ad88b47e4ef03",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/b5c45dfe2fcf37a560ac4f41093ad88b47e4ef03"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7bdb3adc5a32c558cb2594ceadaa1611fd592a5",
+      "size": 10078,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b7bdb3adc5a32c558cb2594ceadaa1611fd592a5"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b412886c65db3233d363b74dd01c13f047a5785",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/9b412886c65db3233d363b74dd01c13f047a5785"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/scripts/set-active-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": ".cursor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24e9c79ee8c9c5754fcee81deef83c98ae58e0e9",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/24e9c79ee8c9c5754fcee81deef83c98ae58e0e9"
+    },
+    {
+      "path": ".cursor/hooks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "023f50167f3b3d3b229264c1365bfb934d9d1876",
+      "size": 603,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/023f50167f3b3d3b229264c1365bfb934d9d1876"
+    },
+    {
+      "path": ".cursor/hooks.windows.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cd34e3e6464b12c597fa7d895e856cd9bc024cf",
+      "size": 771,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/9cd34e3e6464b12c597fa7d895e856cd9bc024cf"
+    },
+    {
+      "path": ".cursor/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e287de1d25c157b4b8060d6f52f5945a43007a0",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/8e287de1d25c157b4b8060d6f52f5945a43007a0"
+    },
+    {
+      "path": ".cursor/hooks/post-tool-use.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a007d724cf399c7e970ec8bc1f9717d638275a0",
+      "size": 317,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/0a007d724cf399c7e970ec8bc1f9717d638275a0"
+    },
+    {
+      "path": ".cursor/hooks/post-tool-use.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "317f6d8014237d81165a6ee92eeeb59734d88b03",
+      "size": 306,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/317f6d8014237d81165a6ee92eeeb59734d88b03"
+    },
+    {
+      "path": ".cursor/hooks/pre-tool-use.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2df5920ee5f104475cc3e0645e97396fb0b14bf",
+      "size": 357,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f2df5920ee5f104475cc3e0645e97396fb0b14bf"
+    },
+    {
+      "path": ".cursor/hooks/pre-tool-use.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "404c4a9331013d9c9b9cdb9104eff79946fbc38f",
+      "size": 390,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/404c4a9331013d9c9b9cdb9104eff79946fbc38f"
+    },
+    {
+      "path": ".cursor/hooks/stop.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "625ff8e348e490eec27d02202befb1c89d4be09e",
+      "size": 1465,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/625ff8e348e490eec27d02202befb1c89d4be09e"
+    },
+    {
+      "path": ".cursor/hooks/stop.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfce2b1d10f67458540f3b0dd52509279e58c695",
+      "size": 1672,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/bfce2b1d10f67458540f3b0dd52509279e58c695"
+    },
+    {
+      "path": ".cursor/hooks/user-prompt-submit.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc81081758d958972253ada0a3bf6f60a2c17ccc",
+      "size": 675,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc81081758d958972253ada0a3bf6f60a2c17ccc"
+    },
+    {
+      "path": ".cursor/hooks/user-prompt-submit.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86383efc2dbfcadd8119d5b66434410311b6b3bd",
+      "size": 535,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/86383efc2dbfcadd8119d5b66434410311b6b3bd"
+    },
+    {
+      "path": ".cursor/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a9d28a0949683e54a539e1a1eec92a6562ce444",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/6a9d28a0949683e54a539e1a1eec92a6562ce444"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d81233055ad6ba07b543982ff3f32565342deb7",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/3d81233055ad6ba07b543982ff3f32565342deb7"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15fa3052da88a8a8630ddfc377c6535b6bc65603",
+      "size": 17006,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15fa3052da88a8a8630ddfc377c6535b6bc65603"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".factory",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ad6e3e092c165ce007df050929bda7c1259865e",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/2ad6e3e092c165ce007df050929bda7c1259865e"
+    },
+    {
+      "path": ".factory/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "382f78cfcf757eb05960fda20b9381d9ad80eb3d",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/382f78cfcf757eb05960fda20b9381d9ad80eb3d"
+    },
+    {
+      "path": ".factory/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aba2c43bc0efea345e9fcc7fc9fff6ab5e536194",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/aba2c43bc0efea345e9fcc7fc9fff6ab5e536194"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b9695320973a2cc30fb591f58e4440b664a43b8",
+      "size": 17053,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4b9695320973a2cc30fb591f58e4440b664a43b8"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/references.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b412886c65db3233d363b74dd01c13f047a5785",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/9b412886c65db3233d363b74dd01c13f047a5785"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/scripts/set-active-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".gemini",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cff5075574f38af6a7af0a73c77c8d9a5d44f9d",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/7cff5075574f38af6a7af0a73c77c8d9a5d44f9d"
+    },
+    {
+      "path": ".gemini/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "778d41236033f37e0d2609fa809494b659640b50",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/778d41236033f37e0d2609fa809494b659640b50"
+    },
+    {
+      "path": ".gemini/hooks/after-tool.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6f35bef132da30d2f8bba870d289f5954211c84",
+      "size": 427,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b6f35bef132da30d2f8bba870d289f5954211c84"
+    },
+    {
+      "path": ".gemini/hooks/before-model.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "105b8514941089439bfa90d87c87b63a20e4cf27",
+      "size": 895,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/105b8514941089439bfa90d87c87b63a20e4cf27"
+    },
+    {
+      "path": ".gemini/hooks/before-tool.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dce50620f079b3ff4810c55babc1014e74b20d3a",
+      "size": 749,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dce50620f079b3ff4810c55babc1014e74b20d3a"
+    },
+    {
+      "path": ".gemini/hooks/session-end.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cafe5de49f57f2bad75712277fe34b8fbe05f66",
+      "size": 827,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4cafe5de49f57f2bad75712277fe34b8fbe05f66"
+    },
+    {
+      "path": ".gemini/hooks/session-start.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce7174f0f20ebe93a52b4881077e64a479c1f60f",
+      "size": 1197,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ce7174f0f20ebe93a52b4881077e64a479c1f60f"
+    },
+    {
+      "path": ".gemini/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "935d2cc13c22991bfb7b0724eec391e62163657d",
+      "size": 1966,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/935d2cc13c22991bfb7b0724eec391e62163657d"
+    },
+    {
+      "path": ".gemini/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4996726314f563d54b4fd0d100b8d96d895bb335",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/4996726314f563d54b4fd0d100b8d96d895bb335"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b6401b9f579939193cf8fc8dd009c68dc9d9b70",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/9b6401b9f579939193cf8fc8dd009c68dc9d9b70"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25aba9b1612c9d33be20ca9990b9760e5fdcc972",
+      "size": 9994,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/25aba9b1612c9d33be20ca9990b9760e5fdcc972"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ade565f00ce1914a662587bd6dbf187884dab303",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ade565f00ce1914a662587bd6dbf187884dab303"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/references/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/references/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b412886c65db3233d363b74dd01c13f047a5785",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/9b412886c65db3233d363b74dd01c13f047a5785"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/scripts/set-active-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8a4781faacafdd188f3a22f09fafb77492db1a2",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/a8a4781faacafdd188f3a22f09fafb77492db1a2"
+    },
+    {
+      "path": ".github/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4caaf61fa8defa34069f82bd43056bc4456f3e5c",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/4caaf61fa8defa34069f82bd43056bc4456f3e5c"
+    },
+    {
+      "path": ".github/hooks/planning-with-files.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9476ba54f9b6200a9949e95dd1526ae74a7a123",
+      "size": 1107,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d9476ba54f9b6200a9949e95dd1526ae74a7a123"
+    },
+    {
+      "path": ".github/hooks/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4410709692615338e390cb42b5ef8d60e2747008",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/4410709692615338e390cb42b5ef8d60e2747008"
+    },
+    {
+      "path": ".github/hooks/scripts/agent-stop.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "779ed8ec5536805779f3b171300f81002711935b",
+      "size": 2012,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/779ed8ec5536805779f3b171300f81002711935b"
+    },
+    {
+      "path": ".github/hooks/scripts/agent-stop.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "65bfc755818e4899f982bb8449801f1f5c65daa7",
+      "size": 1707,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/65bfc755818e4899f982bb8449801f1f5c65daa7"
+    },
+    {
+      "path": ".github/hooks/scripts/error-occurred.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beb6bf09c7e6e1ceeca48ec279f6bc120025fc74",
+      "size": 1028,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/beb6bf09c7e6e1ceeca48ec279f6bc120025fc74"
+    },
+    {
+      "path": ".github/hooks/scripts/error-occurred.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eb7e28bd7ae2310705a433f04aa88315e2c8949",
+      "size": 1360,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6eb7e28bd7ae2310705a433f04aa88315e2c8949"
+    },
+    {
+      "path": ".github/hooks/scripts/post-tool-use.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8efb2fd66826ce75c1b8ac874149d89779ca60f4",
+      "size": 668,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8efb2fd66826ce75c1b8ac874149d89779ca60f4"
+    },
+    {
+      "path": ".github/hooks/scripts/post-tool-use.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "66a35901d7927dfa01b85ce3757a93ee4e87980f",
+      "size": 460,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/66a35901d7927dfa01b85ce3757a93ee4e87980f"
+    },
+    {
+      "path": ".github/hooks/scripts/pre-tool-use.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7c3f1bab3af06610277f7f559394b517b0a37be",
+      "size": 1028,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a7c3f1bab3af06610277f7f559394b517b0a37be"
+    },
+    {
+      "path": ".github/hooks/scripts/pre-tool-use.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "aaea50fb87b60b1b322a4c5c878c970ea8484df8",
+      "size": 1142,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/aaea50fb87b60b1b322a4c5c878c970ea8484df8"
+    },
+    {
+      "path": ".github/hooks/scripts/session-start.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2386d9f5b114dc208721b009f96a507c4bb2a5e5",
+      "size": 1730,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/2386d9f5b114dc208721b009f96a507c4bb2a5e5"
+    },
+    {
+      "path": ".github/hooks/scripts/session-start.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0ceaba349f6fa924f206df4046f2c35e17ea1d97",
+      "size": 1726,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/0ceaba349f6fa924f206df4046f2c35e17ea1d97"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fdba2c4385cc535eeac59133ebce18b60ebeb217",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/fdba2c4385cc535eeac59133ebce18b60ebeb217"
+    },
+    {
+      "path": ".github/workflows/skill-optimize-apply.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81ec5abef468748b1a6e32661b0d37e0327e05c7",
+      "size": 753,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/81ec5abef468748b1a6e32661b0d37e0327e05c7"
+    },
+    {
+      "path": ".github/workflows/skill-review.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55626f281edbc458bbba6f55a2d3503f4ff0042b",
+      "size": 820,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/55626f281edbc458bbba6f55a2d3503f4ff0042b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "070e0539a59cf348b3ae70d1488c6bef58125275",
+      "size": 1046,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/070e0539a59cf348b3ae70d1488c6bef58125275"
+    },
+    {
+      "path": ".hermes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70fde01073963d6236cdb0d25215b8cc2b84ab23",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/70fde01073963d6236cdb0d25215b8cc2b84ab23"
+    },
+    {
+      "path": ".hermes/commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df619827069a476fc249ceb189e18382c03731c2",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/df619827069a476fc249ceb189e18382c03731c2"
+    },
+    {
+      "path": ".hermes/commands/plan-status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a3fa6e94e07243537cd0123cf9090e598671d2b",
+      "size": 206,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5a3fa6e94e07243537cd0123cf9090e598671d2b"
+    },
+    {
+      "path": ".hermes/commands/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea5c25adab975180673ed966278c04bc0e13d09a",
+      "size": 400,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ea5c25adab975180673ed966278c04bc0e13d09a"
+    },
+    {
+      "path": ".hermes/plugins",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed298339078534a99eea1e82daf94f5a6c7ec790",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ed298339078534a99eea1e82daf94f5a6c7ec790"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "303fa06742aed5f6a6a71acdd4f43740fe02ed44",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/303fa06742aed5f6a6a71acdd4f43740fe02ed44"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2826abba09ed892d179f62efd2cc92c199c2c4c",
+      "size": 2638,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f2826abba09ed892d179f62efd2cc92c199c2c4c"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/constants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff63925d22ca48605e81939cd300eb454f982596",
+      "size": 208,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ff63925d22ca48605e81939cd300eb454f982596"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/hook_state.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15dfaadf842cb18aff4cfc01968f8779207630bc",
+      "size": 487,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15dfaadf842cb18aff4cfc01968f8779207630bc"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/hooks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7137888fabe5b78f7645e462814a9d149086d9b",
+      "size": 2570,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/e7137888fabe5b78f7645e462814a9d149086d9b"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/paths.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03a6da9ba055488324da314e3749aedee34edf80",
+      "size": 2528,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/03a6da9ba055488324da314e3749aedee34edf80"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/planning_files.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fb8bc0bf1e957b07969c8d8538bc1f94b049e7e",
+      "size": 6655,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/2fb8bc0bf1e957b07969c8d8538bc1f94b049e7e"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/plugin.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1136bed32070970af9286448b424b69e5ae1d62d",
+      "size": 347,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1136bed32070970af9286448b424b69e5ae1d62d"
+    },
+    {
+      "path": ".hermes/plugins/planning-with-files/tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb96406ea79f08b7bafbc00d2fd854a5b3e7eb9e",
+      "size": 1579,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/eb96406ea79f08b7bafbc00d2fd854a5b3e7eb9e"
+    },
+    {
+      "path": ".hermes/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c73aca8c11933a6b81a28563cb576b43d88bfcff",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/c73aca8c11933a6b81a28563cb576b43d88bfcff"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fbece7aae7670514a6e0733a810d94501bf3bb19",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/fbece7aae7670514a6e0733a810d94501bf3bb19"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0776bffab0710adf25639f4543f2bd22b00716d",
+      "size": 8027,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c0776bffab0710adf25639f4543f2bd22b00716d"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5963f7402359cbdf164977caa320a3b60562049b",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/5963f7402359cbdf164977caa320a3b60562049b"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9ca44e59727e98763bd2a41e768fd8c38d66cd49",
+      "size": 1737,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/9ca44e59727e98763bd2a41e768fd8c38d66cd49"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts/check-continue.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6675196bf92e4eb314c1810e619713771623e9f",
+      "size": 1013,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f6675196bf92e4eb314c1810e619713771623e9f"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1a3868132f36b6f144aae9448bd7fbdf9bef530c",
+      "size": 3706,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1a3868132f36b6f144aae9448bd7fbdf9bef530c"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ba42d6354e28ec2eb3dcf6720450f59f0bc68e59",
+      "size": 12829,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ba42d6354e28ec2eb3dcf6720450f59f0bc68e59"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/scripts/sync-ide-folders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e64523ec3961ad2860392d0eafae4ba2a908ea0b",
+      "size": 9718,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/e64523ec3961ad2860392d0eafae4ba2a908ea0b"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81d4886c3dbe4c4e0bdebe7b5c095e4db0688fa3",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/81d4886c3dbe4c4e0bdebe7b5c095e4db0688fa3"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/templates/analytics_findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01ca57cddcf4c7320ac17d305c0a72a7aea201d0",
+      "size": 3336,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/01ca57cddcf4c7320ac17d305c0a72a7aea201d0"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/templates/analytics_task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "040ca715c1ad72003f7acf488f598088e1d57143",
+      "size": 3980,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/040ca715c1ad72003f7acf488f598088e1d57143"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".hermes/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".kiro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a97759a0ccb2b1d8c7b351d589dfa24c62995fa7",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/a97759a0ccb2b1d8c7b351d589dfa24c62995fa7"
+    },
+    {
+      "path": ".kiro/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "600075848f7ba79206c71ae02c376f2968e6bf36",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/600075848f7ba79206c71ae02c376f2968e6bf36"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77ae5f11d98b0aa27333cc23050bfaf24754e8c2",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/77ae5f11d98b0aa27333cc23050bfaf24754e8c2"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "577cf75caa77dbee4fb78e508c540a422d951258",
+      "size": 8223,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/577cf75caa77dbee4fb78e508c540a422d951258"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f80453ec8aa105fb665e66bd1f092e0ac8b294fa",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/f80453ec8aa105fb665e66bd1f092e0ac8b294fa"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "028c7248c48a40cb28bf4b7d5b3f65412051977e",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/028c7248c48a40cb28bf4b7d5b3f65412051977e"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/scripts/bootstrap.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5a41f51b0b204e8531cc9ff99c44ef9de9d34cd",
+      "size": 1867,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b5a41f51b0b204e8531cc9ff99c44ef9de9d34cd"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/scripts/bootstrap.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0768a8e2c6ccda9e2b3131226db92d305111926e",
+      "size": 1484,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/0768a8e2c6ccda9e2b3131226db92d305111926e"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aef49fee8f96bb7ca3ac656bc7dba1832c4900b2",
+      "size": 1413,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/aef49fee8f96bb7ca3ac656bc7dba1832c4900b2"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ccdfcb37d6708b7debbab0f12ddb75e8ef8c3bff",
+      "size": 1477,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ccdfcb37d6708b7debbab0f12ddb75e8ef8c3bff"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "897f485b2b5d08409b4ee435dff7f971bba1625a",
+      "size": 3778,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/897f485b2b5d08409b4ee435dff7f971bba1625a"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0a5da4b5a7a337dbea8851ba4a951724a867be92",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/0a5da4b5a7a337dbea8851ba4a951724a867be92"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/templates/planning-context.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f103ef72adad58ee60cf67dbd2b17734ea7c081",
+      "size": 339,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3f103ef72adad58ee60cf67dbd2b17734ea7c081"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/assets/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99acd9f90f853a5463069326d5b1d01cdd840fd9",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/99acd9f90f853a5463069326d5b1d01cdd840fd9"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/references/manus-principles.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c3e672a4a8991d85a87b15d53abbc5191e70564",
+      "size": 3705,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4c3e672a4a8991d85a87b15d53abbc5191e70564"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/references/planning-rules.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e9dafccc1454e997adf72e6da8795895f97348a",
+      "size": 1277,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3e9dafccc1454e997adf72e6da8795895f97348a"
+    },
+    {
+      "path": ".kiro/skills/planning-with-files/references/planning-templates.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0421986d00be4f4edc0cd95d7b6a24b644d9bb0c",
+      "size": 1814,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/0421986d00be4f4edc0cd95d7b6a24b644d9bb0c"
+    },
+    {
+      "path": ".mastracode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2147cec9f76a679a6baaef1733f4008cca3eaf58",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/2147cec9f76a679a6baaef1733f4008cca3eaf58"
+    },
+    {
+      "path": ".mastracode/hooks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e2545dab19ab857ef863864137b9339096e04a8",
+      "size": 1540,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/2e2545dab19ab857ef863864137b9339096e04a8"
+    },
+    {
+      "path": ".mastracode/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a8a9e154b880c4b1d668bb5224e8fb6ef43c86c",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/7a8a9e154b880c4b1d668bb5224e8fb6ef43c86c"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "466391976444810e39ad8eb9b101875e14f5651f",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/466391976444810e39ad8eb9b101875e14f5651f"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6c1d5b27ca122468e6d359337c5e7e16e93cf85",
+      "size": 17025,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b6c1d5b27ca122468e6d359337c5e7e16e93cf85"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ade565f00ce1914a662587bd6dbf187884dab303",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ade565f00ce1914a662587bd6dbf187884dab303"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/references/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/references/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e973ad00af2f626c6541745c13e00b609178fafa",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/e973ad00af2f626c6541745c13e00b609178fafa"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f5975fb4a10d2b184d6178d8909940dbe83105",
+      "size": 1678,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d6f5975fb4a10d2b184d6178d8909940dbe83105"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ca44e59727e98763bd2a41e768fd8c38d66cd49",
+      "size": 1737,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/9ca44e59727e98763bd2a41e768fd8c38d66cd49"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeef1498c4d274182dd197da7b733b40dbda7183",
+      "size": 2431,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/eeef1498c4d274182dd197da7b733b40dbda7183"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c60de88e6aea6b6f58b320f099073441c1204eb",
+      "size": 2254,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1c60de88e6aea6b6f58b320f099073441c1204eb"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d5fc0cde5336921916d904be857adff5c20895f",
+      "size": 8188,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/7d5fc0cde5336921916d904be857adff5c20895f"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".mastracode/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".opencode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb0af54690bc64ca9aa1a14d8e19c286d1bc306f",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/eb0af54690bc64ca9aa1a14d8e19c286d1bc306f"
+    },
+    {
+      "path": ".opencode/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2553e374e013b78c80bd5b147c4ffa47bb35d28a",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/2553e374e013b78c80bd5b147c4ffa47bb35d28a"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7ebb2afc390ea9dd9735e289413bae802725823",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/b7ebb2afc390ea9dd9735e289413bae802725823"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0285d0e1dbb1357cfbf42e5bcb6cd3770115261",
+      "size": 17041,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a0285d0e1dbb1357cfbf42e5bcb6cd3770115261"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a2f0b4dacb228a357258dec83b735d5b8646d8e",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/7a2f0b4dacb228a357258dec83b735d5b8646d8e"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f5975fb4a10d2b184d6178d8909940dbe83105",
+      "size": 1678,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d6f5975fb4a10d2b184d6178d8909940dbe83105"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbfea3e4269b57c1b3c5eff07f3257536c9e2c98",
+      "size": 1618,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dbfea3e4269b57c1b3c5eff07f3257536c9e2c98"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeef1498c4d274182dd197da7b733b40dbda7183",
+      "size": 2431,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/eeef1498c4d274182dd197da7b733b40dbda7183"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c60de88e6aea6b6f58b320f099073441c1204eb",
+      "size": 2254,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1c60de88e6aea6b6f58b320f099073441c1204eb"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".opencode/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": ".pi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc12c27d60dc6fc058b61ff3dd3fb769d2386c76",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/bc12c27d60dc6fc058b61ff3dd3fb769d2386c76"
+    },
+    {
+      "path": ".pi/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ab251000c177125be8ad9eeb1c05743e593f6f3",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/7ab251000c177125be8ad9eeb1c05743e593f6f3"
+    },
+    {
+      "path": ".pi/skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1a85615ea8b03ef49e63cb943dce50d4ecb0888",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/e1a85615ea8b03ef49e63cb943dce50d4ecb0888"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56768574d78513c174d22dd09d9c8f0d094507af",
+      "size": 2289,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/56768574d78513c174d22dd09d9c8f0d094507af"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e1ffbd08f5754fb25e24c8f5acb8417fb5f7351",
+      "size": 10769,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/9e1ffbd08f5754fb25e24c8f5acb8417fb5f7351"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a9540e8c8b423c488d6089ab5bde678c20a0e69",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/7a9540e8c8b423c488d6089ab5bde678c20a0e69"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d8ef6795ad8321fc85224ed90cf8fed40e431a63",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/d8ef6795ad8321fc85224ed90cf8fed40e431a63"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions/planning-with-files/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10fde85689ece8b1de2c995b68ed37f037f54ab8",
+      "size": 672,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/10fde85689ece8b1de2c995b68ed37f037f54ab8"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions/planning-with-files/attestation.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42b1972c9769350e17d0a9e0659b39e081b6d1f8",
+      "size": 1396,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/42b1972c9769350e17d0a9e0659b39e081b6d1f8"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions/planning-with-files/constants.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "130d749db7605495496b964e9a6a087670c552ee",
+      "size": 1525,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/130d749db7605495496b964e9a6a087670c552ee"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions/planning-with-files/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16fff1c91c9013928fa1fd10f687a5373edfdb53",
+      "size": 211,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/16fff1c91c9013928fa1fd10f687a5373edfdb53"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions/planning-with-files/plan.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79cf9b0d5bef0199f31a68f22d88cf1c3d36de79",
+      "size": 5124,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/79cf9b0d5bef0199f31a68f22d88cf1c3d36de79"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/extensions/planning-with-files/runtime.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78f9f1b75263cda3feed7ed6c29e5264031b9acd",
+      "size": 19112,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78f9f1b75263cda3feed7ed6c29e5264031b9acd"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d71cd96379bb5c390fb9d5112f480447bfd8d277",
+      "size": 909,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d71cd96379bb5c390fb9d5112f480447bfd8d277"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b412886c65db3233d363b74dd01c13f047a5785",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/9b412886c65db3233d363b74dd01c13f047a5785"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/set-active-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/scripts/set-active-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": ".pi/skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "030330fff59b4e7c250cd4aebd8f996203d735ab",
+      "size": 5473,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/030330fff59b4e7c250cd4aebd8f996203d735ab"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67967547983562e47996afb09281170c2374844b",
+      "size": 88861,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/67967547983562e47996afb09281170c2374844b"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "243c4e4f6dc1dc1fdbc65df47d8bbbaae4d4f7fc",
+      "size": 797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/243c4e4f6dc1dc1fdbc65df47d8bbbaae4d4f7fc"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48cfd1af8a287de96e8e7987e7ff94adb8dfc560",
+      "size": 3365,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/48cfd1af8a287de96e8e7987e7ff94adb8dfc560"
+    },
+    {
+      "path": "CONTRIBUTORS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d53a4b2936e4e27a5cae029159ff914aaa9ac484",
+      "size": 28320,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d53a4b2936e4e27a5cae029159ff914aaa9ac484"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a00edac2c06c65f72f6fa7dc75512541213aa771",
+      "size": 1066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a00edac2c06c65f72f6fa7dc75512541213aa771"
+    },
+    {
+      "path": "MIGRATION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edd3f7d299cc5407673ee1848117688e4335e9f4",
+      "size": 3018,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/edd3f7d299cc5407673ee1848117688e4335e9f4"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bf9aeed980edccd5bfa4bea9024ee30e3ba864b",
+      "size": 31903,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/7bf9aeed980edccd5bfa4bea9024ee30e3ba864b"
+    },
+    {
+      "path": "commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41cf806d017f59c9cfbbc55aa7c5c54b69fc3d15",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/41cf806d017f59c9cfbbc55aa7c5c54b69fc3d15"
+    },
+    {
+      "path": "commands/plan-ar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b7d6c05c5a20679ee4b54d50713d28b8f3830b7",
+      "size": 727,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6b7d6c05c5a20679ee4b54d50713d28b8f3830b7"
+    },
+    {
+      "path": "commands/plan-attest.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32794013c44443894998f9155a793517c82ae572",
+      "size": 1508,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/32794013c44443894998f9155a793517c82ae572"
+    },
+    {
+      "path": "commands/plan-de.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3044ebc29d13686f323713f3c7100e1d61604550",
+      "size": 580,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3044ebc29d13686f323713f3c7100e1d61604550"
+    },
+    {
+      "path": "commands/plan-es.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a8944d4baa12cb6df13f4d8d0c736ee1e3bec7f",
+      "size": 639,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4a8944d4baa12cb6df13f4d8d0c736ee1e3bec7f"
+    },
+    {
+      "path": "commands/plan-goal.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "778db21038dbc696469df1965b4c34b425a5d671",
+      "size": 1804,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/778db21038dbc696469df1965b4c34b425a5d671"
+    },
+    {
+      "path": "commands/plan-loop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0bb9a216fe5fd9eff311bc42065f6e00116cf56",
+      "size": 2070,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d0bb9a216fe5fd9eff311bc42065f6e00116cf56"
+    },
+    {
+      "path": "commands/plan-zh.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4fa5f49bf7724eb420e70dd8ce451cb451556f4",
+      "size": 515,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b4fa5f49bf7724eb420e70dd8ce451cb451556f4"
+    },
+    {
+      "path": "commands/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d721cf49efcbce2c08fb58c3f966f76cf2780667",
+      "size": 508,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d721cf49efcbce2c08fb58c3f966f76cf2780667"
+    },
+    {
+      "path": "commands/start.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d049ed2b04be4a37443e2d9907d96d743416b91",
+      "size": 417,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4d049ed2b04be4a37443e2d9907d96d743416b91"
+    },
+    {
+      "path": "commands/status.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7724e171bd54bc7c162ade627c16eae1d3883bb",
+      "size": 1265,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b7724e171bd54bc7c162ade627c16eae1d3883bb"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb7f0ced31918f08b30a7653368b266cd36e7cb8",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/bb7f0ced31918f08b30a7653368b266cd36e7cb8"
+    },
+    {
+      "path": "docs/adal.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7717633ce0e320701b7ed34331b888b64e3d5ebb",
+      "size": 4918,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/7717633ce0e320701b7ed34331b888b64e3d5ebb"
+    },
+    {
+      "path": "docs/antigravity.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60801d84eaf38284c016e13a9626ef4988b517bd",
+      "size": 6674,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/60801d84eaf38284c016e13a9626ef4988b517bd"
+    },
+    {
+      "path": "docs/article-v2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a35a153a955c7780d12457b1d08d0bbb2a20984",
+      "size": 5942,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/2a35a153a955c7780d12457b1d08d0bbb2a20984"
+    },
+    {
+      "path": "docs/article.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7151abce155faeb12d19a259a08f6187e5da8353",
+      "size": 10279,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/7151abce155faeb12d19a259a08f6187e5da8353"
+    },
+    {
+      "path": "docs/attestation-locking.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1971186a9771a668257bc6675760ee132dd080a9",
+      "size": 2426,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1971186a9771a668257bc6675760ee132dd080a9"
+    },
+    {
+      "path": "docs/boxlite.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a56d93983da538735f6b6d5d597dc56deed11bb",
+      "size": 6607,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/7a56d93983da538735f6b6d5d597dc56deed11bb"
+    },
+    {
+      "path": "docs/cache-safe-diagram.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7df553f239d0e46bdca439ce9396ed7328c85597",
+      "size": 5631,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/7df553f239d0e46bdca439ce9396ed7328c85597"
+    },
+    {
+      "path": "docs/codebuddy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4204bfbc938108516936c12a766e69927a9d0a5f",
+      "size": 6633,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4204bfbc938108516936c12a766e69927a9d0a5f"
+    },
+    {
+      "path": "docs/codex.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ebca9d3edb6206942173aeaaf7c2e6872abf517",
+      "size": 5517,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6ebca9d3edb6206942173aeaaf7c2e6872abf517"
+    },
+    {
+      "path": "docs/continue.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66c5e33498cd8221789c57134073284cc4b3687a",
+      "size": 2166,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/66c5e33498cd8221789c57134073284cc4b3687a"
+    },
+    {
+      "path": "docs/copilot.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40e4be143e0b556a83338e3b171589f656cfd528",
+      "size": 3863,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/40e4be143e0b556a83338e3b171589f656cfd528"
+    },
+    {
+      "path": "docs/cursor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37dd47a725f2941bf7b7430bc6818165eba2b24f",
+      "size": 5523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/37dd47a725f2941bf7b7430bc6818165eba2b24f"
+    },
+    {
+      "path": "docs/evals.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8801a4d844d0c0032c7e24511653ccd18b2913e2",
+      "size": 8473,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8801a4d844d0c0032c7e24511653ccd18b2913e2"
+    },
+    {
+      "path": "docs/factory.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2dd4f0bf3d88c675fd084ec8b7d9cded3eb0caf",
+      "size": 6978,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b2dd4f0bf3d88c675fd084ec8b7d9cded3eb0caf"
+    },
+    {
+      "path": "docs/gemini.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18185facfc4158c9948a832afb68714689c00af8",
+      "size": 6178,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/18185facfc4158c9948a832afb68714689c00af8"
+    },
+    {
+      "path": "docs/hermes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f74838ff9e62d437bf62dfc68075180e5219b9",
+      "size": 6292,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b1f74838ff9e62d437bf62dfc68075180e5219b9"
+    },
+    {
+      "path": "docs/installation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1e9b5fb3c74a7080eb8fc4142976bc67d966b36",
+      "size": 3368,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a1e9b5fb3c74a7080eb8fc4142976bc67d966b36"
+    },
+    {
+      "path": "docs/kilocode.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "456303dd505cc4b718d5944b04ba27633d197c09",
+      "size": 6326,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/456303dd505cc4b718d5944b04ba27633d197c09"
+    },
+    {
+      "path": "docs/kiro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed92c7870c04391eb029e1014a04c0b3d434abd0",
+      "size": 3586,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ed92c7870c04391eb029e1014a04c0b3d434abd0"
+    },
+    {
+      "path": "docs/mastra.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d534614936d3c81231d2f180f4f374b91a3e5db4",
+      "size": 5702,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d534614936d3c81231d2f180f4f374b91a3e5db4"
+    },
+    {
+      "path": "docs/openclaw.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca683f9419beba2827905bad0033d14ec023fa06",
+      "size": 2896,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ca683f9419beba2827905bad0033d14ec023fa06"
+    },
+    {
+      "path": "docs/opencode.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "177fcf5781a189e7334e373da1aff8e1755c9ec4",
+      "size": 3919,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/177fcf5781a189e7334e373da1aff8e1755c9ec4"
+    },
+    {
+      "path": "docs/pi-agent.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657bd5bc451b24daa44370e6c60bebb45b17dc90",
+      "size": 2865,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/657bd5bc451b24daa44370e6c60bebb45b17dc90"
+    },
+    {
+      "path": "docs/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ac0597f1202b3ec6f3571f6b675c53cea7e7142",
+      "size": 7982,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8ac0597f1202b3ec6f3571f6b675c53cea7e7142"
+    },
+    {
+      "path": "docs/troubleshooting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a8f7afed2b95dabf70993e921eb9d96f854bc97",
+      "size": 5789,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3a8f7afed2b95dabf70993e921eb9d96f854bc97"
+    },
+    {
+      "path": "docs/windows.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0fb1c7b7b183bcbf42f4e3686da559a0cf7f9b",
+      "size": 2794,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ce0fb1c7b7b183bcbf42f4e3686da559a0cf7f9b"
+    },
+    {
+      "path": "docs/workflow.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da22d61f556f9a1c632a8675aa7c572ffa25938",
+      "size": 13369,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/9da22d61f556f9a1c632a8675aa7c572ffa25938"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94680f51c304427095bafe35ddc412ac8d9dacb8",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/94680f51c304427095bafe35ddc412ac8d9dacb8"
+    },
+    {
+      "path": "examples/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85f47fb9c1f26af52bf2319cfd587e380455df2a",
+      "size": 17749,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/85f47fb9c1f26af52bf2319cfd587e380455df2a"
+    },
+    {
+      "path": "examples/boxlite",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc150d981e18d361892f82c15976a58b09df9d35",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/cc150d981e18d361892f82c15976a58b09df9d35"
+    },
+    {
+      "path": "examples/boxlite/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f04095086fda7bb16f14c63e6744621a44c47a26",
+      "size": 616,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f04095086fda7bb16f14c63e6744621a44c47a26"
+    },
+    {
+      "path": "examples/boxlite/quickstart.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bcf3d57103d84d475e37a6ede4329f2e00abe18",
+      "size": 3959,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4bcf3d57103d84d475e37a6ede4329f2e00abe18"
+    },
+    {
+      "path": "media",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "117ccbd23af80b56fc70c4ec7787331f8072c9ef",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/117ccbd23af80b56fc70c4ec7787331f8072c9ef"
+    },
+    {
+      "path": "media/banner.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eb29da3a79f09d676389129af90ee9af5d6a1b4",
+      "size": 1823958,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3eb29da3a79f09d676389129af90ee9af5d6a1b4"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "499759aaa8cfaac0fcbaf9c26b4a2642dbd90191",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/499759aaa8cfaac0fcbaf9c26b4a2642dbd90191"
+    },
+    {
+      "path": "scripts/_v240_update_hook_bodies.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e6d250523016e4e8953f5b097dbe245b4f5dc6d",
+      "size": 10740,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1e6d250523016e4e8953f5b097dbe245b4f5dc6d"
+    },
+    {
+      "path": "scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": "scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": "scripts/bump-version.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a31db1123aae45498820aaf0fc9574df2ef4b1f6",
+      "size": 6808,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a31db1123aae45498820aaf0fc9574df2ef4b1f6"
+    },
+    {
+      "path": "scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": "scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": "scripts/check-continue.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88234b5d703f7075494d546ebeb59d0c796ed5bd",
+      "size": 1021,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/88234b5d703f7075494d546ebeb59d0c796ed5bd"
+    },
+    {
+      "path": "scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": "scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": "scripts/resolve-plan-dir.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": "scripts/resolve-plan-dir.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": "scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "6c4da46684f3e581500b7ea9195d5c2ccd5f3b77",
+      "size": 18876,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6c4da46684f3e581500b7ea9195d5c2ccd5f3b77"
+    },
+    {
+      "path": "scripts/set-active-plan.ps1",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": "scripts/set-active-plan.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": "scripts/sync-ide-folders.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dcc1b1646eafbf9a1a05632955e12536d421a03",
+      "size": 9919,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/9dcc1b1646eafbf9a1a05632955e12536d421a03"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84c709cddf80a839663b6b07421846749cd8cb23",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/84c709cddf80a839663b6b07421846749cd8cb23"
+    },
+    {
+      "path": "skills/planning-with-files-ar",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "477ee6d162cb39db3ba53a7906bc82f9a41123d2",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/477ee6d162cb39db3ba53a7906bc82f9a41123d2"
+    },
+    {
+      "path": "skills/planning-with-files-ar/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23a10f7e78ba19c553c6e8978d800e27ab4b7b75",
+      "size": 21428,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/23a10f7e78ba19c553c6e8978d800e27ab4b7b75"
+    },
+    {
+      "path": "skills/planning-with-files-ar/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b1bb19f47be42fb67633b2a7684016417a41ec9",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/5b1bb19f47be42fb67633b2a7684016417a41ec9"
+    },
+    {
+      "path": "skills/planning-with-files-ar/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce83bf816d0f1a7438368ebc3ceaa325b3df7240",
+      "size": 2310,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ce83bf816d0f1a7438368ebc3ceaa325b3df7240"
+    },
+    {
+      "path": "skills/planning-with-files-ar/scripts/check-complete.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2a6bd87f07f83c79d28dc3cbe3083b7b731b702",
+      "size": 2267,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a2a6bd87f07f83c79d28dc3cbe3083b7b731b702"
+    },
+    {
+      "path": "skills/planning-with-files-ar/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48d434b04fe843e56d7e25558be9bd661e1a5730",
+      "size": 3316,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/48d434b04fe843e56d7e25558be9bd661e1a5730"
+    },
+    {
+      "path": "skills/planning-with-files-ar/scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69b666bbe709af4ddd671cad840abb2c4f1355a9",
+      "size": 3147,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/69b666bbe709af4ddd671cad840abb2c4f1355a9"
+    },
+    {
+      "path": "skills/planning-with-files-ar/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fcb7e862cabde4205ec0d7349508917f58f488c",
+      "size": 15765,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4fcb7e862cabde4205ec0d7349508917f58f488c"
+    },
+    {
+      "path": "skills/planning-with-files-ar/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22329ca7ca76cd64a72e6d805538015856338f8c",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/22329ca7ca76cd64a72e6d805538015856338f8c"
+    },
+    {
+      "path": "skills/planning-with-files-ar/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4c16de4031fb84fb9535d0a62c597cf815ace7b",
+      "size": 4945,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b4c16de4031fb84fb9535d0a62c597cf815ace7b"
+    },
+    {
+      "path": "skills/planning-with-files-ar/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "960c9d3d198af4a8ef36470af967b05ced56f955",
+      "size": 5754,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/960c9d3d198af4a8ef36470af967b05ced56f955"
+    },
+    {
+      "path": "skills/planning-with-files-ar/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b4b099f33e04e3ac7ecfd817940a7beae13c97b",
+      "size": 6578,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4b4b099f33e04e3ac7ecfd817940a7beae13c97b"
+    },
+    {
+      "path": "skills/planning-with-files-de",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "378a920b4bdd8f8a12cff934e9cf61438a27704f",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/378a920b4bdd8f8a12cff934e9cf61438a27704f"
+    },
+    {
+      "path": "skills/planning-with-files-de/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a8d4a9424ee635eb11806d3e23c7eb16c5f158a",
+      "size": 19286,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1a8d4a9424ee635eb11806d3e23c7eb16c5f158a"
+    },
+    {
+      "path": "skills/planning-with-files-de/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca41ca4a1aab1201ef4d54e12abd304f598eeaf5",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ca41ca4a1aab1201ef4d54e12abd304f598eeaf5"
+    },
+    {
+      "path": "skills/planning-with-files-de/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d76fdfcc0cc963c3cb2d25f45d99f51e69195138",
+      "size": 1942,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d76fdfcc0cc963c3cb2d25f45d99f51e69195138"
+    },
+    {
+      "path": "skills/planning-with-files-de/scripts/check-complete.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83b62f5ac81d5a39eea432174c425c93ac05ba32",
+      "size": 1889,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83b62f5ac81d5a39eea432174c425c93ac05ba32"
+    },
+    {
+      "path": "skills/planning-with-files-de/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d4b0fafd5d881c0a8703cccb698fd957715c91c",
+      "size": 2688,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5d4b0fafd5d881c0a8703cccb698fd957715c91c"
+    },
+    {
+      "path": "skills/planning-with-files-de/scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45d2fc0d7d0ed304671a4f0b790f802066f00ce2",
+      "size": 2519,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/45d2fc0d7d0ed304671a4f0b790f802066f00ce2"
+    },
+    {
+      "path": "skills/planning-with-files-de/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98d428ab162a970f16a4fe88a51ee04392b4fe56",
+      "size": 15631,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/98d428ab162a970f16a4fe88a51ee04392b4fe56"
+    },
+    {
+      "path": "skills/planning-with-files-de/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc66edce24d1011a82fb1b6355e2e93b4996a4fa",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/cc66edce24d1011a82fb1b6355e2e93b4996a4fa"
+    },
+    {
+      "path": "skills/planning-with-files-de/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3143df171ee831c7b65f3ca5a459acba1e3fb7d5",
+      "size": 4143,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3143df171ee831c7b65f3ca5a459acba1e3fb7d5"
+    },
+    {
+      "path": "skills/planning-with-files-de/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f22632606aac360f487b9e6587ef48198117d9ea",
+      "size": 4721,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f22632606aac360f487b9e6587ef48198117d9ea"
+    },
+    {
+      "path": "skills/planning-with-files-de/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5391e3e749884345c89a2b7d13d41bd7370e5b34",
+      "size": 5501,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5391e3e749884345c89a2b7d13d41bd7370e5b34"
+    },
+    {
+      "path": "skills/planning-with-files-es",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee709a75561a15f2ae9aa8a834b8ff61997c12a9",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ee709a75561a15f2ae9aa8a834b8ff61997c12a9"
+    },
+    {
+      "path": "skills/planning-with-files-es/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77db52713d2e153c3c06bc39e4fd7019e15d13f0",
+      "size": 19457,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/77db52713d2e153c3c06bc39e4fd7019e15d13f0"
+    },
+    {
+      "path": "skills/planning-with-files-es/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ecb40ae0497f36805f46e00f49ed03f97fac945",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/1ecb40ae0497f36805f46e00f49ed03f97fac945"
+    },
+    {
+      "path": "skills/planning-with-files-es/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "415a0eb2c9a1fecfc603bdcf70ed3590c867ee96",
+      "size": 1962,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/415a0eb2c9a1fecfc603bdcf70ed3590c867ee96"
+    },
+    {
+      "path": "skills/planning-with-files-es/scripts/check-complete.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da95c976118b27ef027da0a4b4f08f66106c43b2",
+      "size": 1914,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/da95c976118b27ef027da0a4b4f08f66106c43b2"
+    },
+    {
+      "path": "skills/planning-with-files-es/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "568c5d23854480fc34eb0eeae5163cf0e994b693",
+      "size": 2684,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/568c5d23854480fc34eb0eeae5163cf0e994b693"
+    },
+    {
+      "path": "skills/planning-with-files-es/scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe266ee0f28edc58de2862bc1913c64b9135b792",
+      "size": 2515,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/fe266ee0f28edc58de2862bc1913c64b9135b792"
+    },
+    {
+      "path": "skills/planning-with-files-es/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "368c72f797f424eb0295c1b87443ee945d363729",
+      "size": 15630,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/368c72f797f424eb0295c1b87443ee945d363729"
+    },
+    {
+      "path": "skills/planning-with-files-es/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4c66afef13a5cc7af8750ddb29ab2f2f8ee0bd83",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/4c66afef13a5cc7af8750ddb29ab2f2f8ee0bd83"
+    },
+    {
+      "path": "skills/planning-with-files-es/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e294ffbccd93a13ae879e62ec21bf63bdbf932a",
+      "size": 4182,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6e294ffbccd93a13ae879e62ec21bf63bdbf932a"
+    },
+    {
+      "path": "skills/planning-with-files-es/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a0582f2b763d95140cfffdae04cfa5bd4499da1",
+      "size": 4603,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1a0582f2b763d95140cfffdae04cfa5bd4499da1"
+    },
+    {
+      "path": "skills/planning-with-files-es/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f64a0b318167395fc1a1e8de8b42bfd349d4fc01",
+      "size": 5242,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f64a0b318167395fc1a1e8de8b42bfd349d4fc01"
+    },
+    {
+      "path": "skills/planning-with-files-zh",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0427bbd0a3f096978a5565e21d29c3490269103f",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/0427bbd0a3f096978a5565e21d29c3490269103f"
+    },
+    {
+      "path": "skills/planning-with-files-zh/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7776819973166e532e2fea290b7fe074c94e042e",
+      "size": 18037,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/7776819973166e532e2fea290b7fe074c94e042e"
+    },
+    {
+      "path": "skills/planning-with-files-zh/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecea66bef25a2087ffb4f58d1f0ca36abd1ec1d0",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ecea66bef25a2087ffb4f58d1f0ca36abd1ec1d0"
+    },
+    {
+      "path": "skills/planning-with-files-zh/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "427467b17fc3953266644d51598e58b94cef2359",
+      "size": 1850,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/427467b17fc3953266644d51598e58b94cef2359"
+    },
+    {
+      "path": "skills/planning-with-files-zh/scripts/check-complete.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d657f56c46d9b43194f04257e4b9bcaba2c7cc9b",
+      "size": 1804,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d657f56c46d9b43194f04257e4b9bcaba2c7cc9b"
+    },
+    {
+      "path": "skills/planning-with-files-zh/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "096510db487d2cd330a5b46d198fea04b0d0afb0",
+      "size": 2479,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/096510db487d2cd330a5b46d198fea04b0d0afb0"
+    },
+    {
+      "path": "skills/planning-with-files-zh/scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f5b1df7ed8c0c18806009a1897d7e017d219355",
+      "size": 2310,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4f5b1df7ed8c0c18806009a1897d7e017d219355"
+    },
+    {
+      "path": "skills/planning-with-files-zh/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0da1e0143f143cf49b2abffce6846725858d230",
+      "size": 15459,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a0da1e0143f143cf49b2abffce6846725858d230"
+    },
+    {
+      "path": "skills/planning-with-files-zh/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4db22f4bb7915d13b2994b6b50a8414199d1bf97",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/4db22f4bb7915d13b2994b6b50a8414199d1bf97"
+    },
+    {
+      "path": "skills/planning-with-files-zh/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be1db2e3ac2e76452362d34c63cc133bba6f58b5",
+      "size": 475,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/be1db2e3ac2e76452362d34c63cc133bba6f58b5"
+    },
+    {
+      "path": "skills/planning-with-files-zh/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfc8815e5d9eb464ce464b28a80eb7ef588e5024",
+      "size": 909,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cfc8815e5d9eb464ce464b28a80eb7ef588e5024"
+    },
+    {
+      "path": "skills/planning-with-files-zh/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bb28254c9706a9bb526e45637b79bb3ea1af7ba",
+      "size": 1275,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4bb28254c9706a9bb526e45637b79bb3ea1af7ba"
+    },
+    {
+      "path": "skills/planning-with-files-zht",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "952788651674cb976492c24e546c24a90979be2a",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/952788651674cb976492c24e546c24a90979be2a"
+    },
+    {
+      "path": "skills/planning-with-files-zht/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ebec566e6585e2f17881b55598bd9010d2e3d4a",
+      "size": 18070,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4ebec566e6585e2f17881b55598bd9010d2e3d4a"
+    },
+    {
+      "path": "skills/planning-with-files-zht/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7799e777dbc61ebc04ceac8f19e00047612e5737",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/7799e777dbc61ebc04ceac8f19e00047612e5737"
+    },
+    {
+      "path": "skills/planning-with-files-zht/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40eb0e2941fcd347f2ab518942b7f12fdac42e84",
+      "size": 1853,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/40eb0e2941fcd347f2ab518942b7f12fdac42e84"
+    },
+    {
+      "path": "skills/planning-with-files-zht/scripts/check-complete.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd2b5ea922bb3e32ab5841f574fba40377bbdbd2",
+      "size": 1807,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/fd2b5ea922bb3e32ab5841f574fba40377bbdbd2"
+    },
+    {
+      "path": "skills/planning-with-files-zht/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7b5ac8222866db075e069966973bc7521f243e6",
+      "size": 2408,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b7b5ac8222866db075e069966973bc7521f243e6"
+    },
+    {
+      "path": "skills/planning-with-files-zht/scripts/init-session.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9750d670d1bf87b6a9d3d81a67edb12bff6f85e",
+      "size": 2239,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/e9750d670d1bf87b6a9d3d81a67edb12bff6f85e"
+    },
+    {
+      "path": "skills/planning-with-files-zht/scripts/session-catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cde64535ed855e780ce5c8539a5b30c01b9dee5e",
+      "size": 15494,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cde64535ed855e780ce5c8539a5b30c01b9dee5e"
+    },
+    {
+      "path": "skills/planning-with-files-zht/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1061537952e8cb72f87be87aae28ed9ac538af93",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/1061537952e8cb72f87be87aae28ed9ac538af93"
+    },
+    {
+      "path": "skills/planning-with-files-zht/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db88f1379706926dcd0729ef361df5cc6745b8e2",
+      "size": 475,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/db88f1379706926dcd0729ef361df5cc6745b8e2"
+    },
+    {
+      "path": "skills/planning-with-files-zht/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ff923ae23a49572226bc03f814e477756074b72",
+      "size": 919,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3ff923ae23a49572226bc03f814e477756074b72"
+    },
+    {
+      "path": "skills/planning-with-files-zht/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0a3f22d53899b5f3b803a99d32e3fb696cca377",
+      "size": 1284,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/a0a3f22d53899b5f3b803a99d32e3fb696cca377"
+    },
+    {
+      "path": "skills/planning-with-files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08b72ad8c5d5343cb54cfe2faa0b4dcb5f3a13aa",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/08b72ad8c5d5343cb54cfe2faa0b4dcb5f3a13aa"
+    },
+    {
+      "path": "skills/planning-with-files/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d613a1afe4e0f3934d707a273871c68b65a9f170",
+      "size": 27253,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/d613a1afe4e0f3934d707a273871c68b65a9f170"
+    },
+    {
+      "path": "skills/planning-with-files/examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f228f8edc277f4a360a4ffe7b919be3d8591f1b9",
+      "size": 4518,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/f228f8edc277f4a360a4ffe7b919be3d8591f1b9"
+    },
+    {
+      "path": "skills/planning-with-files/reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380fbb8be36b35b51458c4ae4c3869c8e8194b7",
+      "size": 8066,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1380fbb8be36b35b51458c4ae4c3869c8e8194b7"
+    },
+    {
+      "path": "skills/planning-with-files/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "830baf15b03b3d5ea4ff9f7ab0c3bc8214ae6bab",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/830baf15b03b3d5ea4ff9f7ab0c3bc8214ae6bab"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/attest-plan.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5deec26562793cc04783fb681bcdf2f6c0d203f",
+      "size": 3950,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c5deec26562793cc04783fb681bcdf2f6c0d203f"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/attest-plan.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3",
+      "size": 6500,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1fbdca2684c05ef4bbc300abd805ca1bbf0d6ec3"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/check-complete.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a5f446d36a30211c8633623a108386e8afd97c",
+      "size": 1797,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78a5f446d36a30211c8633623a108386e8afd97c"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/check-complete.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c75874a014dcf3f78762f15c3ea40918647c8e5d",
+      "size": 2523,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/c75874a014dcf3f78762f15c3ea40918647c8e5d"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/init-session.ps1",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71741ebb018ff5f6912331f71ff35046ece3b048",
+      "size": 3806,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/71741ebb018ff5f6912331f71ff35046ece3b048"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/init-session.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "15985661f5397b3e2292e3a4f1cf418e2d3badba",
+      "size": 7273,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/15985661f5397b3e2292e3a4f1cf418e2d3badba"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/resolve-plan-dir.ps1",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8701887d2f35a367dc9a51716eb4b81336daf4a4",
+      "size": 1227,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/8701887d2f35a367dc9a51716eb4b81336daf4a4"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/resolve-plan-dir.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5e6fe9a77419accec1973e8ff649b881d4660a86",
+      "size": 3884,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/5e6fe9a77419accec1973e8ff649b881d4660a86"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/session-catchup.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b35158dc4260ec71c24ab0f1a83a59958e85332c",
+      "size": 21583,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b35158dc4260ec71c24ab0f1a83a59958e85332c"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/set-active-plan.ps1",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "83c941074000603761dc2cf78d74a8cfa571d430",
+      "size": 1600,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/83c941074000603761dc2cf78d74a8cfa571d430"
+    },
+    {
+      "path": "skills/planning-with-files/scripts/set-active-plan.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "50ec5cc8ba288804fa66198deba6bb1cb503d111",
+      "size": 1505,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/50ec5cc8ba288804fa66198deba6bb1cb503d111"
+    },
+    {
+      "path": "skills/planning-with-files/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55bbc917da7d1b02d7c7888e611bdca9c70ff6cd",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/55bbc917da7d1b02d7c7888e611bdca9c70ff6cd"
+    },
+    {
+      "path": "skills/planning-with-files/templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": "skills/planning-with-files/templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": "skills/planning-with-files/templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": "templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed029934aeeec203c28f2e5a87f317361485ba29",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/ed029934aeeec203c28f2e5a87f317361485ba29"
+    },
+    {
+      "path": "templates/analytics_findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01ca57cddcf4c7320ac17d305c0a72a7aea201d0",
+      "size": 3336,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/01ca57cddcf4c7320ac17d305c0a72a7aea201d0"
+    },
+    {
+      "path": "templates/analytics_task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "040ca715c1ad72003f7acf488f598088e1d57143",
+      "size": 3980,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/040ca715c1ad72003f7acf488f598088e1d57143"
+    },
+    {
+      "path": "templates/findings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "056536d9f1bb3d538cd9b034bce767a888569b4f",
+      "size": 3561,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/056536d9f1bb3d538cd9b034bce767a888569b4f"
+    },
+    {
+      "path": "templates/loop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13096ec034aa08d70dfd0f6a9586d74c067faed4",
+      "size": 1613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/13096ec034aa08d70dfd0f6a9586d74c067faed4"
+    },
+    {
+      "path": "templates/progress.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9af9172be334c5dee175961f6b4a18eeaa46f",
+      "size": 4001,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/dba9af9172be334c5dee175961f6b4a18eeaa46f"
+    },
+    {
+      "path": "templates/task_plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc858964fef25f0320e3944c016ddcd6b2fdca4b",
+      "size": 4613,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/cc858964fef25f0320e3944c016ddcd6b2fdca4b"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de476fe8953daebf0ec1838a6910bd1a9576bad3",
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/trees/de476fe8953daebf0ec1838a6910bd1a9576bad3"
+    },
+    {
+      "path": "tests/test_canonical_script_sync.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0a7494c58dd26812549e251c4397d2fda1e68f6",
+      "size": 3670,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/e0a7494c58dd26812549e251c4397d2fda1e68f6"
+    },
+    {
+      "path": "tests/test_check_complete_resolver.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff22255a53e38c2bf12fe0caf465d730004e5d81",
+      "size": 5501,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/ff22255a53e38c2bf12fe0caf465d730004e5d81"
+    },
+    {
+      "path": "tests/test_clear_recovery.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2168fcb99f3f9d7b0e487f4a2d86c5cb5134b7a7",
+      "size": 6880,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/2168fcb99f3f9d7b0e487f4a2d86c5cb5134b7a7"
+    },
+    {
+      "path": "tests/test_codex_hooks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b2191cb82b185a54efb04fed0260eb8f417537",
+      "size": 6588,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/e7b2191cb82b185a54efb04fed0260eb8f417537"
+    },
+    {
+      "path": "tests/test_codex_session_isolation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78fde0f18882def79d5cea5b24a616e3cfeaae2f",
+      "size": 6555,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/78fde0f18882def79d5cea5b24a616e3cfeaae2f"
+    },
+    {
+      "path": "tests/test_hermes_adapter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "662b537e4d0358e08fc5cbc2084df281bf58ceba",
+      "size": 18585,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/662b537e4d0358e08fc5cbc2084df281bf58ceba"
+    },
+    {
+      "path": "tests/test_hook_body_v240.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b545cdfa3cc3f36bb37ec13a0a4ad5e598d7406",
+      "size": 10873,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/3b545cdfa3cc3f36bb37ec13a0a4ad5e598d7406"
+    },
+    {
+      "path": "tests/test_hook_resolver_integration.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1b97773a6b55ddbe10572de4525dc6cf599b20",
+      "size": 7299,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/2b1b97773a6b55ddbe10572de4525dc6cf599b20"
+    },
+    {
+      "path": "tests/test_init_session_slug.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "943a652a65bf1bcf1f460b9760a87b95815121ad",
+      "size": 4258,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/943a652a65bf1bcf1f460b9760a87b95815121ad"
+    },
+    {
+      "path": "tests/test_path_fix.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6737476d145ee571b762f52fbefbe7a652288235",
+      "size": 1747,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6737476d145ee571b762f52fbefbe7a652288235"
+    },
+    {
+      "path": "tests/test_pi_docs_hook_support.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02b734a41f46ae25e3821f5d1762063653e59b69",
+      "size": 1203,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/02b734a41f46ae25e3821f5d1762063653e59b69"
+    },
+    {
+      "path": "tests/test_pi_extension_capabilities.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81a1844d71db97a5f0d8d20a36048898e3d3d4b6",
+      "size": 4721,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/81a1844d71db97a5f0d8d20a36048898e3d3d4b6"
+    },
+    {
+      "path": "tests/test_pi_extension_packaging.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64110c4280fc9a72d8f62200dbaeab5343806c32",
+      "size": 1407,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/64110c4280fc9a72d8f62200dbaeab5343806c32"
+    },
+    {
+      "path": "tests/test_plan_attestation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "154605400a21fbe20c5c29bc7a9316d55877e1d1",
+      "size": 6508,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/154605400a21fbe20c5c29bc7a9316d55877e1d1"
+    },
+    {
+      "path": "tests/test_precompact_hook.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d5852f711735ceff3f2c9676851939c80de7d03",
+      "size": 4349,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/1d5852f711735ceff3f2c9676851939c80de7d03"
+    },
+    {
+      "path": "tests/test_resolve_plan_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6984121e32c0b9f25113d923f5266966c913652e",
+      "size": 9404,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/6984121e32c0b9f25113d923f5266966c913652e"
+    },
+    {
+      "path": "tests/test_script_permissions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35cef1876083975a44c4cf00a5ccf6abd1ae7ed3",
+      "size": 953,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/35cef1876083975a44c4cf00a5ccf6abd1ae7ed3"
+    },
+    {
+      "path": "tests/test_session_catchup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d06fb73c15eb1a7c111f8e292e76781ba83bab",
+      "size": 8306,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/b8d06fb73c15eb1a7c111f8e292e76781ba83bab"
+    },
+    {
+      "path": "tests/test_session_catchup_opencode.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c5f0eef9392e67187595acb2e606c29c8aacf35",
+      "size": 6459,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/4c5f0eef9392e67187595acb2e606c29c8aacf35"
+    },
+    {
+      "path": "tests/test_set_active_plan.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d5c3af7bf8061a8cfcd5f24901ed68c45f95ea6",
+      "size": 4360,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/0d5c3af7bf8061a8cfcd5f24901ed68c45f95ea6"
+    },
+    {
+      "path": "tests/test_skill_md_version_parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f96e6974b48ee362008f4b84e2f55ff9d1bd34a",
+      "size": 5359,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/2f96e6974b48ee362008f4b84e2f55ff9d1bd34a"
+    },
+    {
+      "path": "tests/test_v238_command_files.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "879315a10630d58e4c6ec63edca2d8b3c48f006e",
+      "size": 2745,
+      "url": "https://api.github.com/repos/OthmanAdi/planning-with-files/git/blobs/879315a10630d58e4c6ec63edca2d8b3c48f006e"
+    }
+  ],
+  "truncated": false
+}
