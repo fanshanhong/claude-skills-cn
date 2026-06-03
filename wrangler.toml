@@ -1,0 +1,6 @@
+name = "claudeskill-cn"
+compatibility_date = "2026-01-01"
+
+[assets]
+directory = "./web/dist"
+not_found_handling = "404-page"
