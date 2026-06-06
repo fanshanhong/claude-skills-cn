@@ -13,7 +13,7 @@ const articles = defineCollection({
     keywords: z.array(z.string()).optional(),
     source: z.string().url(),
     repo: z.string().url().optional(),
-    source_type: z.enum(['single-skill', 'plugin-skill', 'plugin-overview', 'plugin-doc']),
+    source_type: z.enum(['single-skill', 'plugin-skill', 'plugin-overview', 'plugin-doc', 'standalone-tool']),
     plugin: z.string().nullable().optional(),
     sibling_skills: z.array(z.string()).optional(),
     author: z.string(),
